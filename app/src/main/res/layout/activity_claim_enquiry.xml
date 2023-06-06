@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".reimbursement.ClaimEnquiryActivity">
+
+    <include layout="@layout/toolbar_layout" />
+
+    <include
+        layout="@layout/geometric_progress_layout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal" />
+
+
+
+<Button
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_gravity="center"
+    android:layout_margin="20dp"
+    android:textAllCaps="false"
+    android:textStyle="bold"
+    android:fontFamily="@font/lucidasans"
+    android:textColor="@color/white"
+    android:drawableTint="@color/white"
+    android:textSize="18sp"
+    android:onClick="btnNewClaim"
+    android:gravity="center"
+    android:drawableRight="@drawable/ic_keyboard_arrow_right_gray_24dp"
+    android:background="@drawable/button_shape"
+    android:text="@string/submit_new_claim"/>
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/rv"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+
+    <LinearLayout
+        android:id="@+id/ll_no_record_found"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/label_background"
+        android:gravity="center"
+        android:orientation="vertical"
+        android:visibility="gone">
+
+        <ImageView
+            android:id="@+id/img_no_result_found"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_gravity="center"
+            android:src="@drawable/ic_baseline_search_24" />
+
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:fontFamily="@font/lucidasans"
+            android:gravity="center"
+            android:text="@string/no_result_found"
+            android:textColor="@color/black"
+            android:textSize="18sp"
+            android:textStyle="bold" />
+    </LinearLayout>
+</LinearLayout>

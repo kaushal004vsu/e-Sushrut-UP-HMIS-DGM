@@ -1,0 +1,677 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@+id/btn_vitals_done"
+        android:background="@color/activity_background">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/activity_background"
+            android:orientation="vertical"
+            tools:context=".opdLite.VitalsActivity">
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="08dp"
+                android:background="@color/view_background"
+                app:cardCornerRadius="20dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="@color/view_background"
+                    android:orientation="vertical"
+                    android:padding="08dp"
+                    android:paddingBottom="55dp">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:drawableLeft="@drawable/weight"
+                        android:drawablePadding="08dp"
+                        android:drawableTint="#FF7839"
+                        android:text="@string/weight"
+                        android:textColor="#FF7839"
+                        android:textSize="18sp" />
+
+                    <EditText
+                        android:id="@+id/edt_weight"
+                        android:layout_width="160dp"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="right"
+                        android:background="@drawable/vitals_edittext"
+                        android:gravity="center"
+                        android:hint="Weight in kgs"
+                        android:inputType="numberDecimal"
+                        android:maxLength="5"
+                        android:padding="10dp"
+                        android:paddingHorizontal="60dp"
+                        android:textColor="@android:color/white"
+                        android:textColorHint="@android:color/white"
+                        android:textSize="14sp" />
+
+
+                </LinearLayout>
+
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="08dp"
+                android:background="@color/view_background"
+                app:cardCornerRadius="20dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="@color/view_background"
+                    android:orientation="vertical"
+                    android:padding="08dp"
+                    android:paddingBottom="55dp">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:drawableLeft="@drawable/height"
+                        android:drawablePadding="08dp"
+                        android:drawableTint="#4FA0FB"
+                        android:text="@string/height"
+                        android:textColor="#4FA0FB"
+                        android:textSize="18sp" />
+
+                    <EditText
+                        android:id="@+id/edt_height"
+                        android:layout_width="160dp"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="right"
+                        android:background="@drawable/vitals_edittext"
+                        android:gravity="center"
+                        android:hint="Height in cms"
+                        android:inputType="number"
+                        android:maxLength="3"
+                        android:padding="10dp"
+                        android:paddingHorizontal="60dp"
+                        android:textColor="@android:color/white"
+                        android:textColorHint="@android:color/white"
+                        android:textSize="14sp" />
+
+
+                </LinearLayout>
+
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="08dp"
+                android:background="@color/view_background"
+                app:cardCornerRadius="20dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="@color/view_background"
+                    android:orientation="vertical">
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:background="@color/view_background"
+                        android:padding="20dp">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:drawableLeft="@drawable/weight"
+                            android:drawablePadding="08dp"
+                            android:drawableTint="#FF7839"
+                            android:text="@string/bmi"
+                            android:textColor="#FF7839"
+                            android:textSize="18sp" />
+
+
+                        <TextView
+                            android:id="@+id/tv_bmi_header"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentRight="true"
+                            android:layout_centerVertical="true"
+                            android:layout_marginLeft="8dp"
+                            android:hint="kg/m2"
+                            android:textColor="@android:color/white"
+                            android:textColorHint="@android:color/white"
+                            android:textSize="16sp" />
+
+
+                    </RelativeLayout>
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="16dp">
+
+                        <TextView
+                            android:id="@+id/bmi_status"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:textColor="@android:color/white"
+                            android:textSize="18sp" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="8dp"
+                            android:text=""
+                            android:textColor="@android:color/white"
+                            android:textSize="16sp" />
+                    </LinearLayout>
+                </LinearLayout>
+            </androidx.cardview.widget.CardView>
+
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="08dp"
+                android:background="@color/view_background"
+                app:cardCornerRadius="20dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="@color/view_background"
+                    android:orientation="vertical"
+                    android:padding="08dp"
+                    android:paddingBottom="55dp">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:drawableLeft="@drawable/ic_temperature"
+                        android:drawablePadding="08dp"
+                        android:drawableTint="@color/vitals_blue"
+                        android:text="@string/temperature"
+                        android:textColor="@color/vitals_blue"
+                        android:textSize="18sp" />
+
+                    <EditText
+                        android:id="@+id/edt_temperature"
+                        android:layout_width="160dp"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="right"
+                        android:background="@drawable/vitals_edittext"
+                        android:gravity="center"
+                        android:hint="Temp. in fahrenheit"
+                        android:inputType="numberDecimal"
+                        android:maxLength="5"
+                        android:padding="10dp"
+                        android:paddingHorizontal="60dp"
+                        android:textColor="@android:color/white"
+                        android:textColorHint="@android:color/white"
+                        android:textSize="14sp" />
+
+
+                </LinearLayout>
+
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="08dp"
+                android:background="@color/view_background"
+                app:cardCornerRadius="20dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="@color/view_background"
+                    android:orientation="vertical"
+                    android:padding="08dp"
+                    android:paddingBottom="55dp">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:drawableLeft="@drawable/ic_pulse"
+                        android:drawablePadding="08dp"
+                        android:drawableTint="@color/vitals_orange"
+                        android:text="@string/pulse_rate"
+                        android:textColor="@color/vitals_orange"
+                        android:textSize="18sp" />
+
+                    <EditText
+                        android:id="@+id/edtpulse"
+                        android:layout_width="160dp"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="right"
+                        android:background="@drawable/vitals_edittext"
+                        android:gravity="center"
+                        android:hint="Pulse Rate"
+                        android:inputType="number"
+                        android:maxLength="3"
+                        android:padding="10dp"
+                        android:paddingHorizontal="60dp"
+                        android:textColor="@android:color/white"
+                        android:textColorHint="@android:color/white"
+                        android:textSize="14sp" />
+
+
+                </LinearLayout>
+
+            </androidx.cardview.widget.CardView>
+
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="08dp"
+                android:background="@color/view_background"
+                app:cardCornerRadius="20dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="@color/view_background"
+                    android:orientation="vertical"
+                    android:padding="08dp"
+                    android:paddingBottom="55dp">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:drawableLeft="@drawable/ic_temperature"
+                        android:drawablePadding="08dp"
+                        android:drawableTint="@color/vitals_blue"
+                        android:text="BP(mmHg):"
+                        android:textColor="@color/vitals_blue"
+                        android:textSize="18sp" />
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="right"
+                        android:layout_marginTop="08dp">
+
+                        <EditText
+                            android:id="@+id/bp_systolic"
+                            android:layout_width="160dp"
+                            android:layout_height="wrap_content"
+                            android:background="@drawable/vitals_edittext"
+                            android:gravity="center"
+                            android:hint="Systolic"
+                            android:inputType="number"
+                            android:maxLength="3"
+                            android:padding="10dp"
+                            android:paddingHorizontal="60dp"
+                            android:textColor="@android:color/white"
+                            android:textColorHint="@android:color/white"
+                            android:textSize="14sp" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginHorizontal="08dp"
+                            android:text="/"
+                            android:textColor="@android:color/white"
+                            android:textSize="22sp" />
+
+                        <EditText
+                            android:id="@+id/bp_diastolic"
+                            android:layout_width="160dp"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="right"
+                            android:background="@drawable/vitals_edittext"
+                            android:gravity="center"
+                            android:hint="Diastolic"
+                            android:inputType="number"
+                            android:maxLength="3"
+                            android:padding="10dp"
+                            android:paddingHorizontal="60dp"
+                            android:textColor="@android:color/white"
+                            android:textColorHint="@android:color/white"
+                            android:textSize="14sp" />
+                    </LinearLayout>
+
+
+                </LinearLayout>
+
+            </androidx.cardview.widget.CardView>
+
+
+            <!--        fast-->
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="08dp"
+                android:background="@color/view_background"
+                app:cardCornerRadius="20dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="@color/view_background"
+                    android:orientation="vertical"
+                    android:padding="08dp"
+                    android:paddingBottom="55dp">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:drawableLeft="@drawable/weight"
+                        android:drawablePadding="08dp"
+                        android:drawableTint="@color/vitals_orange"
+                        android:text="@string/fast"
+                        android:textColor="@color/vitals_orange"
+                        android:textSize="18sp" />
+
+                    <EditText
+                        android:id="@+id/edt_fast"
+                        android:layout_width="160dp"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="right"
+                        android:background="@drawable/vitals_edittext"
+                        android:gravity="center"
+                        android:hint="@string/fast"
+                        android:inputType="number"
+                        android:maxLength="5"
+                        android:padding="10dp"
+                        android:paddingHorizontal="60dp"
+                        android:textColor="@android:color/white"
+                        android:textColorHint="@android:color/white"
+                        android:textSize="14sp" />
+
+
+                </LinearLayout>
+
+            </androidx.cardview.widget.CardView>
+
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="08dp"
+                android:background="@color/view_background"
+                app:cardCornerRadius="20dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="@color/view_background"
+                    android:orientation="vertical"
+                    android:padding="08dp"
+                    android:paddingBottom="55dp">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:drawableLeft="@drawable/weight"
+                        android:drawablePadding="08dp"
+                        android:drawableTint="@color/vitals_blue"
+                        android:text="PP"
+                        android:textColor="@color/vitals_blue"
+                        android:textSize="18sp" />
+
+                    <EditText
+                        android:id="@+id/edt_pp"
+                        android:layout_width="160dp"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="right"
+                        android:background="@drawable/vitals_edittext"
+                        android:gravity="center"
+                        android:hint="PP"
+                        android:inputType="number"
+                        android:maxLength="3"
+                        android:padding="10dp"
+                        android:paddingHorizontal="60dp"
+                        android:textColor="@android:color/white"
+                        android:textColorHint="@android:color/white"
+                        android:textSize="14sp" />
+
+
+                </LinearLayout>
+
+            </androidx.cardview.widget.CardView>
+
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="08dp"
+                android:background="@color/view_background"
+                app:cardCornerRadius="20dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="@color/view_background"
+                    android:orientation="vertical"
+                    android:padding="08dp"
+                    android:paddingBottom="55dp">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:drawableLeft="@drawable/weight"
+                        android:drawablePadding="08dp"
+                        android:drawableTint="@color/vitals_orange"
+                        android:text="HBA1C"
+                        android:textColor="@color/vitals_orange"
+                        android:textSize="18sp" />
+
+                    <EditText
+                        android:id="@+id/edt_hba"
+                        android:layout_width="160dp"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="right"
+                        android:background="@drawable/vitals_edittext"
+                        android:gravity="center"
+                        android:hint="HBA1C"
+                        android:inputType="number"
+                        android:maxLength="4"
+                        android:padding="10dp"
+                        android:paddingHorizontal="60dp"
+                        android:textColor="@android:color/white"
+                        android:textColorHint="@android:color/white"
+                        android:textSize="14sp" />
+
+
+                </LinearLayout>
+
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="08dp"
+                android:background="@color/view_background"
+                app:cardCornerRadius="20dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="@color/view_background"
+                    android:orientation="vertical"
+                    android:padding="08dp"
+                    android:paddingBottom="55dp">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:drawableLeft="@drawable/ic_blood"
+                        android:drawablePadding="08dp"
+                        android:drawableTint="@color/vitals_blue"
+                        android:text="Hgb"
+                        android:textColor="@color/vitals_blue"
+                        android:textSize="18sp" />
+
+                    <EditText
+                        android:id="@+id/edt_hgb"
+                        android:layout_width="160dp"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="right"
+                        android:background="@drawable/vitals_edittext"
+                        android:gravity="center"
+                        android:hint="Hgb"
+                        android:inputType="number"
+                        android:maxLength="5"
+                        android:padding="10dp"
+                        android:paddingHorizontal="60dp"
+                        android:textColor="@android:color/white"
+                        android:textColorHint="@android:color/white"
+                        android:textSize="14sp" />
+
+
+                </LinearLayout>
+
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="08dp"
+                android:background="@color/view_background"
+                app:cardCornerRadius="20dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="@color/view_background"
+                    android:orientation="vertical"
+                    android:padding="08dp"
+                    android:paddingBottom="55dp">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:drawableLeft="@drawable/ic_blood"
+                        android:drawablePadding="08dp"
+                        android:drawableTint="@color/vitals_orange"
+                        android:text="@string/blood_group"
+                        android:textColor="@color/vitals_orange"
+                        android:textSize="18sp" />
+
+                    <EditText
+                        android:layout_width="160dp"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="right"
+                        android:background="@drawable/vitals_edittext"
+                        android:gravity="center"
+                        android:hint="Blood Group"
+                        android:padding="10dp"
+                        android:paddingHorizontal="60dp"
+                        android:textColor="@android:color/white"
+                        android:textColorHint="@android:color/white"
+                        android:textSize="14sp"
+                        android:visibility="gone"/>
+                    <Spinner
+                        android:layout_width="160dp"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/sp_blood_group"
+                        android:layout_gravity="right"
+                        android:gravity="center"
+                        android:background="@drawable/vitals_edittext"
+                        android:textSize="14sp" />
+
+
+                </LinearLayout>
+
+            </androidx.cardview.widget.CardView>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="08dp"
+                android:gravity="center"
+                android:orientation="horizontal">
+
+                <CheckBox
+                    android:id="@+id/cb_disability"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:buttonTint="@android:color/white"
+                    android:text="@string/disability"
+                    android:textColor="@android:color/white" />
+
+
+                <CheckBox
+                    android:id="@+id/cb_smoking"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:buttonTint="@android:color/white"
+                    android:text="@string/smoking"
+                    android:textColor="@android:color/white" />
+
+
+                <CheckBox
+                    android:id="@+id/cb_anemic"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:buttonTint="@android:color/white"
+                    android:text="@string/anemic"
+                    android:textColor="@android:color/white" />
+
+
+            </LinearLayout>
+
+            <EditText
+                android:id="@+id/edt_description"
+                android:layout_width="match_parent"
+                android:layout_height="180dp"
+                android:layout_margin="16dp"
+                android:background="@color/view_background"
+                android:drawableTint="@android:color/white"
+                android:gravity="top"
+                android:hint="@string/description"
+                android:padding="16dp"
+                android:textColor="@android:color/white"
+                android:textColorHint="@android:color/white"
+                android:textCursorDrawable="@android:drawable/ic_menu_edit" />
+
+        </LinearLayout>
+
+
+
+
+
+    </ScrollView>
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/view_background"
+        android:layout_alignParentBottom="true"
+        android:onClick="btnDone"
+        android:id="@+id/btn_vitals_done"
+        android:text="@string/done"
+        android:textAllCaps="false"
+        android:textColor="@android:color/white"
+        android:textSize="18sp" />
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:elevation="5dp"
+        android:layout_margin="16dp"
+        android:layout_above="@+id/btn_vitals_done"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="16dp"
+        android:layout_marginBottom="82dp"
+        android:contentDescription="submit"
+        android:onClick="btnSpeechInput"
+        android:src="@drawable/mic_folating_button"
+        app:backgroundTint="@android:color/white" />
+</RelativeLayout>

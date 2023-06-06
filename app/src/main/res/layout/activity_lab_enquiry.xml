@@ -1,0 +1,98 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".labEnquiry.LabEnquiryActivity">
+
+    <include layout="@layout/toolbar_layout" />
+
+    <include
+        layout="@layout/geometric_progress_layout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="16dp"
+        android:layout_marginRight="16dp"
+        android:textStyle="bold"
+        android:fontFamily="@font/lucidasans"
+        android:gravity="center_vertical"
+        android:text="@string/selected_hospital"
+        android:textColor="@color/colorPrimaryDark"
+        android:textSize="14sp" />
+    <com.toptoche.searchablespinnerlibrary.SearchableSpinner
+        android:id="@+id/hosp_spinner"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="08dp" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_marginBottom="5dp"
+        android:background="@android:color/darker_gray" />
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="08dp"
+        android:background="@drawable/round_button"
+        android:backgroundTint="@color/label_background"
+        android:orientation="horizontal"
+        android:padding="08dp">
+
+        <com.libizo.CustomEditText
+            android:id="@+id/etSearch"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_weight="1"
+            android:background="@android:color/transparent"
+            android:drawableLeft="@android:drawable/ic_menu_search"
+            android:hint="@string/enter_test_name_to_filter_search"
+            app:libIZO_clearIconTint="@android:color/black"
+            app:libIZO_setClearIconVisible="true" />
+
+    </LinearLayout>
+
+    <ListView
+        android:id="@+id/labs_listview"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:divider="@null"
+        android:dividerHeight="0dp" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/ll_no_record_found"
+        android:visibility="gone"
+        android:gravity="center"
+        android:orientation="vertical">
+
+        <ImageView
+            android:id="@+id/img_no_result_found"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_gravity="center"
+            android:src="@drawable/ic_baseline_search_24" />
+
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:textStyle="bold"
+            android:fontFamily="@font/lucidasans"
+            android:layout_marginTop="20dp"
+            android:text="@string/no_result_found"
+            android:textColor="@color/black"
+            android:textSize="18sp" />
+    </LinearLayout>
+
+
+
+</LinearLayout>

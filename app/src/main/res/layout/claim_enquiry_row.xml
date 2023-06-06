@@ -1,0 +1,144 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:id="@+id/root_view"
+    android:layout_margin="4dp"
+    android:orientation="vertical"
+    android:padding="16dp"
+    app:cardCornerRadius="10dp">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:padding="4dp"
+        android:orientation="horizontal"
+        android:layout_margin="4dp">
+
+       <!-- <ImageView
+            android:id="@+id/image_view"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_gravity="center_vertical"
+            android:padding="2dp" />-->
+
+
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_marginLeft="8dp"
+            android:layout_weight="1"
+            android:id="@+id/ll_data"
+            android:layout_toEndOf="@+id/image_view"
+            android:orientation="vertical">
+            <ProgressBar
+                android:id="@+id/progressbar"
+                style="@style/Widget.AppCompat.ProgressBar.Horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:indeterminate="true"
+                android:indeterminateTint="@android:color/holo_blue_dark"
+                android:visibility="gone" />
+            <TextView
+                android:id="@+id/tv_claim_no"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="8dp"
+                android:autoSizeTextType="uniform"
+                android:autoSizeMinTextSize="12sp"
+                android:autoSizeMaxTextSize="100sp"
+                android:autoSizeStepGranularity="2sp"
+                android:textAppearance="@style/TextAppearance.AppCompat.Large"
+                android:textColor="#81D4FA"
+                android:textSize="16sp"
+                android:textStyle="bold" />
+
+
+            <TextView
+                android:id="@+id/tv_submission_date"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/colorAccent"
+                android:layout_marginStart="8dp"
+                android:textSize="14sp" />
+            <TextView
+                android:id="@+id/tv_status"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/colorAccent"
+                android:layout_marginStart="8dp"
+                android:textSize="14sp" />
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="08dp"
+                android:background="#F3FEFF">
+                <TextView
+                    android:id="@+id/tv_acceptance"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/vitals_blue"
+                    android:layout_weight="1"
+                    android:textStyle="bold"
+                    android:gravity="center"
+                    android:text="@string/accept_claim"
+                    android:padding="04dp"
+                    android:textSize="14sp" />
+                <TextView
+                    android:id="@+id/tv_resubmit_claim"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:padding="04dp"
+                    android:gravity="center"
+                    android:text="@string/re_submit_claim"
+                    android:textStyle="bold"
+                    android:textColor="@color/vitals_blue"
+                    android:layout_weight="1"
+                    android:textSize="14sp" />
+
+
+               <!-- <TextView
+                    android:id="@+id/tv_download_pdf"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:padding="04dp"
+                    android:gravity="center"
+                    android:textStyle="bold"
+                    android:textColor="@color/vitals_blue"
+                    android:background="#D6EFFF"
+                    android:text="Download PDF"
+                    android:textSize="12sp" />-->
+            </LinearLayout>
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/tv_download_pdf"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingHorizontal="08dp"
+            android:paddingTop="08dp"
+            android:gravity="center"
+            android:textStyle="bold"
+            android:layout_gravity="top"
+            android:textColor="@android:color/holo_red_dark"
+            android:drawableTint="@android:color/holo_red_dark"
+            android:drawableTop="@android:drawable/stat_sys_download"
+            android:text="PDF"
+            android:textSize="10sp" />
+       <!-- <ImageView
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_toRightOf="@+id/ll_data"
+            android:layout_gravity="center_vertical"
+            android:padding="2dp"
+            android:src="@drawable/ic_keyboard_arrow_right_gray_24dp" />-->
+    </LinearLayout>
+
+</androidx.cardview.widget.CardView>

@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:id="@+id/root_view"
+    android:layout_margin="4dp"
+    android:orientation="vertical"
+    android:padding="16dp"
+    app:cardCornerRadius="10dp">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:padding="4dp"
+        android:orientation="horizontal"
+        android:layout_margin="4dp">
+<LinearLayout
+    android:layout_width="wrap_content"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Token No."
+        android:gravity="center"
+        android:textStyle="bold"
+        android:textColor="#673AB7"
+        android:textSize="12sp" />
+
+        <ImageView
+            android:id="@+id/image_view"
+            android:layout_width="50dp"
+            android:layout_height="match_parent"
+            android:layout_gravity="center_vertical"
+            android:padding="2dp" />
+
+</LinearLayout>
+<!--<View
+    android:layout_width="0.1dp"
+    android:layout_height="match_parent"
+    android:background="@android:color/darker_gray"/>-->
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_marginLeft="8dp"
+            android:layout_weight="1"
+            android:id="@+id/ll_data"
+            android:layout_toEndOf="@+id/image_view"
+            android:orientation="vertical">
+            <TextView
+                android:id="@+id/tv_counter_name"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:autoSizeTextType="uniform"
+                android:autoSizeMinTextSize="12sp"
+                android:autoSizeMaxTextSize="100sp"
+                android:autoSizeStepGranularity="2sp"
+                android:textAppearance="@style/TextAppearance.AppCompat.Large"
+                android:textColor="#81D4FA"
+                android:textSize="16sp"
+                android:textStyle="bold" />
+
+<!--
+            <TextView
+                android:id="@+id/tv_token_no"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="8dp"
+                android:textSize="14sp" />-->
+            <TextView
+                android:id="@+id/tv_token_status"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="8dp"
+                android:textSize="14sp" />
+
+            <TextView
+                android:id="@+id/tv_hospital_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="8dp"
+                android:textSize="14sp" />
+
+        </LinearLayout>
+
+        <ImageView
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_toRightOf="@+id/ll_data"
+            android:layout_gravity="center_vertical"
+            android:padding="2dp"
+            app:tint="@color/black"
+            android:src="@drawable/ic_keyboard_arrow_right_gray_24dp" />
+    </LinearLayout>
+
+</androidx.cardview.widget.CardView>

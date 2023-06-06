@@ -1,0 +1,187 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".PatientDrawerHomeActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@+id/switch_umid"
+        android:orientation="vertical">
+        <!--
+        This was androidx.core.widget.NestedScrollView
+-->
+        <LinearLayout
+            android:id="@+id/sv_modules"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:visibility="visible">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/dp_10"
+                    android:gravity="center"
+                    android:orientation="horizontal">
+
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="2"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:id="@+id/name"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginRight="8dp"
+                            android:gravity="left"
+                            android:paddingStart="@dimen/dp_10"
+                            android:paddingEnd="@dimen/dp_10"
+                            android:text=""
+                            android:textColor="@color/amp_gray"
+                            android:textSize="25dp"
+                            android:textStyle="bold" />
+
+                        <TextView
+                            android:id="@+id/cr"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="left|center|top"
+                            android:layout_marginRight="8dp"
+                            android:gravity="left|center"
+                            android:paddingStart="@dimen/dp_10"
+                            android:paddingEnd="@dimen/dp_10"
+                            android:text=""
+                            android:textColor="@color/brown"
+                            android:textSize="12sp"
+                            android:textStyle="bold" />
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:gravity="center|right"
+                        android:orientation="horizontal">
+
+                        <ImageView
+                            android:id="@+id/iv_search"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:paddingLeft="6dp"
+                            android:paddingTop="6dp"
+                            android:paddingBottom="6dp"
+                            android:src="@android:drawable/ic_menu_search" />
+
+                        <ImageView
+                            android:id="@+id/tv_update_my_app"
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:padding="6dp"
+                            android:scaleType="centerInside"
+                            android:src="@drawable/google_play" />
+
+                    </LinearLayout>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/etSearch_ll"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="5dp"
+                    android:background="@drawable/round_button"
+                    android:backgroundTint="@color/label_background"
+                    android:orientation="horizontal"
+                    android:padding="02dp">
+
+                    <com.libizo.CustomEditText
+                        android:id="@+id/etSearch"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:background="@android:color/transparent"
+                        android:drawableLeft="@android:drawable/ic_menu_search"
+                        android:fontFamily="@font/raleway"
+                        android:hint="@string/search"
+                        android:paddingRight="20dp"
+                        android:singleLine="true"
+                        app:libIZO_clearIconTint="@color/black"
+                        app:libIZO_setClearIconVisible="true" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <androidx.viewpager.widget.ViewPager
+                        android:id="@+id/pager"
+                        android:layout_width="match_parent"
+                        android:layout_height="150dp"
+                        android:layout_alignParentTop="true"
+                        android:layout_centerHorizontal="true"
+                        android:layout_marginLeft="8dp"
+                        android:layout_marginTop="2dp"
+                        android:layout_marginRight="8dp"
+                        android:animateLayoutChanges="true"
+                        android:background="@color/white" />
+
+                    <com.google.android.material.tabs.TabLayout
+                        android:id="@+id/tabDots"
+                        android:layout_width="match_parent"
+                        android:layout_height="30dp"
+                        android:layout_marginBottom="5dp"
+                        android:background="@null"
+                        android:translationY="-25dp"
+                        app:tabBackground="@drawable/tab_selector"
+                        app:tabGravity="center"
+                        app:tabIndicatorHeight="0dp" />
+
+                </LinearLayout>
+
+                <androidx.recyclerview.widget.RecyclerView
+                    android:id="@+id/recyclerView"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginHorizontal="8dp"
+                    android:translationY="-30dp"
+                    app:layoutManager="androidx.recyclerview.widget.GridLayoutManager"
+                    app:spanCount="3" />
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+
+    <include
+        layout="@layout/geometric_progress_layout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true" />
+
+
+    <!--   <com.google.android.material.bottomnavigation.BottomNavigationView
+           android:id="@+id/patient_navigation"
+           android:layout_width="match_parent"
+           android:layout_height="wrap_content"
+           android:layout_alignParentBottom="true"
+           android:layout_marginStart="0dp"
+           android:layout_marginEnd="0dp"
+           android:background="?android:attr/windowBackground"
+           android:visibility="gone"
+           app:menu="@menu/patientnavigation" />-->
+</RelativeLayout>

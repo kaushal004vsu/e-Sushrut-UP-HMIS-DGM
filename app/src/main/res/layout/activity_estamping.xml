@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".EstampingActivity">
+
+
+
+
+ <LinearLayout
+     android:layout_width="match_parent"
+     android:layout_height="wrap_content"
+     android:orientation="vertical"
+     android:id="@+id/ll_scanner">
+     <include layout="@layout/toolbar_layout" />
+     <include layout="@layout/geometric_progress_layout"
+         android:layout_gravity="center"
+         android:id="@+id/progress_view"
+         android:layout_centerHorizontal="true"
+         android:layout_above="@+id/ll_scanner"
+         android:layout_marginTop="20dp"
+         android:layout_marginBottom="20dp"
+         android:visibility="gone"
+         android:layout_width="wrap_content"
+         android:layout_height="wrap_content"/>
+
+     <TextView
+         android:layout_width="match_parent"
+         android:layout_height="wrap_content"
+         android:layout_marginBottom="50dp"
+         android:background="@color/label_background"
+         android:fontFamily="@font/lucidasans"
+         android:padding="16dp"
+         android:text="@string/patient_can_do_self_registration_by_scanning_the_qr_code_displayed_at_doctor_s_room_in_the_hospital_after_scanning_qr_code_correctly_registration_for_that_specialty_will_be_done_automatically"
+         android:textColor="@color/black" />
+
+     <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="16dp"
+            android:orientation="horizontal">
+            <ImageButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/ic_flash_on_black_24dp"
+                android:background="@android:color/white"
+                android:id="@+id/btn_flash"/>
+            <com.journeyapps.barcodescanner.DecoratedBarcodeView
+                android:layout_width="match_parent"
+                android:layout_height="400dp"
+                android:id="@+id/barcode_scanner"
+
+                android:layout_centerInParent="true">
+            </com.journeyapps.barcodescanner.DecoratedBarcodeView>
+
+        </LinearLayout>
+ </LinearLayout>
+
+
+
+
+</RelativeLayout>

@@ -1,0 +1,18 @@
+<component name="libraryTable">
+  <library name="Gradle: com.vipulasri:ticketview:1.1.2@aar">
+    <ANNOTATIONS>
+      <root url="jar://$USER_HOME$/.gradle/caches/transforms-3/86b3bf9d005273b6a8b6fde05f50b670/transformed/jetified-ticketview-1.1.2/annotations.zip!/" />
+    </ANNOTATIONS>
+    <CLASSES>
+      <root url="jar://$USER_HOME$/.gradle/caches/transforms-3/86b3bf9d005273b6a8b6fde05f50b670/transformed/jetified-ticketview-1.1.2/jars/classes.jar!/" />
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-3/86b3bf9d005273b6a8b6fde05f50b670/transformed/jetified-ticketview-1.1.2/res" />
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-3/86b3bf9d005273b6a8b6fde05f50b670/transformed/jetified-ticketview-1.1.2/AndroidManifest.xml" />
+    </CLASSES>
+    <JAVADOC>
+      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.vipulasri/ticketview/1.1.2/21a91d0383711754e9f6c4729a3a5b6cfe459cd0/ticketview-1.1.2-javadoc.jar!/" />
+    </JAVADOC>
+    <SOURCES>
+      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.vipulasri/ticketview/1.1.2/22fd3b5b9246e5a0e200dccb8d91c95a68365d75/ticketview-1.1.2-sources.jar!/" />
+    </SOURCES>
+  </library>
+</component>

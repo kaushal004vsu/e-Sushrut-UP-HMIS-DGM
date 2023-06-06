@@ -1,0 +1,142 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.cdac.uphmis.DoctorDrawerHomeActivity"
+    android:background="#ffff">
+
+
+
+    <com.google.android.material.appbar.AppBarLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:id="@+id/toolbar"
+        android:theme="@style/Theme.UPHMIS">
+
+        <androidx.appcompat.widget.Toolbar
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            app:theme="@style/ToolBarStyle"
+            app:title="@string/app_name"
+            app:titleTextColor="@android:color/white">
+
+            <ImageView
+                android:layout_width="80dp"
+                android:layout_height="50dp"
+                android:src="@drawable/toolbarlogo"/>
+        </androidx.appcompat.widget.Toolbar>
+    </com.google.android.material.appbar.AppBarLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_below="@+id/toolbar"
+        android:id="@+id/ll_view">
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@android:color/white"
+            android:text="@string/page1"
+            android:id="@+id/btn_page1" />
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@android:color/white"
+            android:text="@string/page2"
+            android:id="@+id/btn_page2"/>
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@android:color/white"
+            android:text="@string/page3"
+            android:id="@+id/btn_page3"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/pb"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:orientation="vertical">
+
+        <net.bohush.geometricprogressview.GeometricProgressView
+            android:id="@+id/progress_view"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:gp_color="@color/colorAccent"
+            app:gp_duration="800"
+            app:gp_figure_padding="3dp"
+            app:gp_number_of_angles="25"
+            app:gp_type="triangle" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:text="@string/Loading...."
+            android:textColor="@color/colorAccent"
+            android:textStyle="bold" />
+    </LinearLayout>
+
+    <!--<ImageButton-->
+    <!--android:layout_width="wrap_content"-->
+    <!--android:layout_height="wrap_content"-->
+    <!--android:src="@android:drawable/ic_menu_rotate"-->
+    <!--android:background="@android:color/white"-->
+    <!--android:tint="@color/colorPrimary"-->
+    <!--android:layout_below="@+id/ll_view"/>-->
+    <!--<Button-->
+    <!--android:layout_width="wrap_content"-->
+    <!--android:layout_height="wrap_content"-->
+    <!--android:layout_alignParentRight="true"-->
+    <!--android:id="@+id/button_home"-->
+    <!--android:drawableTop="@drawable/homeicon"-->
+    <!--android:background="@android:color/white"-->
+    <!--android:text="Home"/>-->
+    <ImageView
+        android:id="@+id/view_image"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginBottom="50dp"
+        android:paddingHorizontal="10dp"
+        android:visibility="gone"
+        android:layout_below="@+id/ll_view"
+        android:src="@drawable/view_error_image" />
+    <ImageView
+        android:id="@+id/view_image2"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginBottom="50dp"
+        android:paddingHorizontal="10dp"
+        android:visibility="gone"
+        android:layout_below="@+id/ll_view"
+        android:src="@drawable/view_error_image"/>
+    <ImageView
+        android:id="@+id/view_image3"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginBottom="50dp"
+        android:paddingHorizontal="10dp"
+        android:visibility="gone"
+        android:layout_below="@+id/ll_view"
+        android:src="@drawable/view_error_image" />
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/btn_rotate"
+        android:src="@android:drawable/ic_menu_rotate"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        android:layout_margin="20dp"
+        android:tint="@android:color/white"/>
+</RelativeLayout>

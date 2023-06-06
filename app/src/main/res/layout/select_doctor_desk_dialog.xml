@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    app:cardBackgroundColor="@android:color/white"
+    app:cardCornerRadius="10dp"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginTop="50dp"
+    app:cardUseCompatPadding="true">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#39F2FAFF"
+        android:orientation="vertical">
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:textStyle="bold"
+            android:textSize="22sp"
+            android:textColor="@color/vitals_blue"
+            android:text="Select Desk"/>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_marginTop="8dp"
+            android:background="@android:color/darker_gray"
+            android:layout_marginBottom="28dp"/>
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Proceed with VEDD Desk"
+            android:gravity="left"
+            android:textAllCaps="false"
+            android:textSize="18sp"
+            android:id="@+id/btn_old_opd"
+            android:background="@android:color/transparent"
+            android:textColor="@color/black"
+            android:fontFamily="@font/lucidasans"
+            android:drawableRight="@drawable/mdtp_ic_chevron_right_black_24dp"
+          />
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0.5dp"
+            android:layout_marginTop="8dp"
+            android:background="@android:color/darker_gray"
+            android:layout_marginVertical="16dp"/>
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Proceed with e-Sushrut Desk"
+            android:gravity="left"
+            android:textAllCaps="false"
+            android:textSize="18sp"
+            android:id="@+id/btn_new_opd"
+            android:background="@android:color/transparent"
+            android:textColor="@color/black"
+            android:fontFamily="@font/lucidasans"
+            android:drawableRight="@drawable/mdtp_ic_chevron_right_black_24dp"/>
+    </LinearLayout>
+</androidx.cardview.widget.CardView>

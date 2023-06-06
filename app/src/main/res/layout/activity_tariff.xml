@@ -1,0 +1,85 @@
+<RelativeLayout xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/label_background">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/white"
+        android:orientation="vertical">
+        <include layout="@layout/toolbar_layout" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/dp_10"
+            android:layout_marginLeft="@dimen/dp_10"
+            android:layout_marginRight="@dimen/dp_10"
+            android:fontFamily="@font/lucidasans"
+            android:gravity="center_vertical"
+            android:text="@string/selected_hospital"
+            android:textColor="@color/colorPrimaryDark"
+            android:textSize="14sp"
+            android:textStyle="bold" />
+
+        <com.toptoche.searchablespinnerlibrary.SearchableSpinner
+            android:id="@+id/hosp_spinner"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/dp_10"
+            android:layout_marginRight="@dimen/dp_10"
+            />
+        <LinearLayout
+            android:id="@+id/tariff_search_ll"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/box"
+            android:orientation="horizontal"
+            android:padding="10dp">
+
+            <com.libizo.CustomEditText
+                android:id="@+id/etSearch"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+
+
+                android:layout_weight="1"
+                android:hint="@string/enter_tariff_to_search"
+                app:libIZO_clearIconTint="@color/black"
+                app:libIZO_setClearIconVisible="true"
+                app:libIZO_setCornerRadius="2dp" />
+
+            <ImageView
+                android:id="@+id/speech_search"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="5"
+                android:src="@drawable/ic_mic_search" />
+        </LinearLayout>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/opd_charges"
+           android:layout_margin="@dimen/dp_10"
+            android:textColor="@color/black"
+            android:textStyle="bold" />
+
+        <ListView
+            android:id="@+id/tariff_list"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:divider="@null"
+            android:background="@color/white"
+            android:dividerHeight="0dp" />
+
+    </LinearLayout>
+    <include layout="@layout/geometric_progress_layout"
+        android:layout_height="wrap_content"
+        android:layout_width="wrap_content"
+        android:layout_centerInParent="true"/>
+
+</RelativeLayout>

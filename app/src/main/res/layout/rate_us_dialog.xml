@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="10dp"
+    android:orientation="vertical">
+<TextView
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:textSize="18sp"
+    android:layout_margin="10dp"
+    android:textStyle="bold"
+    android:text="Please Provide Feedback:"/>
+    <RatingBar
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:stepSize="1"
+        android:id="@+id/rating_bar"
+        android:numStars="5"/>
+
+
+
+
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:text="Remarks"/>
+
+    <EditText
+        android:id="@+id/edt_review"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="100dp"
+        android:background="@drawable/textbox_background"
+        android:gravity="top"
+        android:hint="Enter your remarks(maximum 300 characters)"
+        android:maxLength="300"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp"
+        android:paddingTop="10dp"
+        android:paddingBottom="50dp"
+        android:textSize="15sp" />
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Submit"
+        android:id="@+id/btn_submit"
+        android:textStyle="bold"
+        android:textColor="@android:color/white"
+        android:background="@drawable/button_shape"/>
+</LinearLayout>

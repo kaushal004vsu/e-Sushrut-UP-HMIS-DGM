@@ -1,0 +1,186 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/ll_section_a"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/label_background"
+        android:gravity="center"
+        android:padding="10dp"
+        android:text="@string/section_a"
+        android:textColor="@color/black"
+        android:textSize="22sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="10dp"
+        android:text="@string/note_document_required"
+        android:textColor="@android:color/holo_red_dark"
+        android:textSize="14sp" />
+
+    <com.google.android.material.textfield.TextInputLayout
+
+        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox.ExposedDropdownMenu"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="8dp"
+        android:hint="@string/choose_reimbursement_type"
+        app:boxStrokeColor="@color/black"
+        android:orientation="horizontal">
+
+
+        <AutoCompleteTextView
+            android:id="@+id/tv_reimburesement_type"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:editable="false"
+            android:inputType="none" />
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+
+    <com.google.android.material.textfield.TextInputLayout
+        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:startIconDrawable="@android:drawable/ic_input_add"
+        app:startIconTint="@android:color/holo_red_dark"
+        android:layout_marginHorizontal="8dp"
+        android:layout_marginTop="10dp"
+        android:hint="@string/name_of_the_hospital"
+        android:textColorHint="@color/colorAccent">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/edt_hosp_name"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:maxLines="1"
+            android:minLines="1"/>
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="8dp"
+        android:layout_marginTop="10dp"
+        app:startIconDrawable="@drawable/calendar"
+        app:startIconTint="@android:color/holo_blue_dark"
+        android:hint="@string/date_of_admission"
+        android:textColorHint="@color/colorAccent">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/edt_adm_date"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:clickable="false"
+            android:cursorVisible="false"
+            android:focusable="false"
+            android:focusableInTouchMode="false"/>
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="8dp"
+        android:layout_marginTop="10dp"
+        app:startIconDrawable="@drawable/calendar"
+        app:startIconTint="@android:color/holo_blue_dark"
+        android:hint="@string/date_of_discharge"
+        android:textColorHint="@color/colorAccent"
+        >
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/edt_disch_date"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:clickable="false"
+            android:cursorVisible="false"
+            android:focusable="false"
+            android:focusableInTouchMode="false"/>
+    </com.google.android.material.textfield.TextInputLayout>
+
+
+    <com.google.android.material.textfield.TextInputLayout
+        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:layout_marginHorizontal="8dp"
+        android:layout_marginTop="10dp"
+        android:hint="@string/enter_diagnosis"
+        android:gravity="top"
+        android:textColorHint="@color/colorAccent">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/edt_diagnosis"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="top"/>
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+
+    <com.google.android.material.textfield.TextInputLayout
+        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:startIconDrawable="@drawable/ic_indian_rupee_symbol"
+        app:startIconTint="@android:color/holo_blue_dark"
+        android:layout_marginHorizontal="8dp"
+        android:layout_marginTop="10dp"
+        android:hint="@string/total_hospital_bill_amount"
+        android:textColorHint="@color/colorAccent"
+        >
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/edt_total_hosp_bill"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="numberDecimal"/>
+
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+
+    <com.google.android.material.textfield.TextInputLayout
+        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:startIconDrawable="@drawable/ic_indian_rupee_symbol"
+        app:startIconTint="@android:color/holo_blue_dark"
+        android:layout_marginHorizontal="8dp"
+        android:layout_marginTop="10dp"
+        android:hint="@string/total_amount_claimed"
+        android:textColorHint="@color/colorAccent">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/edt_claimed_bill"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:inputType="numberDecimal"/>
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <Button
+        android:layout_width="150dp"
+        android:layout_height="50dp"
+        android:layout_gravity="right"
+        android:background="@drawable/button_shape"
+        android:drawableRight="@drawable/ic_keyboard_arrow_right_gray_24dp"
+        android:drawableTint="@color/white"
+        android:textColor="@color/white"
+        android:textStyle="bold"
+        android:textAllCaps="false"
+        android:id="@+id/btn_next_sec_a"
+        android:layout_marginRight="08dp"
+        android:layout_marginTop="20dp"
+        android:text="@string/next"/>
+
+</LinearLayout>

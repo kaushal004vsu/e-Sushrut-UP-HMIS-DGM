@@ -1,0 +1,266 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/activity_background"
+    tools:context=".opdLite.ExaminationsActivity">
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:fillViewport="true"
+        android:layout_above="@+id/btn_examinations_done">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="08dp"
+                android:layout_weight="1"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@color/view_background"
+                    android:fontFamily="@font/lucidasans"
+                    android:padding="16dp"
+                    android:text="CVS:"
+                    android:textColor="@color/vitals_orange"
+                    android:textSize="16sp" />
+
+                <EditText
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="CVS"
+                    android:background="@drawable/box"
+                    android:backgroundTint="@color/view_background"
+                    android:textColorHint="@android:color/white"
+                    android:textColor="@android:color/white"
+                    android:layout_marginHorizontal="08dp"
+                    android:paddingTop="08dp"
+                    android:paddingStart="08dp"
+                    android:paddingBottom="40dp"
+                    android:id="@+id/edt_cvs"/>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="08dp"
+                android:layout_weight="1"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="RS"
+                    android:background="@color/view_background"
+                    android:fontFamily="@font/lucidasans"
+                    android:padding="16dp"
+                    android:text="RS:"
+                    android:textColor="@color/vitals_orange"
+                    android:textSize="16sp" />
+
+                <EditText
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/box"
+                    android:backgroundTint="@color/view_background"
+                    android:textColorHint="@android:color/white"
+                    android:textColor="@android:color/white"
+                    android:layout_marginHorizontal="08dp"
+                    android:hint="RS"
+                    android:paddingTop="08dp"
+                    android:paddingStart="08dp"
+                    android:paddingBottom="40dp"
+                    android:id="@+id/edt_rs"/>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="08dp"
+                android:layout_weight="1"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@color/view_background"
+                    android:fontFamily="@font/lucidasans"
+                    android:padding="16dp"
+                    android:text="CNS:"
+                    android:textColor="@color/vitals_orange"
+                    android:textSize="16sp" />
+
+                <EditText
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="CNS"
+                    android:background="@drawable/box"
+                    android:backgroundTint="@color/view_background"
+                    android:textColorHint="@android:color/white"
+                    android:textColor="@android:color/white"
+                    android:layout_marginHorizontal="08dp"
+                    android:paddingTop="08dp"
+                    android:paddingStart="08dp"
+                    android:paddingBottom="40dp"
+                    android:id="@+id/edt_cns"/>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="08dp"
+                android:layout_weight="1"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@color/view_background"
+                    android:fontFamily="@font/lucidasans"
+                    android:padding="16dp"
+                    android:text="P/A:"
+                    android:textColor="@color/vitals_orange"
+                    android:textSize="16sp" />
+
+                <EditText
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:hint="P/A"
+                    android:background="@drawable/box"
+                    android:backgroundTint="@color/view_background"
+                    android:textColorHint="@android:color/white"
+                    android:textColor="@android:color/white"
+                    android:layout_marginHorizontal="08dp"
+                    android:paddingTop="08dp"
+                    android:paddingStart="08dp"
+                    android:paddingBottom="40dp"
+                    android:id="@+id/edt_pa"/>
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="08dp"
+                android:layout_weight="1"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@color/view_background"
+                    android:fontFamily="@font/lucidasans"
+                    android:padding="16dp"
+                    android:text="General Examination:"
+                    android:textColor="@color/vitals_orange"
+                    android:textSize="16sp" />
+
+                <EditText
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:hint="General Examination"
+                    android:background="@drawable/box"
+                    android:backgroundTint="@color/view_background"
+                    android:textColorHint="@android:color/white"
+                    android:textColor="@android:color/white"
+                    android:layout_marginHorizontal="08dp"
+                    android:paddingTop="08dp"
+                    android:paddingStart="08dp"
+                    android:paddingBottom="40dp"
+                    android:id="@+id/edt_general"/>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="08dp"
+                android:layout_weight="1"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@color/view_background"
+                    android:fontFamily="@font/lucidasans"
+                    android:padding="16dp"
+                    android:text="Muscular Examination:"
+                    android:textColor="@color/vitals_orange"
+                    android:textSize="16sp" />
+
+                <EditText
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:hint="Muscular Examination"
+                    android:background="@drawable/box"
+                    android:backgroundTint="@color/view_background"
+                    android:textColorHint="@android:color/white"
+                    android:textColor="@android:color/white"
+                    android:layout_marginHorizontal="08dp"
+                    android:paddingTop="08dp"
+                    android:paddingStart="08dp"
+                    android:paddingBottom="40dp"
+                    android:id="@+id/edt_muscular"/>
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="08dp"
+                android:layout_weight="1"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@color/view_background"
+                    android:fontFamily="@font/lucidasans"
+                    android:padding="16dp"
+                    android:text="Local Examination:"
+                    android:textColor="@color/vitals_orange"
+                    android:textSize="16sp" />
+
+                <EditText
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:hint="Local Examination"
+                    android:background="@drawable/box"
+                    android:backgroundTint="@color/view_background"
+                    android:textColorHint="@android:color/white"
+                    android:textColor="@android:color/white"
+                    android:layout_marginHorizontal="08dp"
+                    android:paddingTop="08dp"
+                    android:paddingStart="08dp"
+                    android:paddingBottom="40dp"
+                    android:id="@+id/edt_local"/>
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        android:id="@+id/fab_examinations"
+        android:layout_marginBottom="85dp"
+        android:layout_marginRight="16dp"
+        android:src="@drawable/mic_folating_button"/>
+    <Button
+        android:id="@+id/btn_examinations_done"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:onClick="btnDone"
+        android:background="@drawable/button_shape"
+        android:textColor="@android:color/white"
+        android:textStyle="bold"
+        android:textSize="22sp"
+        android:layout_margin="16dp"
+        android:text="@string/done"
+        android:layout_alignParentBottom="true"/>
+
+</RelativeLayout>

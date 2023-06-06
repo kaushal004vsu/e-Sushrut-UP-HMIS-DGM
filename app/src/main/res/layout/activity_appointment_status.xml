@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    tools:context=".appointment.AppointmentStatusActivity">
+    <include layout="@layout/toolbar_layout" />
+    <Spinner
+        android:id="@+id/for_spinner"
+        android:layout_marginTop="20dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <View
+        android:id="@+id/for_spinner_view"
+        android:layout_width="match_parent"
+        android:layout_height="2dp"
+        android:layout_marginBottom="5dp"
+        android:background="@android:color/darker_gray" />
+
+    <include layout="@layout/geometric_progress_layout"
+        android:layout_height="wrap_content"
+        android:layout_width="wrap_content"
+        android:visibility="gone"
+        android:layout_gravity="center"/>
+   <!-- <net.bohush.geometricprogressview.GeometricProgressView
+        android:id="@+id/progress_view"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:visibility="gone"
+        app:gp_color="@color/colorAccent"
+        app:gp_duration="800"
+        app:gp_figure_padding="3dp"
+        app:gp_number_of_angles="25"
+        app:gp_type="triangle" />-->
+
+    <ListView
+        android:id="@+id/lv_appointments"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:divider="@null"
+        android:dividerHeight="0dp" />
+    <TextView
+        android:id="@+id/no_record_found"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="150dp"
+        android:layout_centerInParent="true"
+        android:text="@string/no_previous_appointments_found"
+        android:textColor="@android:color/holo_red_dark"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        android:visibility="gone" />
+</LinearLayout>

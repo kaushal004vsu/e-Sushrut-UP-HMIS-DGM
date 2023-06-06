@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">-->
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FFFFFF">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@+id/btn_back"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/helptitle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="10dp"
+            android:padding="2dp"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:textColor="#696969"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/helptext"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="5dp"
+            android:padding="2dp"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:scrollbars = "vertical"
+            android:textColor="#696969" />
+
+
+    </LinearLayout>
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom"
+        android:id="@+id/btn_back"
+        android:layout_marginTop="10dp"
+        android:onClick="helpBackButton"
+        android:background="@color/colorAccent"
+        android:textColor="@android:color/white"
+        android:layout_alignParentBottom="true"
+        android:textStyle="bold"
+        android:text="@string/help_back_button"/>
+
+
+
+</RelativeLayout>
+    <!--</androidx.constraintlayout.widget.ConstraintLayout>-->

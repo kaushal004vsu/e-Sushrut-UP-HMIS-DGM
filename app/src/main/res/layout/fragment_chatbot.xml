@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".covid19.fragments.chatbotFragment">
+
+
+    <ScrollView android:layout_marginTop="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/scroll">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_gravity="left|top" >
+
+            <LinearLayout
+                android:id="@+id/MainChatLayout"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="16dp"
+                    android:layout_marginTop="20dp"
+                    android:layout_marginRight="100dp"
+                    android:background="@drawable/rounded_form"
+                    android:gravity="bottom"
+                    android:padding="8dp"
+                    android:scrollbars="vertical"
+                    android:text="Welcome !! Note that it should not be taken as a medical advice. It is just a self assessment of your symptoms.Information from this chat will be used for monitoring and management of the current health crisis and research in the fight against COVID-19."
+                    android:textColor="@android:color/white"
+                    android:textSize="14sp" />
+
+
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+
+</FrameLayout>

@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".SelectHospitalActitivy">
+
+<include layout="@layout/toolbar_layout"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textStyle="bold"
+        android:textSize="22sp"
+        android:layout_marginTop="16dp"
+        android:padding="08dp"
+        android:textColor="@color/vitals_blue"
+        android:fontFamily="@font/lucidasans"
+        android:id="@+id/tv_title"/>
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:background="@color/black"/>
+
+    <include layout="@layout/geometric_progress_layout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"/>
+
+    <com.toptoche.searchablespinnerlibrary.SearchableSpinner
+        android:id="@+id/zone_spinner"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp"/>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="2dp"
+        android:id="@+id/zone_spinner_view"
+        android:layout_marginBottom="5dp"
+        android:background="@android:color/darker_gray" />
+
+    <com.toptoche.searchablespinnerlibrary.SearchableSpinner
+        android:id="@+id/division_spinner"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:visibility="gone"/>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="2dp"
+        android:id="@+id/division_spinner_view"
+        android:layout_marginBottom="5dp"
+        android:background="@android:color/darker_gray"
+        android:visibility="gone"/>
+
+    <com.toptoche.searchablespinnerlibrary.SearchableSpinner
+        android:id="@+id/hosp_spinner"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:visibility="gone"/>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="2dp"
+        android:id="@+id/hosp_spinner_view"
+        android:layout_marginBottom="5dp"
+        android:background="@android:color/darker_gray"
+        android:visibility="gone"/>
+
+
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/button_shape"
+        android:textStyle="bold"
+        android:visibility="gone"
+        android:id="@+id/btn_proceed"
+        android:layout_marginTop="40dp"
+        android:layout_gravity="center_horizontal"
+        android:textColor="@color/white"
+        android:text="@string/proceed"/>
+</LinearLayout>

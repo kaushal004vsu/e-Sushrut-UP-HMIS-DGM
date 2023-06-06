@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_margin="10dp"
+    android:background="@drawable/box"
+    android:orientation="vertical">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Diagnosis"
+            android:textAppearance="@style/TextAppearance.AppCompat.Headline"
+            android:textColor="@color/colorAccent"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/tv_clear_diagnosis"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="right"
+            android:text="Clear"
+            android:textSize="20sp" />
+
+    </LinearLayout>
+
+<RelativeLayout
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content">
+    <Switch
+        android:id="@+id/switch_final_diagnosis"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="08dp"
+        android:textSize="12sp"
+        android:text="Add Diagnosis     ICD" />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@+id/switch_final_diagnosis"
+        android:layout_centerVertical="true"
+        android:textSize="12sp"
+        android:textColor="@color/black"
+        android:text="SNOMED-CT"/>
+</RelativeLayout>
+    <AutoCompleteTextView
+        android:id="@+id/auto_complete_final_diagnosis"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Enter diagnosis "
+        android:gravity="top"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"/>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/ll_icd"
+        android:orientation="vertical">
+    <AutoCompleteTextView
+        android:id="@+id/autocomplete_icd_code"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Enter ICD Code"
+        android:gravity="top"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"/>
+
+    <AutoCompleteTextView
+        android:id="@+id/auto_complete_disease"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Enter Disease "
+        android:gravity="top"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"/>
+    </LinearLayout>
+
+    <EditText
+        android:id="@+id/edt_diagnosis"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_margin="10dp"
+        android:textSize="18sp"
+        android:digits="ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789()%/+?,. \n"
+        android:background="@drawable/edittext_background"
+        android:textColor="@drawable/diagnosis_edittext"
+        android:gravity="top" />
+
+</LinearLayout>

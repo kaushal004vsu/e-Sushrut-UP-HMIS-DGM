@@ -1,0 +1,121 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical">
+
+    <include layout="@layout/toolbar_layout" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/lucidasans"
+        android:gravity="center_vertical"
+        android:padding="08dp"
+        android:text="@string/selected_hospital"
+        android:textColor="@color/colorPrimaryDark"
+        android:textSize="14sp"
+        android:textStyle="bold" />
+    <com.toptoche.searchablespinnerlibrary.SearchableSpinner
+        android:id="@+id/hosp_spinner"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="08dp" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_marginBottom="5dp"
+        android:background="@android:color/darker_gray" />
+
+    <com.toptoche.searchablespinnerlibrary.SearchableSpinner
+        android:visibility="gone"
+        android:id="@+id/spinner_department"
+        android:layout_width="match_parent"
+        android:padding="08dp"
+        android:layout_height="wrap_content" />
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_marginBottom="5dp"
+        android:visibility="gone"
+        android:background="@android:color/darker_gray" />
+
+    <RadioGroup
+        android:id="@+id/radio_group_enquiry"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:visibility="gone"
+        android:orientation="horizontal">
+
+        <RadioButton
+            android:id="@+id/radio_general"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="@string/general" />
+
+        <RadioButton
+            android:id="@+id/radio_special"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="@string/special" />
+
+        <RadioButton
+            android:id="@+id/radio_all"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="@string/all" />
+    </RadioGroup>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"></LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/round_button"
+        android:backgroundTint="@color/label_background"
+        android:orientation="horizontal"
+        android:padding="08dp">
+
+        <com.libizo.CustomEditText
+            android:id="@+id/etSearch"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@android:color/transparent"
+            android:drawableLeft="@android:drawable/ic_menu_search"
+            android:hint="@string/search"
+            app:libIZO_clearIconTint="@color/black"
+            app:libIZO_setClearIconVisible="true" />
+
+    </LinearLayout>
+    <include
+        layout="@layout/geometric_progress_layout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center" />
+    <ListView
+        android:id="@+id/department_list"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:divider="@null"
+        android:dividerHeight="0dp" />
+
+
+    <!--   <net.bohush.geometricprogressview.GeometricProgressView
+           android:id="@+id/progress_view"
+           android:layout_width="wrap_content"
+           android:layout_height="wrap_content"
+           android:layout_gravity="center"
+           app:gp_color="@color/colorAccent"
+           app:gp_duration="800"
+           app:gp_figure_padding="3dp"
+           app:gp_number_of_angles="10"
+           app:gp_type="triangle"/>-->
+</LinearLayout>

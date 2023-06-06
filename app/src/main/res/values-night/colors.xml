@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!--<color name="purple_200">#FFBB86FC</color>-->
+    <color name="purple_200">#4FA0FB</color>
+    <color name="purple_500">#FF6200EE</color>
+    <color name="purple_700">#FF3700B3</color>
+    <color name="teal_200">#FF03DAC5</color>
+    <color name="teal_700">#FF018786</color>
+    <color name="black">#FFFFFFFF</color>
+    <color name="white">#FF000000</color>
+
+    <!--<color name="colorAccent">#122d4a</color>-->
+
+
+    <!--OnBoard-->
+    <color name="colorPrimary">#122d4a</color>
+    <color name="colorPrimaryDark">#303F9F</color>
+
+    <!--<color name="colorAccent">#122d4a</color>-->
+    <color name="colorAccent">#F1EEEE</color>
+    <color name="btnBackground">#ffff</color>
+
+
+    <color name="desk_tab_background">#FFF1F0F5</color>
+    <color name="select_button">#009BEE</color>
+
+
+    <!--OnBoard-->
+
+    <color name="selected_dot">#2D9CDB</color>
+    <color name="idle_dot">#662D9CDB</color>
+    <color name="select_cr_header">#2003A9F4</color>
+    <color name="male_background">#6F4BFF</color>
+    <color name="female_background">#F778BA</color>
+
+
+    <color name="vitals_blue">#4FA0FB</color>
+    <color name="vitals_orange">#FF7839</color>
+    <color name="view_background">#232323</color>
+    <color name="activity_background">#111</color>
+    <color name="label_background">#232323</color>
+    <color name="patient_header_background">#232323</color>
+    <color name="holo_blue_dark">#ffff</color>
+    <color name="medi_detail_color">#232323</color>
+    <color name="date_bg_stroke">#4D4B4B</color>
+    <color name="typed_chat_color">#FF7839</color>
+    <color name="side_nav_background">#151515</color>
+
+</resources>

@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="DesignSurface">
+    <option name="filePathToZoomLevelMap">
+      <map>
+        <entry key="..\:/5.UP DGME bkp/eSushrut_UP_HMIS/app/src/main/res/layout/activity_enquiry.xml" value="0.27291666666666664" />
+        <entry key="..\:/5.UP DGME bkp/eSushrut_UP_HMIS/app/src/main/res/layout/activity_login_main_screen.xml" value="0.26871794871794874" />
+        <entry key="..\:/5.UP DGME bkp/eSushrut_UP_HMIS/app/src/main/res/layout/activity_phr_document_upld_new.xml" value="0.27291666666666664" />
+        <entry key="..\:/5.UP DGME bkp/eSushrut_UP_HMIS/app/src/main/res/layout/activity_phractivity.xml" value="0.27291666666666664" />
+        <entry key="..\:/5.UP DGME bkp/eSushrut_UP_HMIS/app/src/main/res/layout/activity_q_m_s_slip.xml" value="0.27291666666666664" />
+        <entry key="..\:/5.UP DGME bkp/eSushrut_UP_HMIS/app/src/main/res/layout/activity_splash_screen.xml" value="0.27291666666666664" />
+      </map>
+    </option>
+  </component>
+  <component name="ProjectRootManager" version="2" languageLevel="JDK_11" default="true" project-jdk-name="Android Studio default JDK" project-jdk-type="JavaSDK">
+    <output url="file://$PROJECT_DIR$/build/classes" />
+  </component>
+  <component name="ProjectType">
+    <option name="id" value="Android" />
+  </component>
+</project>

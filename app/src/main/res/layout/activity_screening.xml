@@ -1,0 +1,1015 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical"
+    tools:context="com.cdac.uphmis.covid19.ScreeningActivity">
+
+    <include layout="@layout/toolbar_layout" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:fillViewport="true"
+        android:layout_marginBottom="20dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="10dp">
+
+            <net.bohush.geometricprogressview.GeometricProgressView
+                android:id="@+id/progress_view"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                app:gp_color="@color/colorAccent"
+                app:gp_duration="800"
+                app:gp_figure_padding="3dp"
+                app:gp_number_of_angles="25"
+                app:gp_type="triangle" />
+
+
+            <Spinner
+                android:id="@+id/for_spinner"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:visibility="gone" />
+
+            <View
+                android:id="@+id/for_spinner_view"
+                android:layout_width="match_parent"
+                android:layout_height="2dp"
+                android:layout_marginBottom="5dp"
+                android:background="@android:color/darker_gray"
+                android:visibility="gone" />
+
+
+            <Spinner
+                android:id="@+id/zone_spinner"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:visibility="gone"/>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="2dp"
+                android:id="@+id/zone_spinner_view"
+                android:layout_marginBottom="5dp"
+                android:visibility="gone"
+                android:background="@android:color/darker_gray" />
+
+            <Spinner
+                android:id="@+id/division_spinner"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:visibility="gone" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="2dp"
+                android:id="@+id/division_spinner_view"
+                android:layout_marginBottom="5dp"
+                android:background="@android:color/darker_gray"
+                android:visibility="gone" />
+
+            <Spinner
+                android:id="@+id/hosp_spinner"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:visibility="visible" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="2dp"
+                android:id="@+id/hosp_spinner_view"
+                android:layout_marginBottom="5dp"
+                android:background="@android:color/darker_gray"
+                android:visibility="gone" />
+
+            <Spinner
+                android:id="@+id/department_spinner"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:visibility="gone" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="2dp"
+                android:id="@+id/department_spinner_view"
+                android:layout_marginBottom="5dp"
+                android:background="@android:color/darker_gray"
+                android:visibility="gone" />
+
+
+            <!--patient details form starts-->
+            <LinearLayout
+                android:id="@+id/ll_registration_form"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@android:color/white"
+                android:orientation="vertical"
+                android:visibility="gone">
+
+
+                <TextView
+                    android:id="@+id/patientdetails"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="#ECEBEB"
+                    android:fontFamily="@font/lucidasans"
+                    android:paddingLeft="10dp"
+                    android:text="@string/basic_details"
+                    android:textSize="18sp"
+                    android:textStyle="bold" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginBottom="5dp"
+                    android:orientation="horizontal"
+                    android:weightSum="11">
+
+                    <ImageView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_weight="1"
+
+                        android:src="@drawable/user" />
+
+                    <com.libizo.CustomEditText
+                        android:id="@+id/efname"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="5"
+                        android:fontFamily="@font/lucidasans"
+                        android:hint="@string/first_name"
+                        android:inputType="textPersonName"
+                        app:libIZO_clearIconTint="@android:color/black"
+                        app:libIZO_setClearIconVisible="true" />
+
+
+                    <com.libizo.CustomEditText
+                        android:id="@+id/elname"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="5"
+                        android:fontFamily="@font/lucidasans"
+                        android:hint="@string/tv_last_name"
+                        android:inputType="textPersonName"
+                        app:libIZO_clearIconTint="@android:color/black"
+                        app:libIZO_setClearIconVisible="true" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginBottom="5dp"
+                    android:orientation="horizontal"
+                    android:weightSum="10">
+
+                    <ImageView
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_gravity="center"
+                        android:layout_weight="1"
+                        android:src="@drawable/relation" />
+
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_gravity="center"
+                        android:layout_weight="9"
+                        android:orientation="vertical">
+
+                        <Spinner
+                            android:id="@+id/srelation"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content" />
+
+                        <View
+                            android:layout_width="match_parent"
+                            android:layout_height="1dp"
+                            android:layout_gravity="bottom"
+                            android:background="@android:color/darker_gray" />
+
+
+                    </LinearLayout>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginBottom="5dp"
+                    android:orientation="horizontal"
+                    android:weightSum="10">
+
+                    <ImageView
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_gravity="center"
+                        android:layout_weight="1"
+                        android:src="@drawable/relation" />
+
+                    <com.libizo.CustomEditText
+                        android:id="@+id/ername"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="9"
+                        android:fontFamily="@font/lucidasans"
+                        android:gravity="bottom"
+                        android:hint="@string/name"
+                        android:inputType="textPersonName"
+                        app:libIZO_clearIconTint="@android:color/black"
+                        app:libIZO_setClearIconVisible="true" />
+                </LinearLayout>
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="5dp"
+                    android:orientation="horizontal"
+                    android:weightSum="10">
+
+                    <ImageView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_weight="1"
+                        android:src="@drawable/cake" />
+
+                    <com.libizo.CustomEditText
+                        android:id="@+id/eage"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_weight="9"
+                        android:fontFamily="@font/lucidasans"
+                        android:hint="@string/tv_age"
+                        android:inputType="number"
+                        android:maxLength="3"
+                        app:libIZO_clearIconTint="@android:color/black"
+                        app:libIZO_setClearIconVisible="true"
+                        app:libIZO_setCornerRadius="2dp" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginBottom="5dp"
+                    android:orientation="horizontal"
+                    android:weightSum="10">
+
+                    <ImageView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_weight="1"
+                        android:src="@drawable/gender" />
+
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_weight="9"
+                        android:orientation="vertical">
+
+                        <Spinner
+                            android:id="@+id/sgender"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content" />
+
+                        <View
+                            android:layout_width="match_parent"
+                            android:layout_height="1dp"
+                            android:background="@android:color/darker_gray" />
+                    </LinearLayout>
+
+                </LinearLayout>
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginBottom="5dp"
+                    android:orientation="horizontal"
+                    android:weightSum="11">
+
+                    <ImageView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_weight="1"
+                        android:src="@drawable/address" />
+
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_weight="5"
+                        android:orientation="vertical">
+
+                        <Spinner
+                            android:id="@+id/sstate"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content" />
+
+                        <View
+                            android:layout_width="match_parent"
+                            android:layout_height="1dp"
+                            android:background="@android:color/darker_gray" />
+
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_marginLeft="5dp"
+                        android:layout_weight="5"
+                        android:orientation="vertical">
+
+                        <Spinner
+                            android:id="@+id/sdistrict"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content" />
+
+                        <View
+                            android:layout_width="match_parent"
+                            android:layout_height="1dp"
+                            android:background="@android:color/darker_gray" />
+
+
+                    </LinearLayout>
+                </LinearLayout>
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"
+                    android:visibility="gone">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="*"
+                        android:textColor="@android:color/holo_red_dark"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/select_district"
+                        android:textColor="@android:color/black" />
+                </LinearLayout>
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginBottom="5dp"
+                    android:orientation="horizontal"
+                    android:weightSum="10">
+
+                    <ImageView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_weight="1"
+                        android:src="@drawable/mobile_no" />
+
+                    <com.libizo.CustomEditText
+                        android:id="@+id/emobile"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="9"
+                        android:fontFamily="@font/lucidasans"
+                        android:hint="@string/tv_mobile_number"
+                        android:inputType="number"
+                        android:maxLength="10"
+                        app:libIZO_clearIconTint="@android:color/black"
+                        app:libIZO_setClearIconVisible="true" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginBottom="5dp"
+                    android:orientation="horizontal"
+                    android:weightSum="10">
+
+                    <ImageView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_weight="1"
+                        android:src="@drawable/email" />
+
+                    <com.libizo.CustomEditText
+                        android:id="@+id/eemail"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="9"
+                        android:digits="ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789()%/+?,@. \n!#$%&amp;'*+-/=?^_`{|}~"
+                        android:fontFamily="@font/lucidasans"
+                        android:hint="@string/tv_email"
+                        android:inputType="textEmailAddress"
+                        app:libIZO_clearIconTint="@android:color/black"
+                        app:libIZO_setClearIconVisible="true" />
+                </LinearLayout>
+
+            </LinearLayout>
+
+
+            <!--patient details form ends-->
+
+            <LinearLayout
+                android:id="@+id/ll_medical_details"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:background="@color/medi_detail_color"
+                    android:fontFamily="@font/lucidasans"
+                    android:paddingVertical="15dp"
+                    android:paddingLeft="10dp"
+                    android:textColor="@color/black"
+                    android:text="@string/medical_details_optional"
+                    android:textSize="15sp"
+                    android:textStyle="bold" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginRight="10dp"
+                    android:orientation="horizontal"
+                    android:weightSum="2">
+
+
+                    <TextView
+                        android:id="@+id/edt_weight"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="10dp"
+                        android:layout_weight="1"
+                        android:drawableLeft="@drawable/weight"
+                        android:drawableRight="@drawable/arrow_down"
+                        android:drawablePadding="10dp"
+                        android:hint="@string/weight_in_kg"
+                        android:inputType="number"
+                        android:maxLength="3"
+                        android:textSize="15sp" />
+
+                    <TextView
+                        android:id="@+id/edt_height"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginTop="10dp"
+                        android:layout_weight="1"
+                        android:drawableLeft="@drawable/height"
+                        android:drawableRight="@drawable/arrow_down"
+                        android:drawablePadding="10dp"
+                        android:hint="@string/height_in_ft_inch"
+                        android:inputType="number"
+                        android:maxLength="10"
+                        android:textSize="15sp" />
+
+                </LinearLayout>
+
+                <TextView
+                    android:id="@+id/tv_covid_screening_param"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginRight="10dp"
+                    android:drawableRight="@drawable/arrow_down"
+                    android:text="@string/are_you_experiencing_any_of_the_following_symptoms"
+                    android:textSize="15sp" />
+
+
+                <LinearLayout
+                    android:id="@+id/llcovid_screen"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginTop="10dp"
+                    android:orientation="vertical">
+
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:weightSum="3">
+
+                        <TextView
+                            android:id="@+id/tv_fever"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_margin="5dp"
+                            android:layout_weight="1"
+                            android:background="@drawable/textbox_background"
+                            android:gravity="center"
+                            android:padding="10dp"
+                            android:text="@string/fever"
+                            android:textColor="@android:color/holo_blue_dark"
+                            android:textStyle="bold" />
+
+                        <TextView
+                            android:id="@+id/tv_cough"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_margin="5dp"
+                            android:layout_weight="1"
+                            android:background="@drawable/textbox_background"
+                            android:gravity="center"
+                            android:padding="10dp"
+                            android:text="@string/cough"
+                            android:textColor="@android:color/holo_blue_dark"
+                            android:textStyle="bold" />
+
+                        <TextView
+                            android:id="@+id/tv_sore_throat"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_margin="5dp"
+                            android:layout_weight="1"
+                            android:background="@drawable/textbox_background"
+                            android:gravity="center"
+                            android:padding="10dp"
+                            android:text="@string/sore_throat"
+                            android:textColor="@android:color/holo_blue_dark"
+                            android:textStyle="bold" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:weightSum="3">
+
+                        <TextView
+                            android:id="@+id/tv_chest_conjestion"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="2"
+                            android:layout_margin="5dp"
+                            android:background="@drawable/textbox_background"
+                            android:gravity="center"
+                            android:padding="10dp"
+                            android:text="@string/chest_congestion_or_runny_nose"
+                            android:textColor="@android:color/holo_blue_dark"
+                            android:textStyle="bold" />
+
+                        <TextView
+                            android:id="@+id/tv_body_ache"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_margin="5dp"
+                            android:layout_weight="1"
+                            android:background="@drawable/textbox_background"
+                            android:gravity="center"
+                            android:padding="10dp"
+                            android:text="@string/body_ache"
+                            android:textColor="@android:color/holo_blue_dark"
+                            android:textStyle="bold" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:weightSum="4">
+
+                        <TextView
+                            android:id="@+id/tv_pink_eyes"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_margin="5dp"
+                            android:layout_weight="1"
+                            android:background="@drawable/textbox_background"
+                            android:gravity="center"
+                            android:padding="10dp"
+                            android:text="@string/pink_eyes"
+                            android:textColor="@android:color/holo_blue_dark"
+                            android:textStyle="bold" />
+
+                        <TextView
+                            android:id="@+id/tv_smell_taste"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_margin="5dp"
+                            android:layout_weight="3"
+                            android:background="@drawable/textbox_background"
+                            android:gravity="center"
+                            android:padding="10dp"
+                            android:text="@string/loss_of_senses_of_smell_and_taste"
+                            android:textColor="@android:color/holo_blue_dark"
+                            android:textStyle="bold" />
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:weightSum="2">
+
+                        <TextView
+                            android:id="@+id/tv_hearing_impairement"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_margin="5dp"
+                            android:layout_weight="1"
+                            android:background="@drawable/textbox_background"
+                            android:gravity="center"
+                            android:padding="10dp"
+                            android:text="@string/hearing_impairment"
+                            android:textColor="@android:color/holo_blue_dark"
+                            android:textStyle="bold" />
+
+                        <TextView
+                            android:id="@+id/tv_breathing_diffculty"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_margin="5dp"
+                            android:layout_weight="1"
+                            android:background="@drawable/textbox_background"
+                            android:gravity="center"
+                            android:padding="10dp"
+                            android:text="@string/breathing_difficulty"
+                            android:textColor="@android:color/holo_blue_dark"
+                            android:textStyle="bold" />
+                    </LinearLayout>
+
+                    <TextView
+                        android:id="@+id/tv_gastro_intestial"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="5dp"
+                        android:layout_weight="1"
+                        android:background="@drawable/textbox_background"
+                        android:gravity="center"
+                        android:padding="10dp"
+                        android:text="@string/gastrointestinal_symptoms"
+                        android:textColor="@android:color/holo_blue_dark"
+                        android:textStyle="bold" />
+
+                    <!--                    <TextView-->
+                    <!--                        android:id="@+id/tv_foreign_travel"-->
+                    <!--                        android:layout_width="match_parent"-->
+                    <!--                        android:layout_height="wrap_content"-->
+                    <!--                        android:layout_margin="5dp"-->
+                    <!--                        android:layout_weight="1"-->
+                    <!--                        android:background="@drawable/textbox_background"-->
+                    <!--                        android:gravity="center"-->
+                    <!--                        android:padding="10dp"-->
+                    <!--                        android:text="@string/foreign_travel_contact_with_foreigners"-->
+                    <!--                        android:textColor="@android:color/holo_blue_dark"-->
+                    <!--                        android:textStyle="bold" />-->
+
+                </LinearLayout>
+
+                <!--do you have any of the following pre existing condition-->
+                <TextView
+                    android:id="@+id/tv_pre_existing_param"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginRight="10dp"
+                    android:drawableRight="@drawable/arrow_down"
+                    android:text="@string/do_you_have_any_of_the_following_pre_existing_conditions"
+                    android:textSize="15sp" />
+
+
+                <GridLayout
+                    android:id="@+id/gl_pre_condition"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:columnCount="3">
+
+
+                    <TextView
+                        android:id="@+id/tv_diabetes"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="5dp"
+                        android:layout_columnWeight="1"
+                        android:background="@drawable/textbox_background"
+                        android:gravity="center"
+                        android:padding="10dp"
+                        android:text="@string/diabetes"
+                        android:textColor="@android:color/holo_blue_dark"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:id="@+id/tv_hypertension"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="5dp"
+                        android:layout_columnWeight="1"
+                        android:background="@drawable/textbox_background"
+                        android:gravity="center"
+                        android:padding="10dp"
+                        android:text="@string/hypertension"
+                        android:textColor="@android:color/holo_blue_dark"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:id="@+id/tv_lung_disease"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="5dp"
+                        android:layout_columnWeight="1"
+                        android:background="@drawable/textbox_background"
+                        android:gravity="center"
+                        android:padding="10dp"
+                        android:text="@string/lung_disease"
+                        android:textColor="@android:color/holo_blue_dark"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:id="@+id/tv_heart_disease"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="5dp"
+                        android:layout_columnWeight="1"
+                        android:background="@drawable/textbox_background"
+                        android:gravity="center"
+                        android:padding="10dp"
+                        android:text="@string/heart_disease"
+                        android:textColor="@android:color/holo_blue_dark"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:id="@+id/tv_kidney_disorder"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="5dp"
+                        android:layout_columnWeight="1"
+                        android:background="@drawable/textbox_background"
+                        android:gravity="center"
+                        android:padding="10dp"
+                        android:maxLines="1"
+                        app:autoSizeTextType="uniform"
+                        app:autoSizeMinTextSize="06sp"
+                        app:autoSizeMaxTextSize="100sp"
+                        app:autoSizeStepGranularity="2sp"
+                        android:text="@string/kidney_disorder"
+                        android:textColor="@android:color/holo_blue_dark"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:id="@+id/tv_asthma"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="5dp"
+                        android:layout_columnWeight="1"
+                        android:background="@drawable/textbox_background"
+                        android:gravity="center"
+                        android:padding="10dp"
+                        android:text="@string/asthma"
+                        android:textColor="@android:color/holo_blue_dark"
+                        android:textStyle="bold" />
+                </GridLayout>
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:orientation="horizontal"
+                    android:weightSum="5">
+
+                    <TextView
+                        android:id="@+id/tv_show_diagnosed_conditions"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="left"
+                        android:layout_weight="4"
+                        android:text="@string/do_you_have_any_previously_diagnosed_conditions"
+                        android:textSize="15sp" />
+
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:weightSum="2">
+
+                        <androidx.appcompat.widget.AppCompatImageButton
+                            android:id="@+id/btn_show_diagnosed_conditions"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="right"
+                            android:layout_weight="1"
+                            android:src="@drawable/covid_right" />
+
+                        <androidx.appcompat.widget.AppCompatImageButton
+                            android:id="@+id/btn_hide_diagnosed_conditions"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="right"
+                            android:layout_weight="1"
+                            android:src="@drawable/close" />
+                    </LinearLayout>
+                </LinearLayout>
+
+                <EditText
+                    android:id="@+id/edt_diagnosed_condtitions"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="5dp"
+                    android:background="@drawable/textbox_background"
+                    android:backgroundTint="@android:color/darker_gray"
+                    android:digits="ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789()%/+?,. \n ऄअआइईउऊऋऌऍऎएऐऑऒओऔकखगघङचछजझञटठडढणतथदधनऩपफबभमयरऱलळऴवशषसहऺऻ़ऽािीृॄॅॆेैॉॊोौ्ॐ॒॑॓॔ॕॖॗक़ख़ग़ज़ड़ढ़फ़य़ॠॡॣ।॥०१२३४५६७८९॰ॱॲॳॴॵॶॷॸॹॺॻॼॽॾॿ"
+                    android:gravity="top"
+                    android:hint="@string/write_diagnosed_conditions"
+                    android:maxLength="300"
+                    android:paddingLeft="10dp"
+                    android:paddingTop="10dp"
+                    android:paddingBottom="50dp"
+                    android:visibility="gone" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:orientation="horizontal"
+                    android:weightSum="5">
+
+                    <TextView
+                        android:id="@+id/tv_show_medications"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="left"
+                        android:layout_weight="4"
+                        android:text="@string/are_you_under_any_medication"
+                        android:textSize="15sp" />
+
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:weightSum="2">
+
+                        <androidx.appcompat.widget.AppCompatImageButton
+                            android:id="@+id/btn_show_medications"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="right"
+                            android:layout_weight="1"
+                            android:src="@drawable/covid_right" />
+
+                        <androidx.appcompat.widget.AppCompatImageButton
+                            android:id="@+id/btn_hide_medications"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="right"
+                            android:layout_weight="1"
+                            android:src="@drawable/close" />
+                    </LinearLayout>
+                </LinearLayout>
+
+                <EditText
+                    android:id="@+id/edt_medications"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="5dp"
+                    android:background="@drawable/textbox_background"
+                    android:backgroundTint="@android:color/darker_gray"
+                    android:digits="ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789()%/+?,. \n ऄअआइईउऊऋऌऍऎएऐऑऒओऔकखगघङचछजझञटठडढणतथदधनऩपफबभमयरऱलळऴवशषसहऺऻ़ऽािीृॄॅॆेैॉॊोौ्ॐ॒॑॓॔ॕॖॗक़ख़ग़ज़ड़ढ़फ़य़ॠॡॣ।॥०१२३४५६७८९॰ॱॲॳॴॵॶॷॸॹॺॻॼॽॾॿ"
+                    android:gravity="top"
+                    android:hint="@string/write_medications"
+                    android:inputType="textCapSentences|textMultiLine"
+                    android:maxLength="300"
+                    android:paddingLeft="10dp"
+                    android:paddingTop="10dp"
+                    android:paddingBottom="50dp"
+                    android:visibility="gone" />
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:orientation="horizontal"
+                    android:weightSum="5">
+
+                    <TextView
+                        android:id="@+id/tv_show_allergies"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="left"
+                        android:layout_weight="4"
+                        android:text="@string/do_you_have_any_allergies"
+                        android:textSize="15sp" />
+
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:weightSum="2">
+
+                        <androidx.appcompat.widget.AppCompatImageButton
+                            android:id="@+id/btn_show_allergies"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="right"
+                            android:layout_weight="1"
+                            android:src="@drawable/covid_right" />
+
+                        <androidx.appcompat.widget.AppCompatImageButton
+                            android:id="@+id/btn_show_hide_allergies"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="right"
+                            android:layout_weight="1"
+                            android:src="@drawable/close" />
+                    </LinearLayout>
+                </LinearLayout>
+
+                <EditText
+                    android:id="@+id/edt_allergies"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="5dp"
+                    android:background="@drawable/textbox_background"
+                    android:backgroundTint="@android:color/darker_gray"
+                    android:digits="ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789()%/+?,. \n ऄअआइईउऊऋऌऍऎएऐऑऒओऔकखगघङचछजझञटठडढणतथदधनऩपफबभमयरऱलळऴवशषसहऺऻ़ऽािीृॄॅॆेैॉॊोौ्ॐ॒॑॓॔ॕॖॗक़ख़ग़ज़ड़ढ़फ़य़ॠॡॣ।॥०१२३४५६७८९॰ॱॲॳॴॵॶॷॸॹॺॻॼॽॾॿ"
+                    android:gravity="top"
+                    android:hint="@string/write_allergies"
+                    android:maxLength="300"
+                    android:paddingLeft="10dp"
+                    android:paddingTop="10dp"
+                    android:paddingBottom="50dp"
+                    android:visibility="gone" />
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="20dp"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="@string/problem_description" />
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="*"
+                        android:textStyle="bold"
+                        android:layout_marginLeft="5dp"
+                        android:textColor="@android:color/holo_red_dark" />
+                </LinearLayout>
+
+                <EditText
+                    android:id="@+id/edt_remarks"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="100dp"
+                    android:background="@drawable/textbox_background"
+                    android:digits="ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789()%/+?,.- \n ऄअआइईउऊऋऌऍऎएऐऑऒओऔकखगघङचछजझञटठडढणतथदधनऩपफबभमयरऱलळऴवशषसहऺऻ़ऽािीृॄॅॆेैॉॊोौ्ॐ॒॑॓॔ॕॖॗक़ख़ग़ज़ड़ढ़फ़य़ॠॡॣ।॥०१२३४५६७८९॰ॱॲॳॴॵॶॷॸॹॺॻॼॽॾॿ"
+                    android:gravity="top"
+                    android:hint="@string/problem_description_maximum_500_characters"
+                    android:maxLength="500"
+                    android:paddingLeft="10dp"
+                    android:paddingTop="10dp"
+                    android:paddingBottom="50dp"
+                    android:textSize="15sp" />
+
+                <Button
+                    android:id="@+id/btn_submit"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="bottom"
+                    android:background="@color/colorAccent"
+                    android:onClick="btnSelectSlot"
+                    android:text="@string/proceed_to_select_slot"
+                    android:textColor="@color/white"
+                    android:textStyle="bold" />
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+
+
+</LinearLayout>

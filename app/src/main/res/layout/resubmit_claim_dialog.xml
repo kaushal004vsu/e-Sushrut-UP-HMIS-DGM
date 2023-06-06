@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    app:cardBackgroundColor="@android:color/white"
+    app:cardCornerRadius="10dp"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginTop="50dp"
+    app:cardUseCompatPadding="true">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:textStyle="bold"
+            android:textSize="22sp"
+            android:textColor="@color/colorAccent"
+            android:text="Re-Submit Claim"/>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_marginTop="8dp"
+            android:background="@android:color/darker_gray"/>
+
+        <com.google.android.material.textfield.TextInputLayout
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:startIconDrawable="@drawable/ic_indian_rupee_symbol"
+            app:startIconTint="@color/vitals_blue"
+            android:layout_marginHorizontal="8dp"
+            android:layout_marginTop="10dp"
+            android:hint="Revision Amount"
+            android:textColorHint="@color/colorAccent"
+            app:boxStrokeColor="@color/colorAccent">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/edt_rev_amount"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:maxLines="1"
+                android:minLines="1"/>
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:startIconDrawable="@android:drawable/ic_menu_edit"
+            app:startIconTint="@color/vitals_orange"
+            android:layout_marginHorizontal="8dp"
+            android:layout_marginTop="10dp"
+            android:hint="Remarks"
+            android:textColorHint="@color/colorAccent"
+            app:boxStrokeColor="@color/colorAccent">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/edt_remarks"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:maxLines="1"
+                android:minLines="1"/>
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Submit"
+            android:layout_marginHorizontal="8dp"
+            android:textStyle="bold"
+            android:textSize="22sp"
+            android:id="@+id/btn_ok"
+            android:textAllCaps="false"
+            android:textColor="@android:color/holo_blue_dark"
+            android:background="@drawable/selected_date_bacground"
+            android:layout_marginBottom="20dp"
+            android:layout_marginTop="20dp" />
+    </LinearLayout>
+</androidx.cardview.widget.CardView>

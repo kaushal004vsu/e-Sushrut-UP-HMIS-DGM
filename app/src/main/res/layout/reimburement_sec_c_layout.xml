@@ -1,0 +1,279 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:visibility="visible"
+    android:id="@+id/ll_section_c"
+    android:orientation="vertical"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/label_background"
+        android:gravity="center"
+        android:padding="10dp"
+        android:text="Section C"
+        android:textColor="@color/black"
+        android:textSize="22sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="10dp"
+        android:text="@string/phc_to_submit"
+        android:textColor="@color/black"
+        android:textSize="14sp" />
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="10dp"
+        android:text="@string/note_document_required"
+        android:textColor="@android:color/holo_red_dark"
+        android:textSize="14sp" />
+
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:paddingHorizontal="10dp"
+        android:text="@string/discharge_summary"
+        android:textStyle="bold"
+        android:textColor="@color/black"
+        android:textSize="14sp" />
+
+    <com.google.android.material.textfield.TextInputLayout
+        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="8dp"
+        android:hint="@string/page_number"
+        android:textColorHint="@color/colorAccent"
+        >
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/edt_disch_page"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:maxLines="1"
+            android:minLines="1"/>
+    </com.google.android.material.textfield.TextInputLayout>
+
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="8dp"
+        android:background="@color/label_background"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingHorizontal="10dp"
+        android:layout_marginTop="10dp"
+        android:text="@string/original_bills_of_hospital"
+        android:textStyle="bold"
+        android:textColor="@color/black"
+        android:textSize="14sp" />
+    <com.google.android.material.textfield.TextInputLayout
+        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="8dp"
+        android:hint="@string/page_number"
+        android:textColorHint="@color/colorAccent"
+        >
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/edt_bill_page"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:maxLines="1"
+            android:minLines="1"/>
+    </com.google.android.material.textfield.TextInputLayout>
+
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="8dp"
+        android:background="@color/label_background"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingHorizontal="10dp"
+        android:layout_marginTop="10dp"
+        android:text="@string/origina_cash_voucher"
+        android:textStyle="bold"
+        android:textColor="@color/black"
+        android:textSize="14sp" />
+    <com.google.android.material.textfield.TextInputLayout
+        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="8dp"
+        android:hint="@string/page_number"
+        android:textColorHint="@color/colorAccent"
+        >
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/edt_voucher_page"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:maxLines="1"
+            android:minLines="1"/>
+    </com.google.android.material.textfield.TextInputLayout>
+
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="8dp"
+        android:background="@color/label_background"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingHorizontal="10dp"
+        android:layout_marginTop="10dp"
+        android:text="@string/pace_maker"
+        android:textStyle="bold"
+        android:textColor="@color/black"
+        android:textSize="14sp" />
+    <com.google.android.material.textfield.TextInputLayout
+        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="8dp"
+        android:hint="@string/page_number"
+        android:textColorHint="@color/colorAccent"
+        >
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/edt_stent_page"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:maxLines="1"
+            android:minLines="1"/>
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="8dp"
+        android:background="@color/label_background"/>
+
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingHorizontal="10dp"
+        android:layout_marginTop="10dp"
+        android:text="@string/any_other_enclosures"
+        android:textStyle="bold"
+        android:textColor="@color/black"
+        android:textSize="14sp" />
+    <com.google.android.material.textfield.TextInputLayout
+        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="8dp"
+        android:hint="@string/page_number"
+        android:textColorHint="@color/colorAccent"
+        >
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/edt_other_enclosure_page"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:maxLines="1"
+            android:minLines="1"/>
+    </com.google.android.material.textfield.TextInputLayout>
+
+
+
+    <CheckBox
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/cb_sec_c"
+        android:layout_marginTop="20dp"
+        android:gravity="top"
+        android:text="@string/declairation"/>
+
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="04dp"
+        android:textStyle="bold"
+        android:textColor="@color/black"
+        android:text="@string/submitted_to"/>
+    <com.toptoche.searchablespinnerlibrary.SearchableSpinner
+        android:id="@+id/zone_spinner"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp"/>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="2dp"
+        android:id="@+id/zone_spinner_view"
+        android:layout_marginBottom="5dp"
+        android:background="@android:color/darker_gray" />
+
+    <com.toptoche.searchablespinnerlibrary.SearchableSpinner
+        android:id="@+id/division_spinner"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:visibility="gone"/>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="2dp"
+        android:id="@+id/division_spinner_view"
+        android:layout_marginBottom="5dp"
+        android:background="@android:color/darker_gray"
+        android:visibility="gone"/>
+
+    <com.toptoche.searchablespinnerlibrary.SearchableSpinner
+        android:id="@+id/hosp_spinner"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:visibility="gone"/>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="2dp"
+        android:id="@+id/hosp_spinner_view"
+        android:layout_marginBottom="5dp"
+        android:background="@android:color/darker_gray"
+        android:visibility="gone"/>
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="08dp"
+        android:layout_marginTop="20dp">
+        <Button
+            android:layout_width="150dp"
+            android:layout_height="50dp"
+            android:background="@drawable/button_shape"
+            android:drawableLeft="@drawable/mdtp_ic_chevron_left_black_24dp"
+            android:drawableTint="@color/white"
+            android:textColor="@color/white"
+            android:textStyle="bold"
+            android:textAllCaps="false"
+            android:id="@+id/btn_back_sec_c"
+            android:text="@string/back"/>
+        <Button
+            android:layout_width="150dp"
+            android:layout_height="50dp"
+            android:layout_alignParentRight="true"
+            android:background="@drawable/button_shape"
+            android:drawableRight="@drawable/ic_keyboard_arrow_right_gray_24dp"
+            android:drawableTint="@color/white"
+            android:textColor="@color/white"
+            android:textStyle="bold"
+            android:textAllCaps="false"
+            android:id="@+id/btn_next_sec_c"
+            android:text="@string/submit"/>
+    </RelativeLayout>
+</LinearLayout>

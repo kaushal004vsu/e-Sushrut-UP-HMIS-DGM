@@ -1,0 +1,626 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE resources [
+<!--    <!ENTITY appname "UAT_ई-सुश्रुत यूपी एचएमआईएस (डी.जी.एम.इ)">-->
+    <!ENTITY appname "UP HMIS">
+    <!ENTITY hosp_name "ई-सुश्रुत यूपी एचएमआईएस(डी.जी.एम.इ)">
+    ]>
+<resources>
+    <string name="app_name">&appname;</string>
+    <string name="hosp_name">&hosp_name;</string>
+
+    <string name="navigation_drawer_open">नेविगेशन ड्रॉअर खोलें</string>
+    <string name="navigation_drawer_close">नेविगेशन ड्रॉअर बंद करें</string>
+
+    <string name="mail"><u>support : mappsdev-noida@cdac.in</u></string>
+    <!-- login activity -->
+
+
+    <string name="support_text"><a href="mailto:mappsdev-noida@cdac.in">support : mappsdev-noida@cdac.in</a></string>
+
+
+    <!-- prescription scanner strings -->
+
+    <string name="title_home">होम</string>
+    <string name="title_enter_new_cr">नया CR</string>
+
+    <string name="Loading....">लोड हो रहा है....</string>
+
+
+    <!--  new patient strings  -->
+
+
+    <!--      registration       form           strings-->
+
+
+    <string name="tv_last_name">कुलनाम*</string>
+    <string name="category">श्रेणी</string>
+    <string name="tv_age">आयु*</string>
+
+    <string name="tv_gender">लिंग*</string>
+    <string name="tv_mobile_number">मोबाइल नंबर*</string>
+    <string name="tv_email">ईमेल</string>
+
+    <string name="tv_state">राज्य</string>
+    <string name="tv_district">जिला</string>
+
+
+    <string name="page1">पृष्ठ 1</string>
+    <string name="page2">पृष्ठ 2</string>
+    <string name="page3">पृष्ठ 3</string>
+
+    <string name="click_on_camera_icon"><u>Rx के साथ सपोर्टिंग क्लिनिकल नोट्स अपलोड करने के लिए आइकन पर टैप करें।(वैकल्पिक)</u></string>
+
+
+    <string name="i_need_help_with">मुझे मदद चाहिए</string>
+    <string name="help_back_button">वापस</string>
+
+    <string name="how_to_login">लॉग इन कैसे करें?</string>
+    <string name="how_to_login_description">
+        <![CDATA[
+        This app allows patients to login using their mobile number.
+
+        <ol>
+        <li> At the home screen, tap on <b><i>Patient Login</i></b> at the lower left corner of the screen.</li>
+        <li> Enter your 10-digit valid mobile number.</li>
+        <li> Enter the One-Time Password (OTP) is sent to your mobile number as an SMS.</li>
+        <li> After successful verification you will be shown the main menu, where you can raise and track Teleconsultancy requests.</li>
+        </ol>
+        ]]>
+    </string>
+
+
+    <string name="quick_steps">Quick Steps for Teleconsultancy Request</string>
+    <string name="quick_steps_description">
+        <![CDATA[
+        After login, you can follow these steps:
+
+
+
+        <ol>
+        <li> To raise a new request, tap on the Teleconsultancy Request icon (<img src=\"econsultation_icon\"/>) from the main menu.</li>
+        <li> Select patient, hospital, telemedicine department and appointment slot. Submit your Teleconsultancy request, with supporting document images (if needed).</li>
+        <li> You can check the status of request in the Consultation and Status (<img src=\"econsult_status\"/>) option from the main menu.</li>
+        <li> Once request is approved by a doctor, you will get a notification and the <b>Join Call</b> button will be shown with your request.</li>
+        <li> You will get a notification when the doctor calls you, and you can join the call from the <b>Join Call</b> button on Consultation and Status (<img src=\"econsult_status\"/>) page.</li>
+        <li> After the doctor has completed the request, you can view prescription from the Consultation and Status (<img src=\"econsult_status\"/>) page.</li>
+        </ol>
+        ]]>
+    </string>
+
+    <string name="how_to_upload_documents">दस्तावेज़ कैसे अपलोड करें?</string>
+    <string name="how_to_upload_documents_description">
+        <![CDATA[
+        With each Teleconsultancy request, you can upload upto three images of supporting documents for the doctor\'s reference. These may include images of past prescriptions, lab test reports or images of infected site(s). The following steps describe how to upload documents:
+        <br>
+        <ol>
+        <li> After filling in the Teleconsultancy request form, a pop-up will prompt and ask if you wish to upload supporting documents.</li>
+        <li> Click on <b>Yes</b> if you want to upload images of any documents.</li>
+        <li> The next screen shows three slots for image upload. Tap on a slot to open the device camera. Take a clear image of the document you wish to upload. You may retake the image if needed. </li>
+        <li> Click on <b>OK</b> and wait for the image to upload. The confirmation message <b><i>Successfully Uploaded</i></b> will be shown, otherwise please re-take the image and upload again.</li>
+        <li> Repeat the steps for other images you wish to upload. After uploading click on <b>Done</b> to submit the Teleconsultancy request.</li>
+        </ol>
+        ]]>
+    </string>
+
+    <string name="how_to_raise_a_new_request">नया अनुरोध कैसे करें?</string>
+    <string name="how_to_raise_a_new_request_description">
+        <![CDATA[
+        You can raise a new Teleconsultancy request by clicking on the <b>Teleconsultancy request</b> button (<img src=\"econsultation_icon\"/>) from the main menu.
+        <br>
+        <ol>
+        <li> Select the patient name from the Teleconsultancy request page. If you need to raise request for your self, select <b><i>Myself</i></b>. Otherwise, click on <b><i>Someone Else</i></b> and enter basic patient identification details.</li>
+        <li> Select the hospital and telemedicine unit for which you want to raise a request.</li>
+        <li> Provide basic details for raising request, such as symptoms, past medication, allergies and problem description.</li>
+        <li> Select a suitable date and an available free slot from the list, then click on submit.</li>
+        <li> You can also upload upto 3 images for doctor\'s reference including past prescriptions, lab reports, images of infected site etc.</li>
+        <li> Teleconsultancy request will be booked and confirmation will be shown. You can check the status in the Consultation and Status page (<img src=\"econsult_status\"/>).</li>
+        </ol>
+        ]]>
+    </string>
+
+
+    <string name="how_to_track_request">परामर्श और स्थिति की जांच कैसे करें?</string>
+    <string name="how_to_track_request_description">
+        <![CDATA[
+        You can track requests from the <b><i>Consultation and Status</b></i> option (<img src=\"econsult_status\"/>) from the main menu. A request can have the following status:
+
+        <ol>
+        <!--<li> <b>Pending: </b> Once you have submitted a request, it is in <i>Pending</i> status for the doctor\'s approval.</li>-->
+        <li> <b>Approved: </b> The doctor will approve your request and change it to <i>Approved</i> status. You will receive a notification when the doctor calls you for the eConsultation. You can join the call from the <b>Join Call</b> button shown for these requests.</li>
+        <li> <b>Completed: </b> After the Teleconsultation is done, the request is <i>Completed</i>. You can now view the prescription from the <b>View Prescription</b> option shown below the request.</li>
+        <li> <b>Rejected: </b> If the doctor rejects your request, its status is changed to <i>Rejected</i>. You can view the message from the doctor using the <b>View Doctor\'s Message</b> option shown below the request. You may wish to submit a new request, if needed.</li>
+        </ol>
+        ]]>
+    </string>
+
+
+    <string name="how_to_view_prescription">नुस्खे को कैसे देखें?</string>
+    <string name="how_to_view_prescription_description">
+        <![CDATA[
+           Patients can view prescriptions for <b>Completed</b> Teleconsultancy requests.
+           <ol>
+           <li>After logging in, go to <b><i>Consultation and Status</i></b> option (<img src=\"econsult_status\"/>) from the main menu.</li>
+           <li>Find the request which has been <b>Completed</b> and tap on <b>View Prescription</b> option shown below that request.</li>
+           <li>Prescription will be downloaded as a PDF within the app itself.</li>
+           </ol>
+        ]]>
+    </string>
+
+
+    <string name="other_issue">कोई अन्य मुद्दा?</string>
+
+    <string name="other_issue_description">
+        <![CDATA[
+          For any other issues, please email <a href=\"mailto:mappsdev-noida@cdac.in\">mappsdev-noida@cdac.in</a>  with details of your issue.
+          <br><br>
+          You can get the latest app updates from <a href=\"https://play.google.com/store/apps/details?id=com.cdac.uphmis\">Google Play Store</a>.
+        ]]>
+    </string>
+
+
+    <string name="tv_further_assistance">
+        <![CDATA[
+]]>
+        </string>
+    <string name="department_Name">विभाग का नाम</string>
+
+
+    <string name="btn_back">वापस</string>
+
+    <string name="tv_tnc">
+        <![CDATA[
+By using the app, you agree to <b> <font color=\'#FF9F00\'><u> terms </u></font></b>
+]]>
+        </string>
+
+
+    <string name="permission_needed">ऐप को किन अनुमतियों की आवश्यकता है?</string>
+    <string name="permission_needed_description">
+    <![CDATA[
+      Users (patients) should enable the following permissions while using the app to use all its features.
+      <ol>
+      <li><b>Appear on Top</b> - This permission is used to deliver call-like full screen notifications when the doctor initiates a video call to the patient. <b><i>Please allow this permission to receive real-time notification when the doctor calls you.</b></i></li>
+      <li><b>Notifications</b> - This app provides notifications to patients when doctor approves, rejects, completes or sends messages against teleconsultation requests raised by patients. <b><i> Please enable notifications for this app to get updates of your teleconsultation request status.</b></i> </li>
+      <li><b>Camera</b> - The app uses the device camera to allow the user to upload images of supporting documents while raising a teleconsultation request. This may include images of past prescriptions, lab reports or images of infected sites.</li>
+      <li><b>Storage</b> - The app uses the device storage for saving prescriptions of teleconsultation requests.</li>
+      </ol>
+    ]]>
+</string>
+    <string name="save_receipt"><b><u>रसीद सहेजें</u></b></string>
+
+
+    <!-- OnBoard Screen. -->
+
+    <string name="ob_header1">दूरसंचार</string>
+    <string name="ob_header2">बुक अपॉइंटमेंट</string>
+    <string name="ob_header3">लैब रिपोर्ट</string>
+    <string name="ob_header4">जाँच करना</string>
+    <string name="ob_header5">पंजीकरण</string>
+
+    <string name="ob_get_started">आरंभ करें</string>
+
+    <string name="ob_desc1">वीडियो-कॉलिंग के जरिए घर बैठे सीधे डॉक्टरों से सलाह लें |</string>
+    <string name="ob_desc2">अस्पताल जाने की योजना बनाने से पहले ऐप से अपॉइंटमेंट बुक करें।</string>
+    <string name="ob_desc3">ऐप से अपनी प्रयोगशाला परीक्षण रिपोर्ट डाउनलोड करें और देखें (केवल पंजीकृत रोगियों के लिए)।</string>
+    <string name="ob_desc4">अस्पताल विभाग के लिए उपलब्ध प्रयोगशाला परीक्षण, शुल्क और ओपीडी देखें।</string>
+    <string name="ob_desc5">स्वास्थ्य सेवाओं का लाभ उठाने के लिए अपना और परिवार के सदस्यों का पंजीकरण करें।</string>
+    <string name="share_file">क्षमा करें, इस समय फ़ाइल साझा करने में असमर्थ।</string>
+
+
+    <string name="patient_name">रोगी का नाम:</string>
+    <string name="cr_no">सीआर संख्या:</string>
+    <string name="self_assess">सेल्फ असेसमेंट</string>
+    <string name="appointment">अपॉइंटमेंट</string>
+    <string name="opd_enquiry">ओपीडी पूछताछ</string>
+    <string name="tariff_details">टैरिफ विवरण</string>
+    <string name="lab_enquiry">लैब पूछताछ</string>
+    <string name="lab_reports">लैब रिपोर्ट</string>
+    <string name="rx_scan">आरएक्स स्कैन</string>
+    <string name="scanned_view">स्कैन किया गया दृश्य</string>
+    <string name="basic_details">बुनियादी विवरण</string>
+    <string name="first_name">पहला नाम*</string>
+    <string name="proceed_to_select_slot">स्लॉट का चयन करने के लिए आगे बढ़ें</string>
+    <string name="problem_description_maximum_500_characters">समस्या विवरण (अधिकतम 500 वर्ण)</string>
+    <string name="problem_description">समस्या का विवरण</string>
+    <string name="write_allergies">एलर्जी लिखें</string>
+    <string name="do_you_have_any_allergies">क्या आपको कोई एलर्जी है?</string>
+    <string name="write_diagnosed_conditions">निदान की स्थिति लिखें</string>
+    <string name="do_you_have_any_previously_diagnosed_conditions">कोई अन्य निदान की स्थिति ? कृपया उल्लेख करें</string>
+    <string name="write_medications">दवाएं लिखें</string>
+    <string name="are_you_under_any_medication">क्या आप किसी दवा के अधीन हैं?</string>
+    <string name="height_in_ft_inch">ऊंचाई(फीट/इंच में)</string>
+    <string name="weight_in_kg">वजन किलो में</string>
+    <string name="breathing_difficulty">सांस लेने में कठिनाई</string>
+    <string name="sore_throat">गला खराब होना</string>
+    <string name="cough">खाँसी</string>
+    <string name="fever">बुखार</string>
+    <string name="select_district">जिला चुनें</string>
+    <string name="name">नाम</string>
+    <string name="are_you_experiencing_any_of_the_following_symptoms">क्या आप निम्न में से किसी भी लक्षण का अनुभव कर रहे हैं?</string>
+    <string name="medical_details_optional">चिकित्सा विवरण (वैकल्पिक)</string>
+    <string name="teleconsultancy">टेलीकंसल्टेंसी</string>
+    <string name="opd_desk">ओपीडी डेस्क</string>
+    <string name="username">यूजर का नाम</string>
+    <string name="password">पासवर्ड</string>
+    <string name="login">लॉगिन</string>
+    <string name="general">सामान्य</string>
+    <string name="special">विशेष</string>
+    <string name="all">ALL</string>
+    <string name="no_department_found">कोई विभाग नहीं मिला!</string>
+    <string name="select_the_appointment_date">अपॉइंटमेंट तिथि का चयन करें</string>
+    <string name="confirm">पुष्टि करें</string>
+    <string name="father_s_mother_s_spouse_s_name">पिता\'s/माता\'s/पति या पत्नी\'s नाम*</string>
+    <string name="city_village">शहर/गांव*</string>
+    <string name="register">रजिस्टर करें</string>
+    <string name="home">होम</string>
+    <string name="patient_registered_successfully">रोगी सफलतापूर्वक पंजीकृत</string>
+    <string name="please_note_down_the_cr_number_for_future_reference_it_will_be_used_for_maintaining_your_medical_records">Please note down the CR number for future reference. It will be used for maintaining your medical records.</string>
+    <string name="no_result_found">कोई परिणाम नहीं मिला!</string>
+    <string name="rx_view">आरएक्स देखें</string>
+    <string name="enter_tariff_to_search">खोजने के लिए टैरिफ दर्ज करें</string>
+    <string name="unable_to_register_patient">रोगी पंजीकृत करने में असमर्थ। कृपया बाद में पुन: प्रयास करें।</string>
+    <string name="crno_nav">सीआर संख्या: </string>
+    <string name="nav_mobile_no">मोबाइल नंबर : XXXXXX</string>
+    <string name="drug_availability">दवा उपलब्धता</string>
+    <string name="blood_stock">ब्लड स्टॉक</string>
+    <string name="cancel_appointment">अपॉइंटमेंट रद्द करें</string>
+    <string name="diabetes">मधुमेह</string>
+    <string name="i_hereby_declare_that_i_am_voluntarily_sharing_my_identity_information_with_national_health_authority_nha_for_the_sole_purpose_of_creation_of_health_id_i_understand_that_my_health_id_can_be_used_and_shared_for_purposes_as_may_be_notified_by_ndhm_from_time_to_time_including_provision_of_healthcare_services_further_i_am_aware_that_my_personal_identifiable_information_name_address_age_date_of_birth_gender_and_photograph_may_be_made_available_to_the_entities_working_in_the_national_digital_health_ecosystem_ndhe_which_inter_alia_includes_stakeholders_and_entities_such_as_healthcare_professionals_e_g_doctors_facilities_e_g_hospitals_laboratories_and_data_fiduciaries_e_g_health_programmes_which_are_registered_with_or_linked_to_the_national_digital_health_mission_ndhm_and_various_processes_there_under_n_n_i_am_aware_that_my_personal_identifiable_information_can_be_used_and_shared_for_purposes_as_mentioned_above_i_reserve_the_right_to_revoke_the_given_consent_at_any_point_of_time">"<b>I hereby declare that,</b>"
+\nI am voluntarily sharing my Aadhaar Number / Virtual ID issued by the Unique Identification Authority of India ("UIDAI"), and my demographic information for the purpose of creating an Ayushman Bharat Health Account number ("ABHA number) and Ayushman Bharat Health Account address (ABHA Address"). I authorize NHA to use my Aadhaar number / Virtual ID for performing Aadhaar based authentication with UIDAI as per the provisions of the Aadhaar (Targeted Delivery of Financial and other Subsidies, Benefits and Services) Act, 2016 for the aforesaid purpose. I understand that UIDAI will share my e-KYC details, or response of "Yes" with NHA upon successful authentication.
+\n\nI intend to create Ayushman Bharat Health Account Number ("ABHA number") and Ayushman Bharat Health Account address ("ABHA Address") using document other than Aadhaar. (Click here to proceed further)
+\n\nI consent to usage of my ABHA address and ABHA number for linking of my legacy (past) government health records and those which will be generated during this encounter.
+\n\nI authorize the sharing of all my health records with healthcare provider(s) for the purpose of providing healthcare services to me during this encounter.
+\n\nI consent to the anonymization and subsequent use of my government health records for public health purposes.
+\n\nI, the user, confirm that I have duly informed and explained the beneficiary of the contents of consent for aforementioned purposes.
+\n\nI, the beneficiary, have been explained about the consent as stated above provide my consent for the aforementioned purposes.</string>    <string name="emr">ईएमआर</string>
+    <string name="update_my_app"><b><u>ऐप अपडेट करें</u></b></string>
+    <!--
+    <string name="h_info_tab_text_1">रेलवे स्वास्थ्य संसाधन</string>
+    <string name="h_info_tab_text_2">सामान्य स्वास्थ्य संसाधन</string>
+-->
+
+    <string name="special_instructions"><b><u>विशेष निर्देश</u></b> </string>
+    <string name="download_discharge_slip"><u><b>डिस्चार्ज स्लिप डाउनलोड करें</b></u></string>
+    <string name="download_admission_slip"><u><b>एडमिशन स्लिप डाउनलोड करें</b></u></string>
+    <string name="note_document_required">आवश्यक दस्तावेज: (पेज नंबर अनिवार्य रूप से उल्लेख किया जाना चाहिए।)</string>
+    <string name="re_submit_claim"><b><u>पुनः सबमिट करें</u></b></string>
+    <string name="accept_claim"><b><u>स्वीकार करें</u></b></string>
+    <string name="tap_to_join_video_call"><u>वीडियो कॉल में शामिल होने के लिए टैप करें</u></string>
+    <string name="view_token_status"><b><u>टोकन की स्थिति देखें</u></b></string>
+    <string name="permission_could_be_given_on_settings_apps_app_info_appear_on_top_should_be_on_click_ok_to_proceed"><![CDATA[Permission could be given on Settings->Apps->->App info>Appear on top should be ON , click ok to proceed]]></string>
+
+    <string name="change_language">भाषा बदलें</string>
+    <string name="help">मदद</string>
+    <string name="share">शेयर करें</string>
+    <string name="my_account">मेरा खाता</string>
+    <string name="about_us">हमारे बारे में</string>
+    <string name="dark_mode">डार्क मोड</string>
+    <string name="switch_user">उपयोगकर्ता बदलें</string>
+    <string name="logout">लॉग आउट</string>
+    <string name="EC_title">टेलीकंसल्टेशन</string>
+    <string name="VR_title">अपॉइंटमेंट की स्थिति</string>
+    <string name="RX_title">आरएक्स देखें</string>
+    <string name="IV_tit">लैब रिपोर्ट</string>
+    <string name="QS_title">कतार संख्या पर्ची</string>
+    <string name="ES_title">स्व-पंजीकरण</string>
+    <string name="TG_title">टोकन जनरेशन</string>
+    <string name="HI_title">अपना आभा बनाएं</string>
+    <string name="MT_title">लेन-देन</string>
+    <string name="SC_title">सिक सर्टिफिकेट</string>
+    <string name="AC_title">आईपीडी विवरण</string>
+    <string name="LP_title">एल.पी. स्थिति</string>
+    <string name="CL_title">प्रतिपूर्ति का दावा</string>
+    <string name="QR_title">मेरा सीआरएन</string>
+    <string name="OE_title">ओपीडी पूछताछ</string>
+    <string name="TR_title">टैरिफ विवरण</string>
+    <string name="LE_title">लैब पूछताछ</string>
+    <string name="DA_title">दवा उपलब्धता</string>
+    <string name="PH_title">पीएचआर</string>
+    <string name="BS_title">ब्लड स्टॉक</string>
+    <string name="PS_title">डॉक्यूमेंट  स्कैन</string>
+    <string name="PV_title">डॉक्यूमेंट देखें</string>
+    <string name="AP_title">अपॉइंटमेंट</string>
+    <string name="LB_title">लैब आधारित अपॉइंटमेंट</string>
+    <string name="UD_title">दस्तावेज़ अपलोड करें</string>
+    <string name="FM_title">परिवार क्यू.आर.</string>
+    <string name="DR_title">दवाएं (आर.एक्स.)</string>
+    <string name="AN_title">घोषणा</string>
+    <string name="CR_title">पंजीकरण करें</string>
+    <string name="FB_title">फीडबैक</string>
+    <string name="medication_against_rx">दवाएं (आर.एक्स.)</string>
+    <string name="appointment_rescheduled_successfully">अपॉइंटमेंट सफलतापूर्वक पुनर्निर्धारित किया गया</string>
+    <string name="appointment_booked_successfully">अपॉइंटमेंट सफलतापूर्वक बुक किया गया</string>
+    <string name="appli_no_txt">( आपका अपॉइंटमेंट नंबर है </string>
+    <string name="br"><![CDATA[)<br><br>]]></string>
+    <string name="your_appointment_booked"><![CDATA[),<br><br>इस विभाग के लिए बुक हुआ  हैं -  <b>]]></string>
+    <string name="dated"><![CDATA[</b>दिनांक - <b>]]></string>
+    <string name="reach_hosp_txt"><![CDATA[</b> . अस्पताल की औपचारिकताएं पूरी करने के लिए कृपया अस्पताल पंजीकरण काउंटर पर सुबह 8.30 बजे से 10.30 बजे के बीच पहुंचें।]]></string>
+    <string name="hi">नमस्ते</string>
+    <string name="chest_congestion_or_runny_nose">छाती में जमाव या बहती नाक</string>
+    <string name="body_ache">शरीर दर्द</string>
+    <string name="pink_eyes">गुलाबी आँखे</string>
+    <string name="loss_of_senses_of_smell_and_taste">गंध और स्वाद की इंद्रियों का नुकसान</string>
+    <string name="hearing_impairment">सुनने में परेशानी</string>
+    <string name="gastrointestinal_symptoms">जठरांत्र संबंधी लक्षण</string>
+    <string name="hypertension">उच्च रक्तचाप</string>
+    <string name="lung_disease">फेफड़ों की बीमारी</string>
+    <string name="heart_disease">हृदय रोग</string>
+    <string name="kidney_disorder">गुर्दा विकार</string>
+    <string name="asthma">दमा</string>
+    <string name="do_you_have_any_of_the_following_pre_existing_conditions">क्या आपके पास निम्न में से कोई पहले से मौजूद स्थितियां हैं?</string>
+    <string name="select_weight">वजन चुनें</string>
+    <string name="kg_s">किग्रा</string>
+    <string name="select_height">ऊँचाई चुनें</string>
+    <string name="feet">फ़ीट</string>
+    <string name="inches">इंच</string>
+    <string name="teleconsultation">टेलीकंसल्टेशन</string>
+    <string name="search">खोजें</string>
+    <string name="live_queue_no_status">लाइव कतार संख्या की स्थिति</string>
+    <string name="patient_can_do_self_registration_by_scanning_the_qr_code_displayed_at_doctor_s_room_in_the_hospital_after_scanning_qr_code_correctly_registration_for_that_specialty_will_be_done_automatically">रोगी अस्पताल में डॉक्टर के कमरे में प्रदर्शित क्यूआर कोड को स्कैन करके स्व-पंजीकरण कर सकता है। क्यूआर कोड को सही से स्कैन करने के बाद उस विशेषता के लिए रजिस्ट्रेशन अपने आप हो जाएगा</string>
+    <string name="language_name">English</string>
+    <string name="approved">स्वीकृत</string>
+    <string name="completed">पूरा हुआ</string>
+    <string name="rejected">रद्द</string>
+    <string name="unattended">अनुपस्थित</string>
+    <string name="gender">लिंग</string>
+    <string name="pincode">पिन कोड</string>
+    <string name="mobile_no">मोबाइल नंबर</string>
+    <string name="email_id">ईमेल आईडी</string>
+    <string name="last_name">अंतिम नाम</string>
+    <string name="age">आयु:</string>
+    <string name="father_name">पिता का नाम</string>
+    <string name="spouse_name">जीवनसाथी का नाम</string>
+    <string name="up_hmis">&appname;</string>
+    <string name="track_stats"><![CDATA[\<br><br>आप होम पेज पर दिए गए मेनू के माध्यम से अपॉइंटमेंट स्थिति पर अपने अनुरोध की स्थिति को ट्रैक कर सकते हैं। \]]></string>
+    <string name="help_contents">सहायता सामग्री</string>
+    <string name="quick_step">शीघ्र कदम:</string>
+    <string name="features_txt"><![CDATA[\मरीज टेली./वीडियो के माध्यम से परामर्श अनुरोध कर सकता है\n\n\उपयोगकर्ता, अस्पताल और विभाग-इकाई का चयन करें \n\n\बुनियादी विवरण और स्वास्थ्य संबंधी समस्याएं भरें\n\n\स्लॉट चयन \n\n\डॉक्टर की स्वीकृति के बाद स्लॉट की पुष्टि\n\n\रोगी अनुरोधों की स्थिति की जांच कर सकता है: लंबित/स्वीकृत \n\n\डॉक्टर के उपलब्ध होने पर बिल्ट-इन वीडियो या ऑडियो कॉन्फ्रेंस पर डॉक्टर से परामर्श \n\n\प्रिस्क्रिप्शन देखें और डाउनलोड करें]]></string>
+    <string name="manual_and_training_txt"><![CDATA[<br><h1><font color=\'blue\'>उपयोगकर्ता नियमावली:</font></h1>\<ol>\<li><a href=\'https://drive.google.com/file/d/1MN92-7Elq28IJ1nYC0ewkUfHMuOnqIL0/view\'>डॉक्टरों के लिए: हिंदी</a></li>\<li><a href=\'https://drive.google.com/file/d/1N22KS2qCANp4ToTmsLyiTC4nb4_yQHoF/view\'>डॉक्टरों के लिए: अंग्रेजी</a></li>\<li><a href=\'https://drive.google.com/file/d/1ACD4B4SLZHXR3TOxEA5pwNXAunI92bLI/view\'>मरीजों के लिए: हिंदी</a></li>\<li><a href=\'https://drive.google.com/file/d/1GycWa_BiS4HV2l6iF_KQJ774Ih_dHJJC/view\'>मरीजों के लिए: अंग्रेजी</a></li>\<br><h1><font color=\'blue\'>एचएमआईएस ऐप प्रशिक्षण वीडियो:</font></h1>\<li><a href=\'https://youtu.be/AMauZNgIpOs\'>डॉक्टरों के लिए: अंग्रेजी वीडियो</a></li>\<li><a href=\'https://youtu.be/Gid2BqgSmFk\'>डॉक्टरों के लिए: हिंदी वीडियो</a></li>\<li><a href=\'https://youtu.be/shLJunBDgsk\'>मरीजों के लिए: अंग्रेजी वीडियो</a></li>\<li><a href=\'https://t.me/joinchat/UlUBld5S6OCVxoeY\'>HMIS टेलीग्राम चैनल के लिए लिंक</a></li>\<li><b>उपयोगकर्ताओं को यह भी सलाह दी जाती है कि वे समय-समय पर एचएमआईएस के बारे में सभी अपडेट और प्रशिक्षण वीडियो की पूरी सामग्री के लिए टेलीग्राम ऐप में आईआर-एचएमआईएस चैनल की सदस्यता लें।</b></li>\<li>हेल्पडेस्क नंबर: <a href=\'tel:040-27788200\'>040-27788200</a></li>]]></string>
+    <string name="no_previous_appointments_found">कोई पिछली अपॉइंटमेंट नहीं मिलीं।</string>
+    <string name="request_submitted_successfully_nfor">अनुरोध सफलतापूर्वक सबमिट किया गया</string>
+    <string name="phone_number">फ़ोन नंबर</string>
+    <string name="address">पता</string>
+    <string name="last_updated">पिछली बार अपडेट किया गया</string>
+    <string name="type_message">संदेश टाइप करें</string>
+    <string name="send_msg">संदेश भेजें</string>
+    <string name="submit_new_claim">नया दावा सबमिट करें</string>
+    <string name="patient_name_hint">रोगी का नाम*</string>
+    <string name="abha_address_hint">आभा पता*</string>
+    <string name="password_hint">पासवर्ड*</string>
+    <string name="confirm_password_hint">पासवर्ड की पुष्टि कीजिये*</string>
+    <string name="day_of_birth_hint">जन्म तिथि*</string>
+    <string name="month_of_birth_hint">जन्म का माह</string>
+    <string name="year_of_birth_hint">जन्म का वर्ष</string>
+    <string name="state_ut_hint">राज्य/संघ राज्य क्षेत्र*</string>
+    <string name="gender_hint">लिंग*</string>
+    <string name="create_my_abdm_abha">मेरी ABDM ABHA बनाएँ</string>
+    <string name="vitals">नब्ज</string>
+    <string name="complaints">शिकायत</string>
+    <string name="diagnosis">निदान</string>
+    <string name="tests">परीक्षण</string>
+    <string name="medications">दवाएं</string>
+    <string name="notes">टिप्पणियाँ</string>
+    <string name="follow_up">फॉलो अप</string>
+    <string name="patient_ndocs">रोगी\nदस्तावेज़</string>
+    <string name="patient_ndetails">रोगी\nविवरण</string>
+    <string name="video_ncall">वीडियो\nकॉल</string>
+    <string name="save">बचाना</string>
+    <string name="audio_ncall">ऑडियो\nकॉल</string>
+    <string name="history">इतिहास</string>
+    <string name="examinations">जांच</string>
+    <string name="investigations">जांच</string>
+    <string name="procedures">प्रक्रिया</string>
+    <string name="drugs">दवाएं</string>
+    <string name="rx">आरएक्स</string>
+    <string name="doctor_s_desk">डॉक्टर की डेस्क</string>
+    <string name="patient_list">रोगियों की सूची</string>
+    <string name="search_patient">रोगी खोजें</string>
+    <string name="select_files">फ़ाइल चुनें</string>
+    <string name="upload_document">दस्तावेज़ अपलोड करें</string>
+    <string name="maximum_of_3_pages_documents_can_be_uploaded">* अधिकतम 3 पेज के दस्तावेज अपलोड किए जा सकते हैं।</string>
+    <string name="to_replace_document_image">दस्तावेज़ छवि को बदलने के लिए।</string>
+    <string name="selected_hospital">अस्पताल चुनें</string>
+    <string name="enter_medicine_name_to_search">खोजने के लिए दवा का नाम डालें</string>
+    <string name="qty_show_alert">* कृपया ध्यान दें कि ऊपर दिखाई गई उपलब्ध मात्रा अनुमानित मात्रा है जो स्टोर पर वास्तविक जारी होने के समय भिन्न हो सकती है।</string>
+    <string name="drug_name">दवा का नाम</string>
+    <string name="done">पूर्ण</string>
+    <string name="history_of_present_illness">वर्तमान बीमारी का इतिहास:</string>
+    <string name="history_of_present_illness_max_500_characters">वर्तमान बीमारी का इतिहास(अधिकतम 500 वर्ण)</string>
+    <string name="complete_history">पूरा इतिहास:</string>
+    <string name="past_history">पिछला इतिहास:</string>
+    <string name="past_history_hint">पिछला इतिहास</string>
+    <string name="family_history">परिवार का इतिहास:</string>
+    <string name="family_history_hint">परिवार का इतिहास</string>
+
+    <string name="personal_history">निजी इतिहास:</string>
+    <string name="personal_history_hint">निजी इतिहास</string>
+    <string name="treatment_history">उपचार इतिहास:</string>
+    <string name="treatment_history_hint">उपचार इतिहास</string>
+    <string name="surgical_history">सर्जिकल इतिहास:</string>
+    <string name="surgical_history_hint">सर्जिकल इतिहासy</string>
+    <string name="enter_test_name_to_filter_search">फ़िल्टर/खोज करने के लिए टेस्ट नाम दर्ज करें</string>
+    <string name="current_queue">मौजूदा कतार</string>
+    <string name="enter_your_mobile_number_to_login">लॉगिन करने के लिए अपना मोबाइल नंबर दर्ज करें</string>
+    <string name="login_as_patient">Login as Patient</string>
+    <string name="tap_for_doctor_login">Tap for Doctor Login</string>
+    <string name="or">या</string>
+    <string name="last_7_days">पिछले 7 दिनों के लंबित अनुरोध की स्थिति केवल यहां दिखाई देगी। जारी की गई वस्तु यहां नहीं दिखाई जाएगी।</string>
+    <string name="mobile_number">मोबाइल नंबर</string>
+    <string name="i_agree">मैं सहमत हूं</string>
+    <string name="submit">जमा करें</string>
+    <string name="your_abha">आपका आभा</string>
+    <string name="abha_address_colon">आभा पता :</string>
+    <string name="abha_number">आभा नंबर :</string>
+    <string name="date_of_birth">जन्मतिथि :</string>
+    <string name="gender_colon">लिंग :</string>
+    <string name="mobile">मोबाइल :</string>
+    <string name="ndhm_login">एनडीएचएम लॉगिन</string>
+    <string name="enter_abha_number">आभा नंबर दर्ज करें</string>
+    <string name="successfully_created_abha_txt">आपने सफलतापूर्वक अपना आभा बना लिया है!\nआज ही अपनी डिजिटल स्वास्थ्य यात्रा शुरू करें.</string>
+    <string name="prescription_preview_edit">प्रिस्क्रिप्शन पूर्वावलोकन/संपादित करें</string>
+    <string name="vitals_colon">नब्ज:</string>
+    <string name="complaints_colon">शिकायत:</string>
+    <string name="diagnosis_colon">निदान :</string>
+    <string name="tests_colon">टेस्ट:</string>
+    <string name="medications_colon">दवाएं:</string>
+    <string name="clinical_notes_colon">क्लिनिकल नोट्स:</string>
+    <string name="follow_up_visit_on">फॉलो अप विजिट करें:</string>
+    <string name="cancel">रद्द करें</string>
+
+    <string name="visit_date">यात्रा तिथि</string>
+    <string name="queue_no">कतार संख्या</string>
+    <string name="printed_on">प्रिंट हुआ</string>
+    <string name="reject">अस्वीकार</string>
+    <string name="accept">स्वीकार करें</string>
+    <string name="incoming_call">इनकमिंग कॉल</string>
+    <string name="section_a">खंड A</string>
+    <string name="choose_reimbursement_type">प्रतिपूर्ति का प्रकार चुनें</string>
+    <string name="name_of_the_hospital">अस्पताल का नाम</string>
+    <string name="date_of_admission">प्रवेश की तिथि</string>
+    <string name="date_of_discharge">डिस्चार्ज की तिथि</string>
+    <string name="enter_diagnosis">निदान दर्ज करें</string>
+    <string name="total_hospital_bill_amount">अस्पताल के बिल की कुल राशि</string>
+    <string name="total_amount_claimed">दावा की गई कुल राशि</string>
+    <string name="next">अगला</string>
+    <string name="section_b">खंड B</string>
+    <string name="ctse_member">क्या आप सी.टी.एस.ई सदस्य हैं?</string>
+    <string name="ctse_card_with_form">(यदि \'हाँ\',कृपया जमा करते समय फॉर्म के साथ आप सी.टी.एस.ई  कार्ड संलग्न करें)</string>
+    <string name="select">चुनें</string>
+    <string name="treatment_in_emergency">क्या इमरजेंसी में इलाज किया गया था?</string>
+    <string name="no_rly_hosp_certi">(यदि \'हाँ\',कृपया NO-Rly अस्पताल द्वारा अनिवार्यता सह आपातकालीन प्रमाणपत्र संलग्न करें)</string>
+    <string name="not_older_6month">सबमिट किया गया दावा 6 महीने से पुराना नहीं है?</string>
+    <string name="reimubrsement_process">देरी की क्षमा के लिए मामले को प्रतिपूर्ति प्रक्रिया डेस्क में संसाधित किया जाना चाहिए, कृपया अस्पताल से संपर्क करें।</string>
+    <string name="any_health_policy">क्या किसी स्वास्थ्य बीमा पॉलिसी की सदस्यता ली है या किसी अन्य स्वास्थ्य योजना के तहत कवर किया गया है?</string>
+    <string name="note_medi_claim">टिप्पणी: यदि लाभार्थी के पास चिकित्सा बीमा पॉलिसी है और इलाज के लिए दावा करने का इरादा है तो वह पहले बीमा कंपनी को दावा कर सकता है और फिर दस्तावेजों के साथ &hosp_name; को दावा जमा कर सकता है।, बिल, आदि, कागज की अलग शीट पर सारांश के साथ बीमा कंपनी द्वारा सत्यापित हो.</string>
+    <string name="recieve_insurance_amt">क्या आपको इलाज के लिए बीमा कंपनी से कोई राशि मिली है??</string>
+    <string name="agree_to_proceed">आगे बढ़ने के लिए सहमत हैं</string>
+    <string name="phc_to_submit">टिप्पणी :- पी.सी.एच. को इस क्लेम फॉर्म में उल्लिखित संदर्भ पृष्ठ संख्या के अनुसार बिलों के सभी मूल समूह को उसी क्रम में जमा करना होगा</string>
+    <string name="discharge_summary">डिस्चार्ज सारांश:</string>
+
+    <string name="origina_cash_voucher">दवाओं/उपभोग्य सामग्रियों/प्रत्यारोपण आदि के मूल नकद वाउचर. अगर सम्बंधित है:</string>
+    <string name="pace_maker">स्टेंट, पेसमेकर, इम्प्लांट आदि की बाहरी थैली:</string>
+    <string name="any_other_enclosures">कोई अन्य संलग्नक:</string>
+    <string name="page_number">इस तरह पेज नंबर दर्ज करें 1-5,18,19</string>
+    <string name="declairation">मैं एतद्द्वारा घोषणा करता हूं कि इस आवेदन में दिए गए विवरण मेरे सर्वोत्तम ज्ञान और विश्वास के अनुसार सही हैं और जिस व्यक्ति के लिए चिकित्सा व्यय किया गया वह पूरी तरह से मुझ पर निर्भर है. मुझे पता है कि चिकित्सा सुविधाओं का दुरुपयोग या किसी भी प्रकार की गलत व्याख्या पर यूएमआईडी कार्ड को रद्द करने सहित दंडात्मक कार्रवाई की जा सकती है।. मैं एतद्द्वारा घोषणा करता हूं कि यह मेरा अंतिम दावा है और मैं इस उपचार प्रकरण के संबंध में भविष्य में &hosp_name; या किसी अन्य स्वास्थ्य योजना के लिए कोई दावा नहीं करूंगा।.</string>
+    <string name="submitted_to">को सबमिट किया गया:</string>
+    <string name="back">वापस</string>
+    <string name="enter_name_of_hospital">कृपया अस्पताल का नाम दर्ज करें।</string>
+    <string name="enter_name_of_admission">कृपया प्रवेश तिथि दर्ज करें</string>
+    <string name="enter_dischatge_date">कृपया छुट्टी की तारीख दर्ज करें</string>
+    <string name="enter_diagonsis">कृपया निदान दर्ज करें</string>
+    <string name="enter_hosp_bill_amt">कृपया अस्पताल के बिल की कुल राशि दर्ज करें</string>
+    <string name="enter_total_claim_amt">कृपया दावा की गई कुल राशि दर्ज करें</string>
+    <string name="yes">हाँ</string>
+    <string name="no">नहीं</string>
+    <string name="select_checkbox">कृपया चेकबॉक्स चुनें।</string>
+    <string name="select_hospital">कृपया अस्पताल का चयन करें।</string>
+    <string name="discharge_summray">कृपया डिस्चार्ज सारांश पृष्ठ संख्या दर्ज करें।</string>
+    <string name="origina_bill_page_number">कृपया मूल बिल पृष्ठ संख्या दर्ज करें।</string>
+    <string name="cash_boucher_page_number">कृपया नकद वाउचर पृष्ठ संख्या दर्ज करें।</string>
+    <string name="outer_pouch_number">कृपया आउटर पाउच पेज नंबर दर्ज करें।</string>
+    <string name="error">त्रुटि</string>
+    <string name="ok">ठीक है</string>
+    <string name="treatment_taken_emrgency">यहां इमरजेंसी में ही इलाज कराया जाएगा।</string>
+    <string name="slary_details">फॉर्म के क्रॉस वेरिफिकेशन के लिए अपना वेतन, बैंक खाता विवरण तैयार रखें।</string>
+    <string name="patient_is_not_entitled_for_reimbursement">रोगी प्रतिपूर्ति के लिए हकदार नहीं है।</string>
+    <string name="original_bills_of_hospital">अस्पताल का मूल बिल:</string>
+    <string name="proceed">आगे बढ़ें</string>
+    <string name="continue_txt">जारी रखें</string>
+    <string name="final_text">Final</string>
+    <string name="information">सूचना</string>
+    <string name="date_vaidation_10am">अपॉइंटमेंट केवल उसी दिन सुबह 10:00 बजे से पहले बुक किया जा सकता है. कृपया किसी अन्य तिथि के लिए अपॉइंटमेंट बुक करें।</string>
+    <string name="no_slot_available_select_date">चयनित तिथि के लिए कोई स्लॉट उपलब्ध नहीं है। कृपया कोई अन्य तिथि चुनें।</string>
+    <string name="reschedule_appointment">अपॉइंटमेंट पुनर्निर्धारित करने में असमर्थ। कृपया बाद में पुन: प्रयास करें।</string>
+    <string name="select_patient_profile">रोगी प्रोफ़ाइल का चयन करें</string>
+    <string name="opd_charges">ओपीडी शुल्क:</string>
+    <string name="weight">वज़न</string>
+    <string name="height">ऊंचाई</string>
+    <string name="bmi">BMI</string>
+    <string name="temperature">तापमान</string>
+    <string name="pulse_rate">पल्स रेट</string>
+    <string name="fast">फास्ट</string>
+    <string name="blood_group">ब्लड ग्रुप</string>
+    <string name="disability">विकलांगता</string>
+    <string name="smoking">धूम्रपान</string>
+    <string name="anemic">रक्तहीनता से पीड़ित</string>
+    <string name="description">विवरण</string>
+    <string name="side">साइड</string>
+    <string name="nr">एन.आर.</string>
+    <string name="left">बायाँ</string>
+    <string name="right">दायां</string>
+    <string name="bilateral">द्विपक्षीय</string>
+    <string name="days">दिन</string>
+    <string name="weeks">सप्ताह</string>
+    <string name="months">माह</string>
+    <string name="add">जोड़ें</string>
+    <string name="icd_code">ICD कोड</string>
+    <string name="snomed_ct">SNOMED-CT</string>
+    <string name="icd_code_search">ICD कोड खोजें</string>
+    <string name="disease">बीमारी</string>
+    <string name="provisional">अस्थायी</string>
+    <string name="differential">अंतर</string>
+    <string name="add_special_condition">विशेष स्थिति जोड़ें</string>
+    <string name="dismiss">रद्द करें</string>
+    <string name="investigations_colon">इन्वेस्टीगेशन:</string>
+    <string name="procedures_colon">प्रोसीजर:</string>
+    <string name="clinical_procedure">क्लीनिकल प्रोसीजर</string>
+
+    <string name="treatment_advice">इलाज की सलाह:</string>
+    <string name="new_update_available">नया अपडेट उपलब्ध हैं</string>
+    <string name="exit">बाहर जाएं</string>
+    <string name="update_now">अपडेट करें</string>
+    <string name="why_do_you_want_to_cancel_this_appointment">आप इस अपॉइंटमेंट को रद्द क्यों करना चाहते हैं?</string>
+    <string name="patient_requisition_details">रोगी आवश्यकता विवरण</string>
+    <string name="please_convey"><![CDATA[कृपया आइकन पर टैप करके और समय का चयन करके रोगी को परामर्श के अनुमानित समय के बारे में बताएं]]></string>
+    <string name="reply_to_patient_maximum_300_characters">रोगी को उत्तर दें (अधिकतम 300 वर्ण)</string>
+    <string name="view_sent_messages">संदेश देखें</string>
+    <string name="tap_to_approve">स्वीकृत करने के लिए टैप करें</string>
+    <string name="teleconsultancy_request_submitted">टेलीकंसल्टेंसी अनुरोध सबमिट किया गया!</string>
+    <string name="upload_supporting_medical_documents">सहायक चिकित्सा दस्तावेज अपलोड करें?</string>
+    <string name="docs_upload_message">(लैब / परीक्षण रिपोर्ट, पुराना प्रिस्क्रिप्शन, मेडिकल नोट्स/स्कैन दस्तावेज़, परामर्श समर्थन के लिए इस टेलीकंसल्टेंसी अनुरोध के साथ चिकित्सा छवियों को स्कैन और अपलोड किया जाएगा). स्कैन और अपलोड करने के लिए \'हां\' दबाएं। स्किप करने के लिए\'नहीं\' दबाएं.</string>
+    <string name="permission_required">अनुमति आवश्यक है</string>
+    <string name="self_registration">स्वयं पंजीकरण</string>
+    <string name="slots_available">" स्लॉट उपलब्ध हैं, कृपया अपॉइंटमेंट अनुरोध के लिए पुष्टि करें।"</string>
+    <string name="skip">स्किप</string>
+    <string name="update_conti">&appname; का नया अपडेट उपलब्ध है। कृपया एप्लिकेशन का उपयोग जारी रखने के लिए अपडेट करें।</string>
+    <string name="update_google_play_store">&appname; का एक नया अपडेट उपलब्ध है। Google Play Store से नवीनतम संस्करण डाउनलोड करने के लिए अभी अपडेट करें।</string>
+    <string name="retry">पुन: प्रयास करें</string>
+    <string name="slot_not_available">चयनित तिथि के लिए कोई स्लॉट उपलब्ध नहीं है, कृपया कोई अन्य तिथि चुनें।</string>
+    <string name="failed_appointment">अपॉइंटमेंट लेने में असमर्थ। कृपया बाद में पुन: प्रयास करें।</string>
+    <string name="failed">सूचना!</string>
+    <string name="do_u_want_to_proceed">क्या आप आगे बढ़ना चाहते हैं?</string>
+    <string name="please_wait">कृपया प्रतीक्षा करें</string>
+    <string name="no_internet_connect">कोई इंटरनेट कनेक्शन नहीं हैं।</string>
+    <string name="no_inernet_connect_msg">ऐसा लगता है कि आप इंटरनेट से कनेक्टेड नहीं हैं। कृपया अपना कनेक्शन जांचें और पुन: प्रयास करें या बाहर निकलें और बाद में पुनः प्रयास करें।</string>
+    <string name="remind_later"><u>मुझे बाद में याद दिलाएं</u></string>
+    <string name="dear">"प्रिय "</string>
+    <string name="todays">आज</string>
+    <string name="upcoming">आने वाला</string>
+    <string name="past">पिछला</string>
+    <string name="show_details">विवरण देखें</string>
+    <string name="hide_details">विवरण छिपाएँ</string>
+    <string name="hospital_colon">"\n\अस्पताल : "</string>
+    <string name="department_unit">"\nविभाग/यूनिट : "</string>
+    <string name="request_date">"\nअनुरोध की तिथि : "</string>
+    <string name="track_status2"><![CDATA["<br><br>आप होम पेज पर दिए गए मेनू के माध्यम से अपॉइंटमेंट तिथि पर अपने अनुरोध की स्थिति को ट्रैक कर सकते हैं। स्वीकृति के बाद, कृपया डॉक्टर के कॉल का इंतजार करें"]]></string>
+    <string name="during_hosp_hour">" अस्पताल की ओपीडी के दौरान।"</string>
+    <string name="user_name">यूज़र नेम</string>
+    <string name="enter_cr_number">सीआर संख्या दर्ज करें</string>
+    <string name="scan_prescription_code">स्कैन प्रिस्क्रिप्शन कोड</string>
+    <string name="scan_barcode_desc">व्यूफ़ाइंडर आयत के अंदर एक बारकोड स्कैन करें। </string>
+    <string name="store">स्टोर</string>
+    <string name="qty_available">उपलब्ध मात्रा</string>
+    <string name="link_my_abha_id"><b><u>Link My ABHA ID</u></b></string>
+    <string name="HIS_AUTH_KEY">fbdcf45645fgnG34534FvdfFvdfbNytHERgSdbsdvsdvs3</string>
+    <string name="emp_id">कर्मचारी आईडी:</string>
+    <string name="drug">दवाई</string>
+    <string name="adviced_date">सलाह की तारीख</string>
+    <string name="adviced_qty">सलाह मात्रा</string>
+    <string name="issued_qty">जारी मात्रा</string>
+    <string name="date">दिनांक</string>
+    <string name="topic">विषय</string>
+    <string name="s_no">क्र.सं.</string>
+    <string name="next_feedback_allowed_after_30_days">30 दिनों के बाद अगली फीडबैक की अनुमति है</string>
+
+
+</resources>

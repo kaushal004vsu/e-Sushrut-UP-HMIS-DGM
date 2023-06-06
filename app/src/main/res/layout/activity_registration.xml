@@ -1,0 +1,513 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".RegistrationActivity">
+
+    <Button
+        android:id="@+id/btn_register"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginBottom="16dp"
+        android:background="@drawable/button_shape"
+        android:onClick="registerUser"
+        android:text="@string/register"
+        android:textColor="@color/mdtp_white"
+        android:textSize="22sp"
+        android:textStyle="bold" />
+
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@+id/btn_register"
+        android:layout_below="@+id/patientdetails">
+        <!--patient details form starts-->
+        <LinearLayout
+            android:id="@+id/ll_registration_form"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginHorizontal="16dp"
+            android:background="@color/white"
+            android:orientation="vertical">
+
+            <!--  <Spinner
+                android:id="@+id/zone_spinner"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="2dp"
+                android:id="@+id/zone_spinner_view"
+                android:layout_marginBottom="5dp"
+                android:background="@android:color/darker_gray" />
+
+            <Spinner
+                android:id="@+id/division_spinner"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="2dp"
+                android:id="@+id/division_spinner_view"
+                android:layout_marginBottom="5dp"
+                android:background="@android:color/darker_gray" />-->
+
+            <Spinner
+                android:id="@+id/hosp_spinner"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+
+            <View
+                android:id="@+id/hosp_spinner_view"
+                android:layout_width="match_parent"
+                android:layout_height="2dp"
+                android:layout_marginBottom="5dp"
+                android:background="@android:color/darker_gray" />
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="5dp"
+                android:orientation="horizontal"
+                android:weightSum="10">
+
+                <ImageView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_weight="1"
+                    android:src="@drawable/user"
+                    app:tint="@color/black" />
+
+                <com.libizo.CustomEditText
+                    android:id="@+id/efname"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="9"
+                    android:fontFamily="@font/lucidasans"
+                    android:hint="@string/patient_name_hint"
+
+                    app:libIZO_clearIconTint="@color/black"
+                    app:libIZO_setClearIconVisible="true" />
+
+
+            </LinearLayout>
+
+            <!-- <LinearLayout
+                 android:layout_width="match_parent"
+                 android:layout_height="wrap_content"
+                 android:layout_marginTop="10dp"
+                 android:layout_marginBottom="5dp"
+                 android:orientation="horizontal"
+                 android:weightSum="10">
+
+                 <ImageView
+                     android:layout_width="0dp"
+                     android:layout_height="match_parent"
+                     android:layout_gravity="center"
+                     android:layout_weight="1"
+                     android:src="@drawable/relation" />
+
+                 <LinearLayout
+                     android:layout_width="0dp"
+                     android:layout_height="match_parent"
+                     android:layout_gravity="center"
+                     android:layout_weight="9"
+                     android:orientation="vertical">
+
+                     <Spinner
+                         android:id="@+id/srelation"
+                         android:layout_width="match_parent"
+                         android:layout_height="wrap_content" />
+
+                     <View
+                         android:layout_width="match_parent"
+                         android:layout_height="1dp"
+                         android:layout_gravity="bottom"
+                         android:background="@android:color/darker_gray" />
+
+
+                 </LinearLayout>
+             </LinearLayout>-->
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="5dp"
+                android:orientation="horizontal"
+                android:weightSum="10">
+
+                <ImageView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_weight="1"
+                    android:src="@drawable/relation"
+                    app:tint="@color/black" />
+
+                <com.libizo.CustomEditText
+                    android:id="@+id/ername"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="9"
+                    android:fontFamily="@font/lucidasans"
+                    android:gravity="bottom"
+
+                    android:hint="@string/father_s_mother_s_spouse_s_name"
+                    app:libIZO_clearIconTint="@android:color/black"
+                    app:libIZO_setClearIconVisible="true" />
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="5dp"
+                android:orientation="horizontal"
+                android:weightSum="10">
+
+                <ImageView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_weight="1"
+                    android:src="@drawable/cake"
+                    app:tint="@color/black" />
+
+                <com.libizo.CustomEditText
+                    android:id="@+id/eage"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:maxLength="3"
+                    android:inputType="number"
+                    android:layout_gravity="center"
+                    android:layout_weight="9"
+                    android:fontFamily="@font/lucidasans"
+                    android:hint="@string/tv_age"
+
+                    app:libIZO_clearIconTint="@color/black"
+                    app:libIZO_setClearIconVisible="true"
+                    app:libIZO_setCornerRadius="2dp" />
+
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="5dp"
+                android:orientation="horizontal"
+                android:weightSum="10">
+
+                <ImageView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_weight="1"
+                    android:src="@drawable/gender" />
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_weight="9"
+                    android:orientation="vertical">
+
+                    <Spinner
+                        android:id="@+id/sgender"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content" />
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="1dp"
+                        android:background="@android:color/darker_gray" />
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <!--      <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="5dp"
+                android:orientation="horizontal"
+                android:weightSum="10">
+
+                <ImageView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_weight="1"
+                    app:tint="@color/black"
+                    android:src="@drawable/gender" />
+
+                <com.libizo.CustomEditText
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_weight="9"
+                    android:fontFamily="@font/lucidasans"
+                    android:hint="@string/tv_gender"
+
+                    app:libIZO_clearIconTint="@color/black"
+                    app:libIZO_setClearIconVisible="true"
+                    app:libIZO_setCornerRadius="2dp" />
+
+            </LinearLayout>-->
+            <!--   <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="5dp"
+                android:orientation="horizontal"
+                android:weightSum="10">
+
+                <ImageView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_weight="1"
+                    android:src="@drawable/gender" />
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_weight="9"
+                    android:orientation="vertical">
+
+                    <Spinner
+                        android:id="@+id/sgender"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content" />
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="1dp"
+                        android:background="@android:color/darker_gray" />
+                </LinearLayout>
+
+            </LinearLayout>-->
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="5dp"
+                android:orientation="horizontal"
+                android:weightSum="10">
+
+                <ImageView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_weight="1"
+                    android:src="@drawable/address"
+                    app:tint="@color/black" />
+
+                <com.libizo.CustomEditText
+                    android:id="@+id/edt_address"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="9"
+                    android:fontFamily="@font/lucidasans"
+                    android:gravity="bottom"
+                    android:hint="@string/city_village"
+
+                    app:libIZO_clearIconTint="@color/black"
+                    app:libIZO_setClearIconVisible="true" />
+            </LinearLayout>
+
+
+            <!-- <com.libizo.CustomEditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:drawablePadding="10dp"
+                android:fontFamily="@font/lucidasans"
+                android:hint="@string/tv_state"
+                android:drawableLeft="@drawable/address"
+                android:drawableTint="@color/black"
+
+                app:libIZO_clearIconTint="@color/black"
+                app:libIZO_setClearIconVisible="true" />
+            <com.libizo.CustomEditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:drawablePadding="10dp"
+
+                android:drawableLeft="@drawable/address"
+                android:drawableTint="@color/black"
+                android:fontFamily="@font/lucidasans"
+                android:hint="@string/tv_district"
+                app:libIZO_clearIconTint="@color/black"
+                app:libIZO_setClearIconVisible="true" />-->
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="5dp"
+                android:orientation="horizontal"
+                android:weightSum="11">
+
+                <ImageView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_weight="1"
+                    android:src="@drawable/address" />
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_weight="5"
+                    android:orientation="vertical">
+
+                    <Spinner
+                        android:id="@+id/sstate"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content" />
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="1dp"
+                        android:background="@android:color/darker_gray" />
+
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginLeft="5dp"
+                    android:layout_weight="5"
+                    android:orientation="vertical">
+
+                    <Spinner
+                        android:id="@+id/sdistrict"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content" />
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="1dp"
+                        android:background="@android:color/darker_gray" />
+
+
+                </LinearLayout>
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="5dp"
+                android:orientation="horizontal"
+                android:weightSum="10">
+
+                <ImageView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_weight="1"
+                    android:src="@drawable/mobile_no"
+                    app:tint="@color/black" />
+
+                <com.libizo.CustomEditText
+                    android:id="@+id/emobile"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="9"
+                    android:enabled="false"
+                    android:fontFamily="@font/lucidasans"
+                    android:hint="@string/tv_mobile_number"
+                    app:libIZO_clearIconTint="@color/black"
+                    app:libIZO_setClearIconVisible="true" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="5dp"
+                android:orientation="horizontal"
+                android:weightSum="10">
+
+                <ImageView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_weight="1"
+                    android:src="@drawable/email"
+                    app:tint="@color/black" />
+
+                <com.libizo.CustomEditText
+                    android:id="@+id/eemail"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="9"
+                    android:digits="ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789()%/+?,@. \n!#$%&amp;'*+-/=?^_`{|}~"
+                    android:fontFamily="@font/lucidasans"
+                    android:hint="@string/tv_email"
+                    app:libIZO_clearIconTint="@color/black"
+                    app:libIZO_setClearIconVisible="true" />
+
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </ScrollView>
+
+    <TextView
+        android:id="@+id/patientdetails"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/toolbar_layout"
+        android:background="@color/label_background"
+        android:fontFamily="@font/lucidasans"
+        android:paddingLeft="16dp"
+        android:text="Register Yourself"
+        android:textSize="18sp"
+        android:textStyle="bold" />
+
+    <include
+        android:id="@+id/toolbar_layout"
+        layout="@layout/toolbar_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true" />
+
+    <net.bohush.geometricprogressview.GeometricProgressView
+        android:id="@+id/progress_view"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:elevation="10dp"
+        android:visibility="gone"
+        app:gp_color="@color/colorAccent"
+        app:gp_duration="800"
+        app:gp_figure_padding="3dp"
+        app:gp_number_of_angles="10"
+        app:gp_type="triangle" />
+</RelativeLayout>

@@ -1,0 +1,15 @@
+<component name="libraryTable">
+  <library name="Gradle: com.pacioianu.david:ink-page-indicator:1.2.0@aar">
+    <CLASSES>
+      <root url="jar://$USER_HOME$/.gradle/caches/transforms-3/0515de2159f8b29b9e6f89f2528c2fd3/transformed/jetified-ink-page-indicator-1.2.0/jars/classes.jar!/" />
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-3/0515de2159f8b29b9e6f89f2528c2fd3/transformed/jetified-ink-page-indicator-1.2.0/res" />
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-3/0515de2159f8b29b9e6f89f2528c2fd3/transformed/jetified-ink-page-indicator-1.2.0/AndroidManifest.xml" />
+    </CLASSES>
+    <JAVADOC>
+      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.pacioianu.david/ink-page-indicator/1.2.0/502afc6a892c200dad7e5d102a16c91a9d053fd4/ink-page-indicator-1.2.0-javadoc.jar!/" />
+    </JAVADOC>
+    <SOURCES>
+      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.pacioianu.david/ink-page-indicator/1.2.0/cb90186d6975d38d952db2315889fa307f206a9a/ink-page-indicator-1.2.0-sources.jar!/" />
+    </SOURCES>
+  </library>
+</component>

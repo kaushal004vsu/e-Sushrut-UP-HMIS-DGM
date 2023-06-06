@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "479467028493",
+    "project_id": "e-sushrut-up-hmis-dgme",
+    "storage_bucket": "e-sushrut-up-hmis-dgme.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:479467028493:android:16f295f29467eebb909544",
+        "android_client_info": {
+          "package_name": "com.cdac.uphmis"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "479467028493-42hk74ff4mrcp89a7bmk94fe5991716p.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAFZ7lbAoSEEXQrb04gYJeIfihvySKFqKM"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "479467028493-42hk74ff4mrcp89a7bmk94fe5991716p.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

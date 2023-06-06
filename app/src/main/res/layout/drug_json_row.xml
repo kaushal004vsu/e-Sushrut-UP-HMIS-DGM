@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="08dp"
+    app:cardCornerRadius="08dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/view_background"
+        android:orientation="vertical"
+        android:padding="08dp">
+
+
+        <TextView
+            android:id="@+id/tv_drug_name"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="08dp"
+            android:fontFamily="@font/lucidasans"
+            android:textColor="@color/vitals_blue"
+            android:textSize="14sp"
+            android:textStyle="bold" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0.5dp"
+            android:background="@android:color/white" />
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="04dp"
+            android:padding="08dp">
+
+            <TextView
+                android:id="@+id/tv_drugs_frequency"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:textColor="@android:color/white" />
+
+            <TextView
+                android:id="@+id/tv_drug_qty"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="right"
+                android:layout_weight="1"
+                android:gravity="right"
+                android:textColor="@android:color/white"
+                android:textSize="16sp"
+                android:textStyle="bold" />
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/tv_special_instructions"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/special_instructions"
+            android:textColor="#56AA1B"
+            android:textSize="14sp" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="right"
+            android:gravity="right"
+            android:layout_marginTop="16dp"
+            android:orientation="horizontal">
+
+            <!-- <TextView
+                 android:id="@+id/tv_special_instructions"
+                 android:layout_width="match_parent"
+                 android:layout_height="wrap_content"
+                 android:layout_weight="1"
+                 android:gravity="center"
+                 android:text="@string/special_instructions"
+                 android:textColor="@android:color/holo_blue_dark"
+                 android:textSize="14sp" />-->
+
+            <ImageView
+                android:id="@+id/img_edit"
+                android:layout_width="25dp"
+                android:layout_height="25dp"
+                android:layout_gravity="right"
+                android:layout_marginRight="32dp"
+                android:src="@android:drawable/ic_menu_edit"
+                app:tint="@android:color/white" />
+
+            <ImageView
+                android:id="@+id/img_delete"
+                android:layout_width="25dp"
+                android:layout_height="25dp"
+                android:layout_gravity="right"
+                android:layout_marginRight="16dp"
+                android:src="@android:drawable/ic_menu_delete"
+                app:tint="@android:color/holo_red_dark" />
+        </LinearLayout>
+    </LinearLayout>
+</androidx.cardview.widget.CardView>

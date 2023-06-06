@@ -1,0 +1,163 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp"
+    tools:context=".ndhm.NDHMGenerateOTPActivity">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="10dp"
+        android:background="@color/label_background">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textStyle="bold"
+
+            android:textSize="12sp"
+            android:text="Already Have ABHA ID?"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/blue"
+            android:textStyle="bold"
+            android:textSize="16sp"
+            android:layout_alignParentRight="true"
+            android:onClick="btnLinkABha"
+            android:text="@string/link_my_abha_id"/>
+    </RelativeLayout>
+    <TextView
+        android:id="@+id/tv_header"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:fontFamily="@font/lucidasans"
+        android:gravity="center"
+        android:text="We will send one time password on this number"
+        android:textColor="@color/black"
+        android:textSize="16sp" />
+
+
+    <!-- <EditText
+          android:layout_width="match_parent"
+          android:layout_height="50dp"
+          android:layout_marginTop="20dp"
+          android:padding="10dp"
+         android:enabled="false"
+          android:id="@+id/edt_mobile_no"
+          android:hint="Enter Mobile Number"
+          android:background="@drawable/box"/>-->
+    <com.google.android.material.textfield.TextInputLayout
+        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:enabled="false"
+        android:hint="@string/mobile_number"
+        android:textColorHint="@color/colorAccent"
+        app:boxStrokeColor="@color/colorAccent"
+        app:prefixText="+91">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/edt_mobile_no"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <LinearLayout
+        android:id="@+id/ll_otp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:visibility="gone">
+
+        <EditText
+            android:id="@+id/edt_otp"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/box"
+            android:hint="Enter OTP"
+            android:inputType="number"
+            android:maxLength="6"
+            android:padding="10dp" />
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:background="@drawable/button_shape"
+            android:onClick="btnSubmitOtp"
+            android:text="Submit"
+            android:textColor="@android:color/white"
+            android:textSize="18sp"
+            android:textStyle="bold" />
+
+
+        <TextView
+            android:id="@+id/tv_resend_otp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:fontFamily="@font/lucidasans"
+            android:gravity="center"
+            android:text="Didn't receive OTP? tap here to resend."
+            android:textColor="@android:color/black"
+            android:textSize="12sp" />
+    </LinearLayout>
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_marginTop="10dp"
+        android:background="@android:color/darker_gray" />
+
+    <ScrollView
+        android:id="@+id/sv_consent"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="20dp"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:justificationMode="inter_word"
+                android:lineSpacingExtra="08sp"
+                android:text="@string/i_hereby_declare_that_i_am_voluntarily_sharing_my_identity_information_with_national_health_authority_nha_for_the_sole_purpose_of_creation_of_health_id_i_understand_that_my_health_id_can_be_used_and_shared_for_purposes_as_may_be_notified_by_ndhm_from_time_to_time_including_provision_of_healthcare_services_further_i_am_aware_that_my_personal_identifiable_information_name_address_age_date_of_birth_gender_and_photograph_may_be_made_available_to_the_entities_working_in_the_national_digital_health_ecosystem_ndhe_which_inter_alia_includes_stakeholders_and_entities_such_as_healthcare_professionals_e_g_doctors_facilities_e_g_hospitals_laboratories_and_data_fiduciaries_e_g_health_programmes_which_are_registered_with_or_linked_to_the_national_digital_health_mission_ndhm_and_various_processes_there_under_n_n_i_am_aware_that_my_personal_identifiable_information_can_be_used_and_shared_for_purposes_as_mentioned_above_i_reserve_the_right_to_revoke_the_given_consent_at_any_point_of_time"
+                android:textColor="@color/black" />
+
+
+            <CheckBox
+                android:id="@+id/i_agree_checkbox"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="08dp"
+                android:text="@string/i_agree" />
+
+
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:layout_marginBottom="50dp"
+                android:background="@drawable/button_shape"
+                android:onClick="btnGetOtp"
+                android:text="@string/submit"
+                android:textColor="@color/white"
+                android:textSize="18sp"
+                android:textStyle="bold" />
+
+        </LinearLayout>
+    </ScrollView>
+
+
+</LinearLayout>

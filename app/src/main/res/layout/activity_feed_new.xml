@@ -1,0 +1,271 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:paddingTop="@dimen/dp_30"
+    android:paddingBottom="@dimen/dp_30"
+    android:orientation="vertical">
+
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="25dp"
+        android:layout_marginTop="5dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:gravity="center"
+        android:textStyle="bold"
+        android:textColor="@color/black"
+        android:text="Feedback" />
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:fillViewport="true">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+            <LinearLayout
+                android:id="@+id/ll_data"
+                android:visibility="visible"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center|top"
+                android:orientation="vertical" >
+
+                <LinearLayout
+                    android:id="@+id/parent_emoji_ll"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:layout_marginTop="@dimen/dp_10"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginRight="20dp">
+                    <LinearLayout
+                        android:layout_weight="1"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center|top"
+                        android:gravity="center|top"
+                        android:orientation="vertical" >
+                        <ImageView
+                            android:id="@+id/poorEmoji"
+                            android:layout_width="90dp"
+                            android:layout_height="90dp"
+                            android:padding="@dimen/dp_5"
+                            android:src="@drawable/emogi_icon11"/>
+
+                        <TextView
+                            android:id="@+id/poor_tv"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:fontFamily="sans-serif-light"
+                            android:text="Poor"
+                            android:textSize="16dp" />
+
+                    </LinearLayout>
+                    <LinearLayout
+                        android:layout_weight="1"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center|top"
+                        android:gravity="center|top"
+                        android:orientation="vertical" >
+                        <ImageView
+                            android:id="@+id/averageEmoji"
+                            android:layout_width="90dp"
+                            android:layout_height="90dp"
+                            android:padding="@dimen/dp_5"
+                            android:src="@drawable/emogi_icon21"/>
+                        <TextView
+                            android:id="@+id/avg_tv"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:textSize="16dp"
+                            android:fontFamily="sans-serif-light"
+                            android:text="Average" />
+
+                    </LinearLayout>
+                    <LinearLayout
+                        android:layout_weight="1"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center|top"
+                        android:gravity="center|top"
+                        android:orientation="vertical" >
+                        <ImageView
+                            android:id="@+id/goodEmoji"
+                            android:layout_width="90dp"
+                            android:layout_height="90dp"
+                            android:padding="@dimen/dp_5"
+                            android:src="@drawable/emogi_icon31"/>
+                        <TextView
+                            android:id="@+id/good_tv"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:textSize="16dp"
+                            android:fontFamily="sans-serif-light"
+                            android:text="Good"/>
+                    </LinearLayout>
+
+                </LinearLayout>
+                <TextView
+                    android:id="@+id/rating_error"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/red"
+                    android:textSize="20dp"
+                    android:gravity="center"
+                    android:layout_marginTop="5dp"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginRight="20dp"
+                    android:text="Feedback required!!" />
+                <LinearLayout
+                    android:id="@+id/feedback_parent"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+                    <com.google.android.material.textfield.TextInputLayout
+                        android:id="@+id/feedback_tv"
+                        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                        android:layout_width="match_parent"
+                        android:layout_height="150dp"
+                        android:layout_marginTop="5dp"
+                        android:layout_marginLeft="20dp"
+                        android:layout_marginRight="20dp"
+                        android:gravity="top"
+                        android:textColorHint="@color/colorAccent"
+                        app:boxStrokeColor="@color/colorAccent">
+
+                        <com.google.android.material.textfield.TextInputEditText
+                            android:id="@+id/feedback_et"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:maxLength="1000"
+                            android:gravity="top"/>
+
+                    </com.google.android.material.textfield.TextInputLayout>
+
+                    <TextView
+                        android:id="@+id/reached_limit_tv"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:textColor="@color/red"
+                        android:gravity="center|right"
+                        android:layout_gravity="right"
+                        android:layout_marginLeft="20dp"
+                        android:layout_marginRight="20dp"
+                        android:text="Character Limit Reached !!" />
+
+                    <TextView
+                        android:id="@+id/remainText"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="right"
+                        android:text="0 / 1000"
+                        android:layout_marginLeft="20dp"
+                        android:layout_marginRight="20dp"
+                        />
+                    <include
+                        android:visibility="gone"
+                        layout="@layout/geometric_progress_layout"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center" />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:orientation="horizontal">
+
+                        <Button
+                            android:visibility="gone"
+                            android:id="@+id/skip"
+                            android:layout_weight="1"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="Skip"
+                            android:textAllCaps="false"
+                            android:textColor="@android:color/darker_gray"
+                            android:background="@null"
+                            android:textStyle="bold"
+                            android:layout_marginTop="5dp"
+                            android:layout_marginLeft="20dp"
+                            android:layout_marginRight="20dp"
+                            android:layout_marginBottom="20dp"
+                            />
+                        <Button
+                            android:layout_weight="1"
+                            android:id="@+id/submit_btn"
+                            android:layout_width="match_parent"
+                            android:layout_height="45dp"
+                            android:text="Submit"
+                            android:textAllCaps="false"
+                            android:textColor="@android:color/white"
+                            android:background="@drawable/button_shape"
+                            android:textStyle="bold"
+                            android:layout_marginTop="5dp"
+                            android:layout_marginLeft="20dp"
+                            android:layout_marginRight="20dp"
+                            />
+                    </LinearLayout>
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:text="@string/next_feedback_allowed_after_30_days"
+                        android:textColor="@color/red"
+                        android:textSize="16dp"
+                        android:layout_marginLeft="20dp"
+                        android:layout_marginRight="20dp"
+                        />
+
+                </LinearLayout>
+
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/rl_successful"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:visibility="gone"
+                android:orientation="vertical">
+                <ImageView
+                    android:id="@+id/checked"
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:src="@drawable/save_success" />
+                <TextView
+                    android:id="@+id/success_tv"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true"
+                    android:textSize="25dp"
+                    android:textColor="@color/green"
+                    android:text="" />
+                <Button
+                    android:id="@+id/close"
+                    android:layout_width="150dp"
+                    android:layout_height="50dp"
+                    android:textAllCaps="false"
+                    android:text="Close"
+                    android:textColor="@android:color/white"
+                    android:background="@drawable/button_shape"
+                    android:textStyle="bold"
+                    android:layout_margin="20dp" />
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </ScrollView>
+
+    </LinearLayout>
+

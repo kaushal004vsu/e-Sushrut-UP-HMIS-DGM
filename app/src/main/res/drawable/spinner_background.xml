@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<selector xmlns:android="http://schemas.android.com/apk/res/android">
+    <item><layer-list>
+        <item>
+            <shape>
+                <solid
+                    android:color="@color/white">
+                </solid>
+
+                <corners android:radius="360dp" />
+
+                <padding
+                    android:bottom="@dimen/dp_10"
+                    android:left="@dimen/dp_10"
+                    android:right="20dp"
+                    android:top="5dp" />
+                <stroke
+                    android:width="2dp"
+                    android:color="@color/light_grey"/>
+            </shape>
+        </item>
+        <item >
+
+            <bitmap android:gravity="bottom|right"
+                android:src="@drawable/drop_down_spinner"
+                android:tint="@color/black"
+                android:autoMirrored="true"/>
+        </item>
+    </layer-list></item>
+</selector>

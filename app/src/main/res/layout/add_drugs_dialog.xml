@@ -1,0 +1,264 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_margin="20dp"
+    app:cardCornerRadius="10dp">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:fillViewport="true">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginBottom="16dp"
+            android:orientation="vertical"
+            android:padding="10dp">
+
+
+            <com.google.android.material.floatingactionbutton.FloatingActionButton
+                android:id="@+id/fab_add_drugs"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="right"
+                android:contentDescription="submit"
+                android:src="@drawable/mic_folating_button"
+                app:backgroundTint="@android:color/holo_blue_dark" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:orientation="horizontal">
+
+                <!-- <ImageView
+                     android:layout_width="60dp"
+                     android:layout_height="60dp"
+                     android:src="@drawable/ic_info_black_24dp"
+                     app:tint="#FF1DD0CA" />-->
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:id="@+id/tv_letter_avatar"
+                    android:textSize="22sp"
+                    android:padding="10dp"
+                    android:textStyle="bold"
+                    android:textAllCaps="true"
+                    android:textColor="@android:color/white"
+                    android:background="@drawable/letter_avatar"/>
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical">
+
+
+                    <TextView
+                        android:id="@+id/tv_drug_name"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_marginLeft="20dp"
+                        android:gravity="left|center"
+                        android:textColor="@color/black"
+                        android:textSize="14sp"
+                        android:textStyle="bold" />
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="0.5dp"
+                android:background="@android:color/darker_gray" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp"
+                android:orientation="horizontal">
+
+                <EditText
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:hint="M"
+                    android:inputType="numberDecimal"
+                    android:textColorHint="@android:color/holo_blue_dark"
+                    android:textStyle="bold"
+                    android:textSize="18sp"
+                    android:id="@+id/tv_m"
+                    android:textColor="@android:color/holo_blue_dark"
+                    android:background="@drawable/circle"/>
+
+                <View
+                    android:layout_width="0dp"
+                    android:layout_height="1dp"
+                    android:layout_weight="1"
+                    android:layout_gravity="center"
+                    android:background="@android:color/darker_gray"/>
+                <EditText
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:hint="A"
+                    android:inputType="numberDecimal"
+                    android:textColorHint="@android:color/holo_blue_dark"
+                    android:textStyle="bold"
+                    android:textSize="18sp"
+                    android:id="@+id/tv_a"
+                    android:textColor="@android:color/holo_blue_dark"
+                    android:background="@drawable/circle"/>
+                <View
+                    android:layout_width="0dp"
+                    android:layout_height="1dp"
+                    android:layout_weight="1"
+                    android:layout_gravity="center"
+                    android:background="@android:color/darker_gray"/>
+                <EditText
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:hint="E"
+                    android:textColorHint="@android:color/holo_blue_dark"
+                    android:id="@+id/tv_e"
+                    android:inputType="numberDecimal"
+                    android:textStyle="bold"
+                    android:textSize="18sp"
+                    android:textColor="@android:color/holo_blue_dark"
+                    android:background="@drawable/circle"/>
+                <View
+                    android:layout_width="0dp"
+                    android:layout_height="1dp"
+                    android:layout_weight="1"
+                    android:layout_gravity="center"
+                    android:background="@android:color/darker_gray"/>
+                <EditText
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:hint="N"
+                    android:textColorHint="@android:color/holo_blue_dark"
+                    android:textStyle="bold"
+                    android:textSize="18sp"
+                    android:inputType="numberDecimal"
+                    android:id="@+id/tv_n"
+                    android:textColor="@android:color/holo_blue_dark"
+                    android:background="@drawable/circle"/>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp"
+                android:orientation="horizontal">
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:src="@android:drawable/ic_menu_close_clear_cancel"
+                    app:tint="@android:color/black" />
+                <EditText
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:hint="0"
+                    android:textColorHint="@android:color/holo_blue_dark"
+                    android:inputType="number"
+                    android:textStyle="bold"
+                    android:textSize="18sp"
+                    android:id="@+id/tv_days"
+                    android:textColor="@android:color/holo_blue_dark"
+                    android:background="@drawable/circle"/>
+
+                <RadioGroup
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:layout_gravity="center">
+                    <RadioButton
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/days"
+                        android:checked="true"
+                        android:layout_weight="1"
+                        android:id="@+id/radio_days"/>
+                    <RadioButton
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/weeks"
+                        android:layout_weight="1"
+                        android:id="@+id/radio_weeks"/>
+                    <RadioButton
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/months"
+                        android:layout_weight="1"
+                        android:id="@+id/radio_months"/>
+                </RadioGroup>
+
+            </LinearLayout>
+
+
+
+
+
+
+
+
+
+
+
+            <MultiAutoCompleteTextView
+                android:id="@+id/auto_compplete_special_condition"
+                android:layout_width="match_parent"
+                android:layout_height="150dp"
+                android:layout_marginTop="16dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:padding="16dp"
+                android:background="@drawable/box"
+                android:gravity="top"
+                android:hint="@string/add_special_condition" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp">
+
+                <Button
+                    android:id="@+id/btn_close"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="left"
+                    android:layout_marginHorizontal="08dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/button_shape"
+                    android:drawableLeft="@android:drawable/ic_menu_close_clear_cancel"
+                    android:text="@string/dismiss"
+                    android:textColor="@android:color/white"
+                    android:textSize="18sp"
+                    android:textStyle="bold" />
+
+                <Button
+                    android:id="@+id/btn_add"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="right"
+                    android:layout_marginHorizontal="08dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/button_shape"
+                    android:drawableLeft="@android:drawable/ic_input_add"
+                    android:text="@string/add"
+                    android:textColor="@android:color/white"
+                    android:textSize="18sp"
+                    android:textStyle="bold" />
+            </LinearLayout>
+
+        </LinearLayout>
+    </ScrollView>
+
+</androidx.cardview.widget.CardView>

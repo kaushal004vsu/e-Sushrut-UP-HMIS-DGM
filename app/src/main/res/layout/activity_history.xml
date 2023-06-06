@@ -1,0 +1,255 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/activity_background"
+    tools:context=".opdLite.HistoryActivity">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:fillViewport="true"
+        android:layout_above="@+id/btn_history_done">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="250dp"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@color/view_background"
+                    android:fontFamily="@font/lucidasans"
+                    android:padding="16dp"
+                    android:text="@string/history_of_present_illness"
+                    android:textColor="@color/vitals_orange"
+                    android:textSize="16sp" />
+
+                <EditText
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_margin="08dp"
+                    android:background="@drawable/box"
+                    android:backgroundTint="@color/view_background"
+                    android:textColorHint="@android:color/white"
+                    android:textColor="@android:color/white"
+                    android:gravity="top"
+                    android:id="@+id/edt_hopi"
+                    android:hint="@string/history_of_present_illness_max_500_characters"
+                    android:maxLength="500"
+                    android:padding="16dp" />
+            </LinearLayout>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:background="@color/view_background"
+                android:fontFamily="@font/lucidasans"
+                android:padding="16dp"
+                android:text="@string/complete_history"
+                android:textColor="@color/vitals_blue"
+                android:textSize="16sp"
+                android:textStyle="bold" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="08dp"
+                    android:layout_weight="1"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@color/view_background"
+                        android:fontFamily="@font/lucidasans"
+                        android:padding="16dp"
+                        android:text="@string/past_history"
+                        android:textColor="@color/vitals_orange"
+                        android:textSize="16sp" />
+
+                    <EditText
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:paddingTop="08dp"
+                        android:paddingStart="08dp"
+                        android:paddingBottom="40dp"
+                        android:layout_marginHorizontal="08dp"
+                        android:hint="@string/past_history_hint"
+                        android:background="@drawable/box"
+                        android:backgroundTint="@color/view_background"
+                        android:textColorHint="@android:color/white"
+                        android:textColor="@android:color/white"
+                        android:id="@+id/edt_past"/>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="08dp"
+                    android:layout_weight="1"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@color/view_background"
+                        android:fontFamily="@font/lucidasans"
+                        android:padding="16dp"
+                        android:text="@string/personal_history"
+                        android:textColor="@color/vitals_orange"
+                        android:textSize="16sp" />
+
+                    <EditText
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/box"
+                        android:backgroundTint="@color/view_background"
+                        android:textColorHint="@android:color/white"
+                        android:textColor="@android:color/white"
+                        android:hint="@string/personal_history_hint"
+                        android:layout_marginHorizontal="08dp"
+                        android:paddingTop="08dp"
+                        android:paddingStart="08dp"
+                        android:paddingBottom="40dp"
+                        android:id="@+id/edt_personal"/>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="08dp"
+                    android:layout_weight="1"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@color/view_background"
+                        android:fontFamily="@font/lucidasans"
+                        android:padding="16dp"
+                        android:text="@string/family_history"
+                        android:textColor="@color/vitals_orange"
+                        android:textSize="16sp" />
+
+                    <EditText
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:hint="@string/family_history_hint"
+                        android:background="@drawable/box"
+                        android:backgroundTint="@color/view_background"
+                        android:textColorHint="@android:color/white"
+                        android:textColor="@android:color/white"
+                        android:layout_marginHorizontal="08dp"
+                        android:paddingTop="08dp"
+                        android:paddingStart="08dp"
+                        android:paddingBottom="40dp"
+                        android:id="@+id/edt_family"/>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="08dp"
+                    android:layout_weight="1"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@color/view_background"
+                        android:fontFamily="@font/lucidasans"
+                        android:padding="16dp"
+                        android:text="@string/treatment_history"
+                        android:textColor="@color/vitals_orange"
+                        android:textSize="16sp" />
+
+                    <EditText
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:hint="@string/treatment_history_hint"
+                        android:background="@drawable/box"
+                        android:backgroundTint="@color/view_background"
+                        android:textColorHint="@android:color/white"
+                        android:textColor="@android:color/white"
+                        android:layout_marginHorizontal="08dp"
+                        android:paddingTop="08dp"
+                        android:paddingStart="08dp"
+                        android:paddingBottom="40dp"
+                        android:id="@+id/edt_treatment"/>
+                </LinearLayout>
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="08dp"
+                    android:layout_weight="1"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@color/view_background"
+                        android:fontFamily="@font/lucidasans"
+                        android:padding="16dp"
+                        android:text="@string/surgical_history"
+                        android:textColor="@color/vitals_orange"
+                        android:textSize="16sp" />
+
+                    <EditText
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:hint="@string/surgical_history_hint"
+                        android:background="@drawable/box"
+                        android:backgroundTint="@color/view_background"
+                        android:textColorHint="@android:color/white"
+                        android:textColor="@android:color/white"
+                        android:layout_marginHorizontal="08dp"
+                        android:paddingTop="08dp"
+                        android:paddingStart="08dp"
+                        android:paddingBottom="40dp"
+                        android:id="@+id/edt_surgical"/>
+                </LinearLayout>
+            </LinearLayout>
+
+        </LinearLayout>
+    </ScrollView>
+
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        android:id="@+id/fab_history"
+        android:layout_marginBottom="85dp"
+        android:layout_marginRight="16dp"
+        android:src="@drawable/mic_folating_button"/>
+    <Button
+        android:id="@+id/btn_history_done"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:onClick="btnDone"
+        android:background="@drawable/button_shape"
+        android:textColor="@android:color/white"
+        android:textStyle="bold"
+        android:textSize="22sp"
+        android:layout_margin="16dp"
+        android:text="@string/done"
+        android:layout_alignParentBottom="true"/>
+</RelativeLayout>

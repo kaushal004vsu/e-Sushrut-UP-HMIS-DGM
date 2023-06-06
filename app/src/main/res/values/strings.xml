@@ -1,0 +1,663 @@
+<!DOCTYPE resources [<!--    <!ENTITY appname "UAT_e-Sushrut UP HMIS">-->
+    <!ENTITY appname "e-Sushrut UP HMIS (DGME)"><!ENTITY hosp_name "UP HMIS">]>
+<resources>
+
+    <string name="app_name">&appname;</string>
+
+    <string name="hosp_name">&hosp_name;</string>
+
+
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+
+    <string name="mail"><u>support : mappsdev-noida@cdac.in</u></string>
+    <!-- login activity -->
+
+
+    <string name="support_text"><a href="mailto:mappsdev-noida@cdac.in">support : mappsdev-noida@cdac.in</a></string>
+
+
+    <!-- prescription scanner strings -->
+
+    <string name="title_home">Home</string>
+    <string name="title_enter_new_cr">New CR</string>
+
+    <string name="Loading....">Loading....</string>
+
+
+    <!--  new patient strings  -->
+
+
+    <!--      registration       form           strings-->
+
+
+    <string name="tv_last_name">Last Name*</string>
+    <string name="tv_age">Age*</string>
+
+    <string name="tv_gender">Gender*</string>
+    <string name="tv_mobile_number">Mobile Number*</string>
+    <string name="tv_email">Email</string>
+
+    <string name="tv_state">State</string>
+    <string name="tv_district">District</string>
+
+
+    <string name="page1">Page 1</string>
+    <string name="page2">Page 2</string>
+    <string name="page3">Page 3</string>
+
+    <string name="click_on_camera_icon"><u>Tap icon to upload supporting clinical notes along with Rx (optional).</u></string>
+
+
+    <string name="i_need_help_with">I need help with</string>
+    <string name="help_back_button">Back</string>
+
+    <string name="how_to_login">How to login?</string>
+    <string name="how_to_login_description">
+        <![CDATA[
+        This app allows patients to login using their mobile number.
+
+        <ol>
+        <li> At the home screen, tap on <b><i>Patient Login</i></b> at the lower left corner of the screen.</li>
+        <li> Enter your 10-digit valid mobile number.</li>
+        <li> Enter the One-Time Password (OTP) is sent to your mobile number as an SMS.</li>
+        <li> After successful verification you will be shown the main menu, where you can raise and track Teleconsultancy requests.</li>
+        </ol>
+        ]]>
+    </string>
+
+
+    <string name="quick_steps">Quick Steps for Teleconsultancy Request</string>
+    <string name="quick_steps_description">
+        <![CDATA[
+        After login, you can follow these steps:
+
+
+
+        <ol>
+        <li> To raise a new request, tap on the Teleconsultancy Request icon (<img src=\"econsultation_icon\"/>) from the main menu.</li>
+        <li> Select patient, hospital, telemedicine department and appointment slot. Submit your Teleconsultancy request, with supporting document images (if needed).</li>
+        <li> You can check the status of request in the Consultation and Status (<img src=\"econsult_status\"/>) option from the main menu.</li>
+        <li> Once request is approved by a doctor, you will get a notification and the <b>Join Call</b> button will be shown with your request.</li>
+        <li> You will get a notification when the doctor calls you, and you can join the call from the <b>Join Call</b> button on Consultation and Status (<img src=\"econsult_status\"/>) page.</li>
+        <li> After the doctor has completed the request, you can view prescription from the Consultation and Status (<img src=\"econsult_status\"/>) page.</li>
+        </ol>
+        ]]>
+    </string>
+
+    <string name="how_to_upload_documents">How to upload documents?</string>
+    <string name="how_to_upload_documents_description">
+        <![CDATA[
+        With each Teleconsultancy request, you can upload upto three images of supporting documents for the doctor\'s reference. These may include images of past prescriptions, lab test reports or images of infected site(s). The following steps describe how to upload documents:
+        <br>
+        <ol>
+        <li> After filling in the Teleconsultancy request form, a pop-up will prompt and ask if you wish to upload supporting documents.</li>
+        <li> Click on <b>Yes</b> if you want to upload images of any documents.</li>
+        <li> The next screen shows three slots for image upload. Tap on a slot to open the device camera. Take a clear image of the document you wish to upload. You may retake the image if needed. </li>
+        <li> Click on <b>OK</b> and wait for the image to upload. The confirmation message <b><i>Successfully Uploaded</i></b> will be shown, otherwise please re-take the image and upload again.</li>
+        <li> Repeat the steps for other images you wish to upload. After uploading click on <b>Done</b> to submit the Teleconsultancy request.</li>
+        </ol>
+        ]]>
+    </string>
+
+    <string name="how_to_raise_a_new_request">How to raise a new request?</string>
+    <string name="how_to_raise_a_new_request_description">
+        <![CDATA[
+        You can raise a new Teleconsultancy request by clicking on the <b>Teleconsultancy request</b> button (<img src=\"econsultation_icon\"/>) from the main menu.
+        <br>
+        <ol>
+        <li> Select the patient name from the Teleconsultancy request page. If you need to raise request for your self, select <b><i>Myself</i></b>. Otherwise, click on <b><i>Someone Else</i></b> and enter basic patient identification details.</li>
+        <li> Select the hospital and telemedicine unit for which you want to raise a request.</li>
+        <li> Provide basic details for raising request, such as symptoms, past medication, allergies and problem description.</li>
+        <li> Select a suitable date and an available free slot from the list, then click on submit.</li>
+        <li> You can also upload upto 3 images for doctor\'s reference including past prescriptions, lab reports, images of infected site etc.</li>
+        <li> Teleconsultancy request will be booked and confirmation will be shown. You can check the status in the Consultation and Status page (<img src=\"econsult_status\"/>).</li>
+        </ol>
+        ]]>
+    </string>
+
+
+    <string name="how_to_track_request">How to check Consultation and Status?</string>
+    <string name="how_to_track_request_description">
+        <![CDATA[
+        You can track requests from the <b><i>Consultation and Status</b></i> option (<img src=\"econsult_status\"/>) from the main menu. A request can have the following status:
+
+        <ol>
+        <!--<li> <b>Pending: </b> Once you have submitted a request, it is in <i>Pending</i> status for the doctor\'s approval.</li>-->
+        <li> <b>Approved: </b> The doctor will approve your request and change it to <i>Approved</i> status. You will receive a notification when the doctor calls you for the eConsultation. You can join the call from the <b>Join Call</b> button shown for these requests.</li>
+        <li> <b>Completed: </b> After the Teleconsultation is done, the request is <i>Completed</i>. You can now view the prescription from the <b>View Prescription</b> option shown below the request.</li>
+        <li> <b>Rejected: </b> If the doctor rejects your request, its status is changed to <i>Rejected</i>. You can view the message from the doctor using the <b>View Doctor\'s Message</b> option shown below the request. You may wish to submit a new request, if needed.</li>
+        </ol>
+        ]]>
+    </string>
+
+
+    <string name="how_to_view_prescription">How to view prescription?</string>
+    <string name="how_to_view_prescription_description">
+        <![CDATA[
+           Patients can view prescriptions for <b>Completed</b> Teleconsultancy requests.
+           <ol>
+           <li>After logging in, go to <b><i>Consultation and Status</i></b> option (<img src=\"econsult_status\"/>) from the main menu.</li>
+           <li>Find the request which has been <b>Completed</b> and tap on <b>View Prescription</b> option shown below that request.</li>
+           <li>Prescription will be downloaded as a PDF within the app itself.</li>
+           </ol>
+        ]]>
+    </string>
+
+
+    <string name="other_issue">Any other issue?</string>
+
+    <string name="other_issue_description">
+        <![CDATA[
+          For any other issues, please email <a href=\"mailto:mappsdev-noida@cdac.in\">mappsdev-noida@cdac.in</a>  with details of your issue.
+          <br><br>
+          You can get the latest app updates from <a href=\"https://play.google.com/store/apps/details?id=com.cdac.uphmis\">Google Play Store</a>.
+        ]]>
+    </string>
+
+
+    <string name="tv_further_assistance">
+        <![CDATA[
+]]>
+        </string>
+    <string name="department_Name">department Name</string>
+
+
+    <string name="btn_back">Back</string>
+
+    <string name="tv_tnc">
+        <![CDATA[
+By using the app, you agree to <b> <font color=\'#FF9F00\'><u> terms </u></font></b>
+]]>
+        </string>
+
+
+    <string name="permission_needed">What permissions does the app need?</string>
+    <string name="permission_needed_description">
+    <![CDATA[
+      Users (patients) should enable the following permissions while using the app to use all its features.
+      <ol>
+      <li><b>Appear on Top</b> - This permission is used to deliver call-like full screen notifications when the doctor initiates a video call to the patient. <b><i>Please allow this permission to receive real-time notification when the doctor calls you.</b></i></li>
+      <li><b>Notifications</b> - This app provides notifications to patients when doctor approves, rejects, completes or sends messages against teleconsultation requests raised by patients. <b><i> Please enable notifications for this app to get updates of your teleconsultation request status.</b></i> </li>
+      <li><b>Camera</b> - The app uses the device camera to allow the user to upload images of supporting documents while raising a teleconsultation request. This may include images of past prescriptions, lab reports or images of infected sites.</li>
+      <li><b>Storage</b> - The app uses the device storage for saving prescriptions of teleconsultation requests.</li>
+      </ol>
+    ]]>
+</string>
+    <string name="save_receipt"><b><u>Save Receipt</u></b></string>
+
+
+    <!-- OnBoard Screen. -->
+
+    <string name="ob_header1">TELECONSULTATION</string>
+    <string name="ob_header2">BOOK APPOINTMENT</string>
+    <string name="ob_header3">LAB REPORTS</string>
+    <string name="ob_header4">ENQUIRY</string>
+    <string name="ob_header5">REGISTRATION</string>
+
+    <string name="ob_get_started">GET STARTED</string>
+
+    <string name="ob_desc1">Consult with doctors directly from home through video-calling.</string>
+    <string name="ob_desc2">Book appointments from the app before planning a visit to the hospital.</string>
+    <string name="ob_desc3">Download and view your lab test reports from the app (for registered patients only).</string>
+    <string name="ob_desc4">View lab tests available, tariffs and OPD hours for hospital departments.</string>
+    <string name="ob_desc5">Register yourself and family members to avail healthcare services.</string>
+    <string name="share_file">Sorry,unable to share file at the moment.</string>
+
+
+    <string name="patient_name">Patient Name:</string>
+    <string name="cr_no">CR NO:</string>
+    <string name="self_assess">Self Assess</string>
+    <string name="appointment">Appointment</string>
+    <string name="opd_enquiry">OPD Enquiry</string>
+    <string name="tariff_details">Tariff details</string>
+    <string name="lab_enquiry">Lab Enquiry</string>
+    <string name="lab_reports">Lab Reports</string>
+    <string name="rx_scan">Rx Scan</string>
+    <string name="scanned_view">Scanned View</string>
+    <string name="basic_details">Basic Details</string>
+    <string name="first_name">First Name*</string>
+    <string name="proceed_to_select_slot">Proceed to Select Slot</string>
+    <string name="problem_description_maximum_500_characters">Problem Description (maximum 500 characters)</string>
+    <string name="problem_description">Problem Description</string>
+    <string name="write_allergies">Write allergies</string>
+    <string name="do_you_have_any_allergies">Do you have any allergies?</string>
+    <string name="write_diagnosed_conditions">Write diagnosed conditions</string>
+    <string name="do_you_have_any_previously_diagnosed_conditions">Any other Diagnosed condition ? Please mention</string>
+    <string name="write_medications">Write medications</string>
+    <string name="are_you_under_any_medication">Are you under any medication?</string>
+    <string name="height_in_ft_inch">Height in ft/inch</string>
+    <string name="weight_in_kg">Weight in Kg</string>
+    <string name="breathing_difficulty">Breathing Difficulty</string>
+    <string name="sore_throat">Sore Throat</string>
+    <string name="cough">Cough</string>
+    <string name="fever">Fever</string>
+    <string name="select_district">Select District</string>
+    <string name="name">Name</string>
+    <string name="are_you_experiencing_any_of_the_following_symptoms">Are you experiencing any of the following symptoms?</string>
+    <string name="medical_details_optional">Medical details (optional)</string>
+    <string name="teleconsultancy">Teleconsultancy</string>
+    <string name="opd_desk">OPD Desk</string>
+    <string name="username">Username</string>
+    <string name="password">Password</string>
+    <string name="login">login</string>
+    <string name="general">GENERAL</string>
+    <string name="special">SPECIAL</string>
+    <string name="all">ALL</string>
+    <string name="no_department_found">No department found!</string>
+    <string name="select_the_appointment_date">Select the appointment date</string>
+    <string name="confirm">Confirm</string>
+    <string name="father_s_mother_s_spouse_s_name">Father\'s/Mother\'s/Spouse\'s Name*</string>
+    <string name="city_village">City/Village*</string>
+    <string name="register">Register</string>
+    <string name="home">Home</string>
+    <string name="patient_registered_successfully">Patient Registered Successfully</string>
+    <string name="please_note_down_the_cr_number_for_future_reference_it_will_be_used_for_maintaining_your_medical_records">Please note down the CR number for future reference. It will be used for maintaining your medical records.</string>
+    <string name="no_result_found">No Result Found!</string>
+    <string name="rx_view">Rx View</string>
+    <string name="enter_tariff_to_search">Enter tariff to search</string>
+    <string name="unable_to_register_patient">Unable to register patient.Please try again later.</string>
+    <string name="crno_nav">CR No: </string>
+    <string name="nav_mobile_no">Mob No : XXXXXX</string>
+    <string name="drug_availability">Drug Availability</string>
+    <string name="blood_stock">Blood Stock</string>
+    <string name="cancel_appointment">Cancel Appointment</string>
+    <string name="diabetes">Diabetes</string>
+    <string name="i_hereby_declare_that_i_am_voluntarily_sharing_my_identity_information_with_national_health_authority_nha_for_the_sole_purpose_of_creation_of_health_id_i_understand_that_my_health_id_can_be_used_and_shared_for_purposes_as_may_be_notified_by_ndhm_from_time_to_time_including_provision_of_healthcare_services_further_i_am_aware_that_my_personal_identifiable_information_name_address_age_date_of_birth_gender_and_photograph_may_be_made_available_to_the_entities_working_in_the_national_digital_health_ecosystem_ndhe_which_inter_alia_includes_stakeholders_and_entities_such_as_healthcare_professionals_e_g_doctors_facilities_e_g_hospitals_laboratories_and_data_fiduciaries_e_g_health_programmes_which_are_registered_with_or_linked_to_the_national_digital_health_mission_ndhm_and_various_processes_there_under_n_n_i_am_aware_that_my_personal_identifiable_information_can_be_used_and_shared_for_purposes_as_mentioned_above_i_reserve_the_right_to_revoke_the_given_consent_at_any_point_of_time">"<b>I hereby declare that,</b>"
+\nI am voluntarily sharing my Aadhaar Number / Virtual ID issued by the Unique Identification Authority of India ("UIDAI"), and my demographic information for the purpose of creating an Ayushman Bharat Health Account number ("ABHA number) and Ayushman Bharat Health Account address (ABHA Address"). I authorize NHA to use my Aadhaar number / Virtual ID for performing Aadhaar based authentication with UIDAI as per the provisions of the Aadhaar (Targeted Delivery of Financial and other Subsidies, Benefits and Services) Act, 2016 for the aforesaid purpose. I understand that UIDAI will share my e-KYC details, or response of "Yes" with NHA upon successful authentication.
+\n\nI intend to create Ayushman Bharat Health Account Number ("ABHA number") and Ayushman Bharat Health Account address ("ABHA Address") using document other than Aadhaar. (Click here to proceed further)
+\n\nI consent to usage of my ABHA address and ABHA number for linking of my legacy (past) government health records and those which will be generated during this encounter.
+\n\nI authorize the sharing of all my health records with healthcare provider(s) for the purpose of providing healthcare services to me during this encounter.
+\n\nI consent to the anonymization and subsequent use of my government health records for public health purposes.
+\n\nI, the user, confirm that I have duly informed and explained the beneficiary of the contents of consent for aforementioned purposes.
+\n\nI, the beneficiary, have been explained about the consent as stated above provide my consent for the aforementioned purposes.</string>
+    <string name="emr">EMR</string>
+    <string name="update_my_app"><b><u>Update My App</u></b></string>
+    <!-- <string name="h_info_tab_text_1">Railway Health Resources</string>
+    <string name="h_info_tab_text_2">General Health Resources</string>-->
+
+    <string name="special_instructions"><b><u>Special Instructions</u></b> </string>
+    <string name="download_discharge_slip"><u><b>Download Discharge Slip</b></u></string>
+    <string name="download_admission_slip"><u><b>Download Admission Slip</b></u></string>
+    <string name="note_document_required">Necessary Documents required: (page numbers should be necessarily mentioned.)</string>
+    <string name="re_submit_claim"><b><u>Re-Submit</u></b></string>
+    <string name="accept_claim"><b><u>Accept</u></b></string>
+    <string name="tap_to_join_video_call"><u>Tap to join video call</u></string>
+    <string name="view_token_status"><b><u>View Token Status</u></b></string>
+    <string name="permission_could_be_given_on_settings_apps_app_info_appear_on_top_should_be_on_click_ok_to_proceed"><![CDATA[Permission could be given on Settings->Apps->->App info>Appear on top should be ON , click ok to proceed]]></string>
+    <string name="change_language">Change Language</string>
+    <string name="help">Help</string>
+    <string name="share">share</string>
+    <string name="my_account">My Account</string>
+    <string name="about_us">About us</string>
+    <string name="dark_mode">Dark Mode</string>
+    <string name="switch_user">Switch User</string>
+    <string name="logout">Logout</string>
+    <string name="EC_title">Teleconsultation</string>
+    <string name="VR_title">Appointment Status</string>
+    <string name="RX_title">Rx View</string>
+    <string name="IV_tit">Lab Reports</string>
+    <string name="QS_title">Queue No. Slip</string>
+    <string name="ES_title">Self-Registration</string>
+    <string name="TG_title">Token Generation</string>
+    <string name="HI_title">Create your ABHA</string>
+    <string name="MT_title">Transaction</string>
+    <string name="SC_title">Sick Certificate</string>
+    <string name="AC_title">IPD Details</string>
+    <string name="LP_title">LP Status</string>
+    <string name="CL_title">Reimbursement Claim</string>
+    <string name="QR_title">My CRN</string>
+    <string name="OE_title">OPD Enquiry</string>
+    <string name="TR_title">Tariff details</string>
+    <string name="LE_title">Lab Enquiry</string>
+    <string name="DA_title">Drug Availability</string>
+    <string name="PH_title">PHR</string>
+    <string name="BS_title">Blood Stock</string>
+    <string name="PS_title">Document Scan</string>
+    <string name="PV_title">View Document</string>
+    <string name="AP_title">Appointment</string>
+    <string name="LB_title">Lab Based Appointment</string>
+    <string name="UD_title">Upload Documents</string>
+    <string name="FM_title">Family QR</string>
+    <string name="DR_title">Medications (Rx)</string>
+    <string name="AN_title">Announcement</string>
+    <string name="CR_title">Add Patient</string>
+    <string name="FB_title">Feedback</string>
+    <string name="medication_against_rx">Medication Against Rx</string>
+    <string name="appointment_rescheduled_successfully">Appointment Rescheduled Successfully</string>
+    <string name="appointment_booked_successfully">Appointment Booked Successfully</string>
+    <string name="appli_no_txt">( Your Appointment No. is </string>
+    <string name="br"><![CDATA[ )<br><br>]]></string>
+    <string name="your_appointment_booked"><![CDATA[),<br><br>Your Appointment is Booked for <b>]]></string>
+    <string name="dated"><![CDATA[ </b>dated - <b>]]></string>
+    <string name="reach_hosp_txt"><![CDATA[</b> . Please reach the hospital registration counter to complete the hospital formalities.]]></string>
+    <string name="hi">Hi</string>
+    <string name="chest_congestion_or_runny_nose">Chest Congestion or Runny Nose</string>
+    <string name="body_ache">Body Ache</string>
+    <string name="pink_eyes">Pink Eyes</string>
+    <string name="loss_of_senses_of_smell_and_taste">Loss of Senses of Smell and Taste</string>
+    <string name="hearing_impairment">Hearing Impairment</string>
+    <string name="gastrointestinal_symptoms">Gastrointestinal Symptoms</string>
+    <string name="hypertension">Hypertension</string>
+    <string name="lung_disease">Lung Disease</string>
+    <string name="heart_disease">Heart Disease</string>
+    <string name="kidney_disorder">Kidney Disorder</string>
+    <string name="asthma">Asthma</string>
+    <string name="do_you_have_any_of_the_following_pre_existing_conditions">Do you have any of the following pre-existing conditions ?</string>
+    <string name="select_weight">Select Weight</string>
+    <string name="kg_s">Kg(s)</string>
+    <string name="select_height">Select Height</string>
+    <string name="feet">Feet</string>
+    <string name="inches">Inches</string>
+    <string name="teleconsultation">Teleconsultation</string>
+    <string name="search">Search</string>
+    <string name="live_queue_no_status">Live Queue No. Status</string>
+    <string name="patient_can_do_self_registration_by_scanning_the_qr_code_displayed_at_doctor_s_room_in_the_hospital_after_scanning_qr_code_correctly_registration_for_that_specialty_will_be_done_automatically">Patient can do Self Registration by scanning the QR Code displayed at Doctor\'s Room in the Hospital. After scanning QR Code correctly, Registration for that specialty will be done automatically</string>
+    <string name="language_name">हिन्दी</string>
+
+    <string name="approved">Approved</string>
+    <string name="completed">Completed</string>
+    <string name="rejected">Rejected</string>
+    <string name="unattended">Unattended</string>
+    <string name="gender">Gender</string>
+    <string name="pincode">Pincode</string>
+    <string name="mobile_no">Mobile No</string>
+    <string name="email_id">Email Id</string>
+    <string name="category">Category</string>
+    <string name="last_name">Last Name</string>
+    <string name="age">Age</string>
+    <string name="father_name">Father Name</string>
+    <string name="spouse_name">Spouse Name</string>
+    <string name="up_hmis">&appname;</string>
+    <string name="track_stats"><![CDATA[\<br><br>You can track status of your request on appointment status through menu provided at home page. \]]></string>
+    <string name="help_contents">Help Contents</string>
+    <string name="quick_step">Quick Steps:</string>
+    <string name="features_txt"><![CDATA[\Patient can Raise Tele/Video Consultation Request\n\n\Select User (among Family), Hospital & Department-Unit \n\n\Fill Basic Details & Health Issues\n\n\Slot Selection \n\n\Confirmation of Slot after Doctor’s Approval\n\n\Patient can check the Status of Requests: Pending/Approved \n\n\Consultation with the Doctor on built-in Video or Audio Conference when Doctor is available \n\n\View and Download Prescription]]></string>
+    <string name="manual_and_training_txt"><![CDATA[<br><h1><font color=\'blue\'>User Manuals:</font></h1><ol>\<li><a href=\'https://drive.google.com/file/d/1MN92-7Elq28IJ1nYC0ewkUfHMuOnqIL0/view\'>For Doctors: Hindi</a></li>\<li><a href=\'https://drive.google.com/file/d/1N22KS2qCANp4ToTmsLyiTC4nb4_yQHoF/view\'>For Doctors: English</a></li>\<li><a href=\'https://drive.google.com/file/d/1ACD4B4SLZHXR3TOxEA5pwNXAunI92bLI/view\'>For Patients: Hindi</a></li>\<li><a href=\'https://drive.google.com/file/d/1GycWa_BiS4HV2l6iF_KQJ774Ih_dHJJC/view\'>For Patients: English</a></li>\<br><h1><font color=\'blue\'>HMIS App Training Video:</font></h1>\<li><a href=\'https://youtu.be/AMauZNgIpOs\'>For Doctors: English Video</a></li>\<li><a href=\'https://youtu.be/Gid2BqgSmFk\'>For Doctors: Hindi Video</a></li>\<li><a href=\'https://youtu.be/shLJunBDgsk\'>For Patients: English Video</a></li>\<li><a href=\'https://t.me/joinchat/UlUBld5S6OCVxoeY\'>Link for HMIS Telegram Channel</a></li>\<li><b>Users are also advised to subscribe to IR-HMIS Channel in Telegram App for all updates regarding HMIS from time to time and for full content of Training\Videos.</b></li>\<li>HelpDesk Number: <a href=\'tel:040-27788200\'>040-27788200</a></li>]]></string>
+    <string name="no_previous_appointments_found">No previous appointments found.</string>
+    <string name="request_submitted_successfully_nfor">Request Submitted Successfully \nfor</string>
+    <string name="phone_number">Phone Number</string>
+    <string name="address">Address</string>
+    <string name="last_updated">Last Updated</string>
+    <string name="type_message">type message</string>
+    <string name="send_msg">Send MSG</string>
+    <string name="submit_new_claim">Submit New Claim</string>
+    <string name="patient_name_hint">Patient Name*</string>
+    <string name="abha_address_hint">ABHA Address*</string>
+    <string name="password_hint">Password*</string>
+    <string name="confirm_password_hint">Confirm Password*</string>
+    <string name="day_of_birth_hint">Day of birth*</string>
+    <string name="month_of_birth_hint">Month of birth</string>
+    <string name="year_of_birth_hint">Year of birth</string>
+    <string name="state_ut_hint">State/UT*</string>
+    <string name="gender_hint">Gender*</string>
+    <string name="create_my_abdm_abha">Create my ABDM ABHA</string>
+    <string name="vitals">Vitals</string>
+    <string name="complaints">Complaints</string>
+    <string name="diagnosis">Diagnosis</string>
+    <string name="tests">Tests</string>
+    <string name="medications">Medications</string>
+    <string name="notes">Notes</string>
+    <string name="follow_up">Follow Up</string>
+    <string name="patient_ndocs">Patient\ndocs</string>
+    <string name="patient_ndetails">Patient\ndetails</string>
+    <string name="video_ncall">Video\ncall</string>
+    <string name="save">Save</string>
+    <string name="audio_ncall">Audio\ncall</string>
+    <string name="history">History</string>
+    <string name="examinations">Examinations</string>
+    <string name="investigations">Investigations</string>
+    <string name="procedures">Procedures</string>
+    <string name="drugs">Drugs</string>
+    <string name="rx">Rx</string>
+    <string name="doctor_s_desk">Doctor\'s Desk</string>
+    <string name="patient_list">Patient List</string>
+    <string name="search_patient">Search Patient</string>
+    <string name="select_files">select files</string>
+    <string name="upload_document">upload Document</string>
+    <string name="maximum_of_3_pages_documents_can_be_uploaded">* Maximum of 3 pages documents can be uploaded.</string>
+    <string name="to_replace_document_image">to replace document image.</string>
+    <string name="selected_hospital">Selected hospital</string>
+    <string name="enter_medicine_name_to_search">Enter medicine name to search</string>
+    <string name="qty_show_alert">* Pls note that Available Qty shown above is approximate qty which may get vary at time of actual issuance at store.</string>
+    <string name="drug_name">Drug Name</string>
+    <string name="done">done</string>
+    <string name="history_of_present_illness">History of Present Illness:</string>
+    <string name="history_of_present_illness_max_500_characters">History of Present Illness(max 500 characters)</string>
+    <string name="complete_history">Complete History:</string>
+    <string name="past_history_hint">Past History</string>
+    <string name="past_history">Past History:</string>
+    <string name="family_history">Family History:</string>
+    <string name="family_history_hint">Family History</string>
+    <string name="treatment_history">Treatment History:</string>
+    <string name="personal_history">Personal History:</string>
+    <string name="personal_history_hint">Personal History</string>
+    <string name="treatment_history_hint">Treatment History</string>
+    <string name="surgical_history">Surgical History:</string>
+    <string name="surgical_history_hint">Surgical History</string>
+    <string name="enter_test_name_to_filter_search">Enter Test Name To Filter/Search</string>
+    <string name="current_queue">Current Queue</string>
+    <string name="enter_your_mobile_number_to_login">Enter your mobile number to login</string>
+    <string name="login_as_patient">Login as Patient</string>
+    <string name="tap_for_doctor_login">Tap for Doctor Login</string>
+    <string name="or">Or</string>
+    <string name="last_7_days">Last 7 days pending request status would only be visible here.Issued Item would not be shown here.</string>
+    <string name="mobile_number">Mobile Number</string>
+    <string name="i_agree">I agree</string>
+    <string name="submit">Submit</string>
+    <string name="your_abha">Your ABHA</string>
+    <string name="abha_address_colon">ABHA Address:</string>
+    <string name="abha_number">ABHA Number :</string>
+    <string name="date_of_birth">Date of Birth :</string>
+    <string name="gender_colon">Gender :</string>
+    <string name="mobile">Mobile :</string>
+    <string name="ndhm_login">NDHM Login</string>
+    <string name="enter_abha_number">Enter ABHA Number</string>
+    <string name="successfully_created_abha_txt">You have successfully created your ABHA!\nBegin your digital health journey today.</string>
+    <string name="prescription_preview_edit">Prescription Preview/Edit</string>
+    <string name="vitals_colon">Vitals:</string>
+    <string name="complaints_colon">Complaints:</string>
+    <string name="diagnosis_colon">Diagnosis:</string>
+    <string name="tests_colon">Tests:</string>
+    <string name="medications_colon">Medications:</string>
+    <string name="clinical_notes_colon">Clinical Notes:</string>
+    <string name="follow_up_visit_on">Follow Up Visit On:</string>
+    <string name="cancel">Cancel</string>
+    <string name="visit_date">Visit Date</string>
+    <string name="queue_no">Queue No</string>
+    <string name="printed_on">Printed On</string>
+    <string name="reject">reject</string>
+    <string name="accept">Accept</string>
+    <string name="incoming_call">Incoming Call</string>
+    <string name="section_a">Section A</string>
+    <string name="choose_reimbursement_type">Choose Reimbursement Type</string>
+    <string name="name_of_the_hospital">Name of the Hospital</string>
+    <string name="date_of_admission">Date of Admission</string>
+    <string name="date_of_discharge">Date of Discharge</string>
+    <string name="enter_diagnosis">Enter Diagnosis</string>
+    <string name="total_hospital_bill_amount">Total Hospital Bill Amount</string>
+    <string name="total_amount_claimed">Total Amount Claimed</string>
+    <string name="next">Next</string>
+    <string name="section_b">Section B</string>
+    <string name="ctse_member">Whether you are a CTSE Member?</string>
+    <string name="ctse_card_with_form">(If \'Yes\',Please attach CTSE card with form at time of submission)</string>
+    <string name="select">Select</string>
+    <string name="treatment_in_emergency">Whether Treatment was taken in Emergency?</string>
+    <string name="no_rly_hosp_certi">(If \'Yes\',Please attach Essentiality cum Emergency Certificate by the NO-Rly Hospital)</string>
+    <string name="not_older_6month">The submitted claim is not older than 6 months?</string>
+    <string name="reimubrsement_process">The case should be processed in Reimbursement Process Desk for condonation of delay, pls contact hospital</string>
+    <string name="any_health_policy">Whether subscribing to any Health insurance policy or covered under any other health scheme?</string>
+    <string name="note_medi_claim">Note: In case the beneficiary has medical insurance policy and intend to make claim for the treatment in question then he/she may make claim to insurance company first and then submit claim to &hosp_name;
+        with documents, bills, etc attested by insurance company along with summary on separate sheet of paper.</string>
+    <string name="recieve_insurance_amt">Have you received any amount from insurance company for the treatment in question?</string>
+    <string name="agree_to_proceed">Agree to proceed</string>
+    <string name="phc_to_submit">Note :- PCH has to submit this all original bunch of bills in the same order as per the reference page numbers mentioned in this Claim Form</string>
+    <string name="discharge_summary">Discharge Summary:</string>
+
+    <string name="origina_cash_voucher">Original Cash vouchers of Drugs/consumables/implants etc. if relevant:</string>
+    <string name="pace_maker">Outer pouch of Stent, pacemaker, Implants etc:</string>
+    <string name="any_other_enclosures">Any other enclosures:</string>
+    <string name="page_number">Enter Page Numbers like this 1-5,18,19</string>
+    <string name="declairation">I hereby declare that the statements in this application are true to the best of my knowledge and belief and that the person for whom medical expenses were incurred is wholly dependent upon me. I am aware that misuse of medical facilities or misrepresentation of any kind can attract penal action including cancellation of UMID card. I hereby declare that this is my final claim and I shall not make any claim in future to &hosp_name;
+        or any other health scheme in respect to this treatment episode.</string>
+    <string name="submitted_to">Submitted to:</string>
+    <string name="back">Back</string>
+    <string name="enter_name_of_hospital">Please enter name of the hospital</string>
+    <string name="enter_name_of_admission">Please enter admission date</string>
+    <string name="enter_dischatge_date">Please enter date of discharge</string>
+    <string name="enter_diagonsis">Please enter diagnosis</string>
+    <string name="enter_hosp_bill_amt">Please enter total hospital bill amount</string>
+    <string name="enter_total_claim_amt">Please enter total claimed amount</string>
+    <string name="yes">Yes</string>
+    <string name="select_checkbox">Please select checkbox.</string>
+    <string name="select_hospital">Please select hospital.</string>
+    <string name="discharge_summray">Please enter Discharge Summary Page No</string>
+    <string name="origina_bill_page_number">Please enter Orginal Bill Page No</string>
+    <string name="cash_boucher_page_number">Please enter Cash Voucher Page No</string>
+    <string name="outer_pouch_number">Please enter Outer Pouch  Page No</string>
+    <string name="error">Error</string>
+    <string name="ok">Ok</string>
+    <string name="no">No</string>
+    <string name="treatment_taken_emrgency">Treatment taken under Emergency would only be submitted here.</string>
+    <string name="slary_details">Keep your salary bank account detail ready for cross verifications on form</string>
+    <string name="patient_is_not_entitled_for_reimbursement">Patient is not entitled for Reimbursement</string>
+    <string name="original_bills_of_hospital">Original Bills of Hospital:</string>
+    <string name="proceed">Proceed</string>
+    <string name="continue_txt">continue</string>
+    <string name="information">Information</string>
+    <string name="date_vaidation_10am">Appointments can only be booked before 10:00 am on the same day. Please book appointment for another date.</string>
+    <string name="no_slot_available_select_date">No slots_available for selected date.Please select another date.</string>
+    <string name="reschedule_appointment">Unable to reschedule appointment.Please try again later.</string>
+    <string name="select_patient_profile">Select Patient Profile</string>
+    <string name="opd_charges">OPD Charges:</string>
+    <string name="weight">Weight</string>
+    <string name="height">Height</string>
+    <string name="bmi">BMI</string>
+    <string name="temperature">Temperature</string>
+    <string name="pulse_rate">Pulse Rate</string>
+    <string name="fast">Fast</string>
+    <string name="blood_group">Blood Group</string>
+    <string name="disability">Disability</string>
+    <string name="smoking">Smoking</string>
+    <string name="anemic">Anemic</string>
+    <string name="description">Description</string>
+    <string name="side">Side</string>
+    <string name="nr">NR</string>
+    <string name="left">Left</string>
+    <string name="right">Right</string>
+    <string name="bilateral">Bilateral</string>
+    <string name="days">Days</string>
+    <string name="weeks">Weeks</string>
+    <string name="months">Months</string>
+    <string name="add">Add</string>
+    <string name="icd_code">ICD Code</string>
+    <string name="snomed_ct">SNOMED-CT</string>
+    <string name="icd_code_search">ICD code search</string>
+    <string name="disease">Disease</string>
+    <string name="provisional">Provisional</string>
+    <string name="differential">Differential</string>
+    <string name="final_text">Final</string>
+    <string name="add_special_condition">Add Special Condition</string>
+    <string name="dismiss">Dismiss</string>
+    <string name="investigations_colon">Investigations:</string>
+    <string name="procedures_colon">Procedures:</string>
+    <string name="clinical_procedure">Clinical Procedure</string>
+    <string name="treatment_advice">Treatment Advice:</string>
+    <string name="new_update_available">New Update Available</string>
+    <string name="exit">Exit</string>
+    <string name="update_now">Update Now</string>
+    <string name="why_do_you_want_to_cancel_this_appointment">Why do you want to cancel this appointment?</string>
+    <string name="patient_requisition_details">Patient Requisition Details</string>
+    <string name="please_convey"><![CDATA[Please convey approximate time of consultation to patient by tapping icon & selecting time]]></string>
+    <string name="reply_to_patient_maximum_300_characters">Reply to patient (maximum 300 characters)</string>
+    <string name="view_sent_messages">View Sent Messages</string>
+    <string name="tap_to_approve">Tap to approve</string>
+    <string name="teleconsultancy_request_submitted">Teleconsultancy request submitted!</string>
+    <string name="upload_supporting_medical_documents">Upload Supporting Medical Documents?</string>
+    <string name="docs_upload_message">(Lab/Test Reports, Old Prescriptions, Medical Notes/Scan Documents, Medical Images would be scanned and uploaded with this teleconsultancy request for consultation support). Press \'Yes\' to scan and upload.\'No\' to skip.</string>
+    <string name="permission_required">Permission Required</string>
+    <string name="self_registration">Self Registration</string>
+    <string name="slots_available">" Slots Available, Please press confirm to raise appointment request."</string>
+    <string name="skip">Skip</string>
+    <string name="update_conti">A new update of &appname; is available.Please update to continue using application.</string>
+    <string name="update_google_play_store">A new update of &appname; is available.Tap Update Now to download the latest version from Google Play Store.</string>
+    <string name="retry">Retry</string>
+    <string name="slot_not_available">No slot is available for the selected date, Kindly select another date.</string>
+    <string name="failed_appointment">Unable to make appointment.Please try again later.</string>
+    <string name="failed">Info!</string>
+    <string name="do_u_want_to_proceed">Do you want to proceed?</string>
+    <string name="please_wait">Please wait</string>
+    <string name="no_internet_connect">No Internet Connection</string>
+    <string name="no_inernet_connect_msg">You don\'t seem to be connected to the internet.Please check your connection and try again or exit and retry later.</string>
+    <string name="remind_later"><u>Remind me later</u></string>
+    <string name="dear">"Dear "</string>
+    <string name="todays">Todays</string>
+    <string name="upcoming">Upcoming</string>
+    <string name="past">Past</string>
+    <string name="show_details">Show Details</string>
+    <string name="hide_details">Hide Details</string>
+    <string name="hospital_colon">"\n\nHospital : "</string>
+    <string name="department_unit">"\nDepartment/Unit : "</string>
+    <string name="request_date">\"\nRequested Date : \"</string>
+    <string name="track_status2"><![CDATA["<br><br>You can track status of your request on appointment date through menu provided at home page. After approval, please wait for Doctor call on "]]></string>
+    <string name="during_hosp_hour">" during hospital OPD Hours."</string>
+    <string name="user_name">Username</string>
+    <string name="enter_cr_number">Enter CR number</string>
+    <string name="scan_prescription_code">Scan Prescription Code</string>
+    <string name="scan_barcode_desc">Place a barcode inside the viewfinder rectangle to scan it.</string>
+    <string name="store">Store</string>
+    <string name="qty_available">Qty available</string>
+    <string name="link_my_abha_id"><b><u>Link My ABHA ID</u></b></string>
+    <string name="HIS_AUTH_KEY">fbdcf45645fgnG34534FvdfFvdfbNytHERgSdbsdvsdvs3</string>
+    <string name="emp_id">Employee ID:</string>
+    <string name="drug">Drug</string>
+    <string name="adviced_date">Adviced Date</string>
+    <string name="adviced_qty">Adviced QTY</string>
+    <string name="issued_qty">Issued QTY</string>
+    <string name="date">Date</string>
+    <string name="topic">Topic</string>
+    <string name="s_no">S.No.</string>
+    <string name="next_feedback_allowed_after_30_days">Next feedback allowed after 30 days</string>
+
+
+
+    <string-array name="blood_group">
+        <item>Select blood group</item>
+        <item>Unknown</item>
+        <item>A+</item>
+        <item>A-</item>
+        <item>B+</item>
+        <item>B-</item>
+        <item>AB+</item>
+        <item>AB-</item>
+        <item>O+</item>
+        <item>O-</item>
+    </string-array>
+
+    <string-array name="docs_type">
+        <item>Select</item>
+        <item>Rx</item>
+        <item>Lab Reports</item>
+        <item>Discharge Summary</item>
+        <item>Others</item>
+    </string-array>
+
+    <string-array name="docs_type2">
+        <item>Select</item>
+        <item>Patient Documents</item>
+        <item>External Investigation Reports</item>
+        <item>MLC Documents</item>
+        <item>Verification Documents</item>
+        <item>Medical Certificate</item>
+        <item>Fitness Certificate</item>
+        <item>Case Sheet</item>
+        <item>Death Report</item>
+        <item>Death Certificate (MCCD)</item>
+        <item>Birth Report</item>
+        <item>OPD File</item>
+        <item>Estimate Certificate</item>
+        <item>Certificate B</item>
+
+    </string-array>
+
+</resources>
